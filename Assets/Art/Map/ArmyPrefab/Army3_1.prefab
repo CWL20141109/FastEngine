@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8806825992848307907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8806825992848307905}
+  - component: {fileID: 8806825992848307904}
+  - component: {fileID: 7358997106236573918}
+  m_Layer: 0
+  m_Name: Army3_1
+  m_TagString: Troop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8806825992848307905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806825992848307907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8806825992848307904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806825992848307907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755072c86cac1534aaf0a51818d43a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - clipName: Walk@1
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 90, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk1.png
+  - clipName: Walk@2
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 77, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk2.png
+  - clipName: Walk@3
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: -0.247, y: 0.287, z: -0.322}
+      angle: {x: 0, y: 10, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: -1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: 0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk2.png
+  - clipName: Walk@4
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: -90, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: -1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: 0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk1.png
+  - clipName: Walk@5
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: 0, y: 0, z: -0.41}
+      angle: {x: 0, y: 250, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: -1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: 0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk6.png
+  - clipName: Walk@6
+    attachGoRes: Assets/Art/Effect/Map/Prefab/troops_walk.prefab
+    attachGoSpace:
+      position: {x: 0.17, y: 0, z: -0.12}
+      angle: {x: 0, y: 180, z: 0}
+    audio:
+      asset: 2003
+      duration: 3.061
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Walk6.png
+  - clipName: Attack
+    attachGoRes: Assets/Art/Effect/Map/Prefab/smoke_A.prefab
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 0, z: 0}
+    audio:
+      asset: 
+      duration: 0
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 100
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Attack.png
+  - clipName: Defend
+    attachGoRes: 
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 0, z: 0}
+    audio:
+      asset: 
+      duration: 0
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 80
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.427}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Defend.png
+  - clipName: Idle
+    attachGoRes: 
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 0, z: 0}
+    audio:
+      asset: 
+      duration: 0
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 70
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -0.95, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/Idle.png
+  - clipName: DrawLeft
+    attachGoRes: 
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 0, z: 0}
+    audio:
+      asset: 
+      duration: 0
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: 1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 110
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: -1.5, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/DrawLeft.png
+  - clipName: DrawRight
+    attachGoRes: 
+    attachGoSpace:
+      position: {x: 0, y: 0, z: 0}
+      angle: {x: 0, y: 0, z: 0}
+    audio:
+      asset: 
+      duration: 0
+      loop: 1
+      is3D: 1
+      volume: 1
+      delay: 0
+      fadeTime: 0.5
+    units:
+    - scaleX: 2
+      scaleY: 2
+      filpX: -1
+      filpY: 1
+      horizontal: 2
+      vertical: 2
+      speed: 110
+      speedScale: 1
+      delay: 0
+      space:
+        position: {x: 1.5, y: 0, z: -1.3}
+        angle: {x: 40, y: 0, z: 0}
+      textureRes: Assets/Art/Map/ArmyTexture/Army3_1/DrawLeft.png
+  aotuPlay: 1
+  asyncLoad: 1
+--- !u!65 &7358997106236573918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806825992848307907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.37, y: 1.17, z: 1}
+  m_Center: {x: 0.066, y: 0.81, z: 0}
