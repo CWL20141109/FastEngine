@@ -8,7 +8,21 @@ namespace FastEngine.Editor.Version
 
     public class Build
     {
+        /// <summary>
+        /// 压缩回调
+        /// </summary>
+        class ZipCallback:ZipUtils.ZipCallback
+        {
+            /// <summary>
+            /// 压缩文件数量
+            /// </summary>
+            public int count { get; private set; }
 
+            public override void OnPostZip(ICSharpCode.SharpZipLib.Zip.ZipFile _entry)
+            {
+                count++;
+            }
+        }
     }
 }
 
