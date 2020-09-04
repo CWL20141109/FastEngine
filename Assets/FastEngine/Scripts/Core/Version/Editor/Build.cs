@@ -18,10 +18,17 @@ namespace FastEngine.Editor.Version
             /// </summary>
             public int count { get; private set; }
 
-            public override void OnPostZip(ICSharpCode.SharpZipLib.Zip.ZipFile _entry)
+            public override void OnPostZip(ICSharpCode.SharpZipLib.Zip.ZipEntry _entry)
             {
                 count++;
             }
+
+            /// <summary>
+            /// 资源压缩回调
+            /// </summary>
+            private static ZipCallback zipCallback;
+
+         
         }
     }
 }
