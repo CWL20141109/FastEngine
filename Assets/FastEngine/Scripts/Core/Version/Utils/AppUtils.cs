@@ -39,9 +39,9 @@ namespace FastEngine
 
         #region editor
 
-        public static stringConfigDataDirectory()
+        public static string ConfigDataDirectory()
         {
-            return FilePathUtils.Combine()
+            return FilePathUtils.Combine(BuildRootDirectory(), "config");
         }
 
         /// <summary>
@@ -62,9 +62,14 @@ namespace FastEngine
             return FilePathUtils.Combine(FastAssetsRootDirectory(), "Config");
         }
 
+        /// <summary>
+        /// build 根目录
+        /// </summary>
+        /// <returns></returns>
         public static string BuildRootDirectory()
         {
-            return FilePathUtils.Combine(FilePathUtils.GetTopDirectory(Application.dataPath),"Build",Plac)
+            return FilePathUtils.Combine(FilePathUtils.GetTopDirectory(Application.dataPath), "Build",
+                PlatformUtils.PlatformId());
         }
         #endregion
     }

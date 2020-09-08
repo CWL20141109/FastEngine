@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 
 namespace FastEngine
@@ -96,6 +98,154 @@ namespace FastEngine
                         return ReplaceSeparator(Path.Combine(paths), "/");
                     }
             }
+        }
+        #endregion
+
+        #region 文件
+        /// <summary>
+        /// 写入文件
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        public static bool FileWriteAllText(string path, string context)
+        {
+            try
+            {
+                FileInfo info = new FileInfo(path);
+                if (!info.Directory.Exists) info.Directory.Create();
+                if(info.Exists)info.Delete();
+
+                File.WriteAllText(path,context);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("FileWriteAllText Exception: " + e.ToString());
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// 写入文件
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="context"></param>
+        /// <param name="encoding"></param>
+        /// <returns></returns>
+        public static bool FileWriteAllText(string path, string context, Encoding encoding)
+        {
+            try
+            {
+                FileInfo info = new FileInfo(path);
+                if(!info.Directory.Exists)info.Directory.Create();
+                if(info.Exists) info.Delete();
+
+                File.WriteAllText(path,context);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("FileWriteAllText Exception: " + e.ToString());
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// 读取文件
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="succeed"></param>
+        /// <returns></returns>
+        public static string FileReadAllText(string path, out bool succeed)
+        {
+            try
+            {
+                FileInfo info = new FileInfo(path);
+                if (info.Exists)
+                {
+                    succeed = true;
+                    return File.ReadAllText(path);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("FileReadAllText Exception: " + e.ToString());
+            }
+
+            succeed = false;
+            return "";
+        }
+
+        /// <summary>
+        /// 删除文件
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public static bool DeleteFile(string path)
+        {
+            try
+            {
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("DeleteFile Exception: " + e.ToString());
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 文件是否存在
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public static bool FileExists(string path)
+        {
+            return File.Exists(path);
+        }
+
+        /// <summary>
+        /// 文件复制
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="dest"></param>
+        /// <returns></returns>
+        public static bool FileCopy(string source, string dest)
+        {
+            try
+            {
+                FileInfo info = new FileInfo(dest);
+                if (!Directory.Exists(info.DirectoryName))
+                {
+                    Directory.CreateDirectory(info.DirectoryName);
+                }
+
+                DeleteFile(dest);
+                File.Copy(source,dest);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("FileCopy Exception: " + e.ToString());
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// 文件大小
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public static long FileSize(string path)
+        {
+            return (new FileInfo(path)).Length;
         }
         #endregion
     }

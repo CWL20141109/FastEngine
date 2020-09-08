@@ -21,9 +21,11 @@ namespace FastEngine.Core
         public bool il2cpp;
     }
 
-    public class BuildConfig
+
+    public class BuildConfig:ConfigObject
     {
-    
+        #region build
+#endregion
     }
 }
 
