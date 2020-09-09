@@ -1,5 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using FastEngine.Core;
+using FastEngine.Editor.Version;
+using UnityEditor;
 using UnityEngine;
 
 namespace FastEngine.Editor.AssetBundle
@@ -59,8 +63,105 @@ namespace FastEngine.Editor.AssetBundle
         /// 名字
         /// </summary>
         public string bundleName;
+        /// <summary>
+        /// 映射配置
+        /// </summary>
+        public Dictionary<string, AssetBundleMappingData> mapping = new Dictionary<string, AssetBundleMappingData>();
 
-        public 
+        /// <summary>
+        /// 在编辑器中是否显示
+        /// </summary>
+        public bool editorShow = false;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="structure">结构</param>
+        /// <param name="target">目标路径</param>
+        /// <param name="bundelPath">bundle 输出路径</param>
+        /// <param name="genMapping"> 是否生成mapping配置</param>
+        /// <param name="pattern">匹配模式</param>
+        /// <returns></returns>
+        public static Pack Create(BuildModel structure, string target, string bundelPath, GenerateMapping genMapping,
+            string pattern = "*.*")
+        {
+            var pack = new Pack();
+            pack.model = structure;
+            pack.target = target;
+            pack.bundlePath = bundelPath;
+            pack.genMapping = genMapping;
+            pack.pattern = pattern;
+            return pack;
+        }
+
+        public void Build()
+        {
+            mapping.Clear();
+
+            switch (model)
+            {
+                case BuildModel.Standard:
+                    {
+
+                    }
+                    break;
+                case BuildModel.File:
+                    {
+
+                    }
+                    break;
+                case BuildModel.Folder:
+                    {
+
+                    }
+                    break;
+                case BuildModel.FolderChild:
+                    {
+
+                    }
+                    break;
+                case BuildModel.FolderFile:
+                    { }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void BuildeStandard()
+        {
+            string[] typeDirs = Directory.GetDirectories(target, "*", SearchOption.TopDirectoryOnly);
+            for (int i = 0; i < typeDirs.Length; i++)
+            {
+                var typeDir = typeDirs[i];
+                var _type = FilePathUtils.GetPathSction(typeDir, -1);
+                var dir = Path.Combine(typeDir, "Prefab");
+                if (Directory.Exists(dir))
+                {
+                    string[] files = Directory.GetFiles(dir, pattern, SearchOption.AllDirectories);
+                    for (int index = 0; index < files.Length; index++)
+                    {
+                        var abName = Path.Combine(bundlePath, _type);
+
+                    }
+                }
+            }
+        }
+
+        private void SetBundleName(string filePath, string bundleName)
+        {
+            AssetImporter importer = AssetImporter.GetAtPath(filePath);
+
+            if (importer != null)
+            {
+                importer.assetBundleName = bundleName;
+
+                //添加配置
+                var rp = importer.assetPath.Substring("Assets/".Length);
+                var pxIndex = rp.LastIndexOf('.');
+            }
+
+        }
     }
 
 }

@@ -73,7 +73,7 @@ namespace FastEngine
         }
 
         /// <summary>
-        /// 
+        /// 路径连接
         /// </summary>
         /// <param name="paths"></param>
         /// <returns></returns>
@@ -98,6 +98,33 @@ namespace FastEngine
                         return ReplaceSeparator(Path.Combine(paths), "/");
                     }
             }
+        }
+
+        /// <summary>
+        /// 获取路径上的第几个位置内容
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public static string GetPathSction(string path, int index)
+        {
+            if (index == 0)
+                return "";
+
+            path = ReplaceSeparator(path);
+            char separator = Path.AltDirectorySeparatorChar;
+            string[] ps = path.Split(separator);
+
+            if (index < 0)
+            {
+                index = ps.Length + index + 1;
+            }
+
+            if (ps.Length >= index)
+            {
+                return ps[index - 1];
+            }
+            return "";
         }
         #endregion
 
