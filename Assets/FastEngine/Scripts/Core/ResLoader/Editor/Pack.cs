@@ -102,26 +102,28 @@ namespace FastEngine.Editor.AssetBundle
             {
                 case BuildModel.Standard:
                     {
-
+                        BuildeStandard();
                     }
                     break;
                 case BuildModel.File:
                     {
-
+                        BuildFile();
                     }
                     break;
                 case BuildModel.Folder:
                     {
-
+                        BuildFolder();
                     }
                     break;
                 case BuildModel.FolderChild:
                     {
-
+                        BuildFolderChild();
                     }
                     break;
                 case BuildModel.FolderFile:
-                    { }
+                    {
+                        BuildFolderFile();
+                    }
                     break;
                 default:
                     break;
@@ -142,9 +144,61 @@ namespace FastEngine.Editor.AssetBundle
                     for (int index = 0; index < files.Length; index++)
                     {
                         var abName = Path.Combine(bundlePath, _type);
-
+                        SetBundleName(files[index], abName);
                     }
                 }
+            }
+        }
+
+        private void BuildFile()
+        {
+            if (File.Exists(target))
+            {
+                if (!string.IsNullOrEmpty(bundlePath))
+                {
+                    SetBundleName(target, FilePathUtils.Combine(bundlePath, FilePathUtils.GetFileName(target, false)));
+                }
+                else
+                {
+                    SetBundleName(target, FilePathUtils.GetFileName(target, false));
+                }
+            }
+        }
+
+        private void BuildFolder()
+        {
+            if (Directory.Exists(target))
+            {
+                string[] files = Directory.GetFiles(target, pattern, SearchOption.AllDirectories);
+                for (int index = 0; index < files.Length; index++)
+                {
+                    SetBundleName(files[index], FilePathUtils.Combine(bundlePath, bundleName));
+                }
+            }
+        }
+
+        private void BuildFolderChild()
+        {
+            string[] typeDirs = Directory.GetDirectories(target, "*", SearchOption.TopDirectoryOnly);
+            for (int i = 0; i < typeDirs.Length; i++)
+            {
+                var typeDir = typeDirs[i];
+                var _type = FilePathUtils.GetPathSction(typeDir, -1);
+                string[] files = Directory.GetFiles(typeDir, pattern, SearchOption.AllDirectories);
+                for (int index = 0; index < files.Length; index++)
+                {
+                    var abName = Path.Combine(bundlePath, _type);
+                    SetBundleName(files[index],abName);
+                }
+            }
+        }
+
+        private void BuildFolderFile()
+        {
+            string[] files = Directory.GetFiles(target, pattern, SearchOption.TopDirectoryOnly);
+            for (int i = 0; i < files.Length; i++)
+            {
+                SetBundleName(files[i], FilePathUtils.Combine(bundlePath, FilePathUtils.GetFileName(files[i], false)));
             }
         }
 
@@ -159,6 +213,18 @@ namespace FastEngine.Editor.AssetBundle
                 //添加配置
                 var rp = importer.assetPath.Substring("Assets/".Length);
                 var pxIndex = rp.LastIndexOf('.');
+                if (pxIndex > 0)
+                {
+                    rp = rp.Substring(0, pxIndex);
+                }
+
+                if (!mapping.ContainsKey(rp))
+                {
+                    var data = new AssetBundleMappingData();
+                    data.bundleName = importer.assetBundleName;
+                    data.assetName = FilePathUtils.GetFileName(filePath, true);
+                    mapping.Add(rp, data);
+                }
             }
 
         }

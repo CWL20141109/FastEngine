@@ -48,6 +48,17 @@ namespace FastEngine
         }
 
         /// <summary>
+        /// 获取文件路径上的文件名
+        /// </summary>
+        /// <param name="filePath">文件路径</param>
+        /// <param name="extension">是否需要扩展名</param>
+        /// <returns></returns>
+        public static string GetFileName(string filePath, bool extension)
+        {
+            FileInfo info = new FileInfo(filePath);
+            return extension ? info.Name : info.Name.Substring(0, info.Name.Length - info.Extension.Length);
+        }
+        /// <summary>
         /// 获取上级目录
         /// </summary>
         /// <param name="directory"></param>
