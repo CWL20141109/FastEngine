@@ -11,7 +11,7 @@ namespace FastEngine.Editor.AssetBundle
         [MenuItem("FastEngine/AssetBundle/打开配置")]
         static void OpenConfig()
         {
-
+            FastEditorWindow.ShowWindow<AssetBundleEditorWindow>();
         }
     }
 }

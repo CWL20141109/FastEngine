@@ -29,7 +29,7 @@ namespace FastEngine.Editor.AssetBundle
                 AssetDatabase.Refresh();
             }
 
-            if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Plur")))
+            if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Plus")))
             {
                 if (_bar == 0)
                 {
@@ -37,7 +37,7 @@ namespace FastEngine.Editor.AssetBundle
                     pack.editorShow = true;
                     assetBundleConfig.packs.Add(pack);
                 }
-                else if(_bar == 1)
+                else if (_bar == 1)
                 {
                     var source = new Source();
                     source.editorShow = true;
@@ -49,6 +49,31 @@ namespace FastEngine.Editor.AssetBundle
             _bar = GUILayout.Toolbar(_bar, _barStrs);
 
             EditorGUILayout.BeginVertical("box");
+            _scrollPosition = EditorGUILayout.BeginScrollView(_scrollPosition);
+
+            if (_bar == 0)
+            {
+                for (int i = 0; i < assetBundleConfig.packs.Count; i++)
+                {
+                    var pack = assetBundleConfig.packs[i];
+
+                    EditorGUILayout.BeginVertical("box");
+
+                    if (pack.editorShow)
+                    {
+                        EditorGUILayout.BeginHorizontal();
+                        EditorGUILayout.LabelField("目标资源路径");
+                        if(GUILayout.Button(EditorGUIUtility.IconContent("TreeEditor.Trash"))
+                        {
+
+                        }
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
         }
     }
 
