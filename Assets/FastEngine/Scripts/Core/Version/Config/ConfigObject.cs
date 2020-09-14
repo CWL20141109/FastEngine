@@ -8,7 +8,7 @@ namespace FastEngine.Core
 
     public class ConfigObject
     {
-        public void Initialize() { }
+        public void Initialize() { OnInitialize();}
 
         protected virtual void OnInitialize() { }
 
