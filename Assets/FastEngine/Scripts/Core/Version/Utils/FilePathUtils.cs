@@ -84,6 +84,29 @@ namespace FastEngine
         }
 
         /// <summary>
+        /// Clean Directory
+        /// </summary>
+        /// <param name="directory"></param>
+        public static void DirectoryClean(string directory)
+        {
+            DirectoryDelete(directory);
+            DirectoryCreate(directory);
+        }
+
+        /// <summary>
+        ///  Copy Directory
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="dest"></param>
+        /// <param name="clean"></param>
+        public static void DirectoryCopy(string source, string dest, bool clean = true)
+        {
+            if(clean) DirectoryClean(dest);
+
+            var files = Directory.GetFiles(source, "*.*", SearchOption.TopDirectoryOnly);
+            
+        }
+        /// <summary>
         /// 路径连接
         /// </summary>
         /// <param name="paths"></param>
