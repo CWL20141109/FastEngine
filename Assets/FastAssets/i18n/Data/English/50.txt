@@ -1,0 +1,333 @@
+Achievement
+Achievement Category
+Seasonal Reward
+Territory Dominance
+Construction Dominance
+Statement
+Alliance Mail
+Group Mail
+System
+Stamina
+Attributes
+Unit Type
+Counteract
+Skill
+Enhancement
+Enlightenment
+Hero Reset
+Inheritance
+Equipment
+Attribute Points
+Inherit Skills
+Drill Skills
+Learn Skills
+Upgrade Skills
+Skill Points
+Skill Types
+Territory
+Tax
+Trade
+Market
+City
+Teleport
+Requirements
+City Shutdown
+Status Description
+Relocation
+Requirement
+Cooldown
+Emergency Relocation
+Start-over
+Trade
+Trade Ratio
+Trade Secretary
+Join an Alliance
+Quit an Alliance
+Siege
+Alliance Contribution
+Alliance Level
+Captive
+Alliance Bonus
+Join an Alliance
+Quit an Alliance
+Siege
+Alliance Contribution
+Alliance Level
+Captive
+Trial Rules
+Trial Formation
+Trial Rewards
+Player Data
+Personal Data
+Heroes Data
+Skill Data
+Map Data
+Other Data
+Summon Pool
+Territory Dominance
+Construction Dominance
+View Rank
+Alliance Dominance
+Premium Summon
+Standard Summon
+Special Summon
+Basics
+Dispatch
+Recruit Reservists
+Outpost
+Barricade
+Bunk
+Drone Hub
+Depot
+Mint
+Recreation Hub
+Satellite City
+Occupy A Fort
+Fort Functions
+Alliance Diplomacy
+Neutral
+Hostile
+Friendly
+Sign-in
+Campaign Info
+Campaign Time
+Campaign Info
+Campaign Time
+Leadership
+Troop Strength
+Marching Speed
+Siege Points
+Bonus
+Units
+Units
+Deploy
+Morale
+City Management
+Instant Completion
+Stronghold
+Recruit Reservists
+Economic Officers
+Appointment Exp
+Training Exp
+Training Limitations
+Treasure Hunt
+Treasure Hunt
+Reward List
+Skill Point Transfer
+Vehicle Factory
+Vehicle
+Chief Mechanic
+Forge
+Material
+Equipment
+Chief Designer
+Resource Land Type
+Land Output
+Guard Troop Strength
+Hero Level-up
+Troop Strength Increase
+Multiple Heros Deployed
+How to Build
+Subcity Functions
+How to Build
+Camp Features
+How to Build
+Outpost Features
+How to Build
+Barricade Features
+Vanquish Scavengers
+Vanquishing Rewards
+Eliminate Bandits
+Elimination Rewards
+Intercept New Dawn Convoy
+Interception Rewards
+Sweep
+Sweeping Rewards
+Collect
+Collection Results
+City Siege
+Complete Achievement Quests to get rewards and increase Achievement Evaluation of this season.
+There are four categories of achievements: Conquest, Economy, Development and Siege.
+You will receive seasonal rewards based on your achievement evaluation in that season.
+Empty Land + 3<br>Lvl 1 Territory + 10    Lvl 2 Territory + 20    Lvl 3 Territory + 40<br>Lvl 4 Territory + 60    Lvl 5 Territory + 160    Lvl 6 Territory + 200<br>Lvl 7 Territory + 250    Lvl 8 Territory + 300    Lvl 9 Territory + 350<br>Lvl 10 Territory + 400
+Outpost + 50    Barricade + 20    Satellite City +1,000<br>Camp + 20    Mint + 200    Drone Hub + 200<br>Bunk + 200    Depot + 200    Recreation Hub + 200<br>Fort + 100<br>Your Dominance increases as the Construction Level increases.<br>The default 7 blocks of land of your Main City do not add to Dominance.
+Only Leader, Deputy, and Commandant of an alliance can write and publish Statements. Up to 10 Statements can be issued at the same time.
+Only Leader, Deputy, Commandant, Diplomat and Officers of an alliance can send alliance mails.
+Only group managers can send group mails to group members.
+Remember to claim time-limited items in system mails in time since countdown starts when they are sent. <br>The mailbox will be cleared at the end of each season. Therefore, please claim items as soon as possible.
+A Hero will restore 1 stamina point every 3 minutes and consume 15 stamina points upon each action.
+A Hero's Attack determines physical damage; Defense determines physical defense; Intelligence determines tactical damage and tactical defense; Speed determines action priorities each round; Statecraft and Charisma determine effect bonus when appointed as a city officer.
+Each Hero has different ability ratings upon unit types. The higher the ability rating goes, the stronger the Hero is in combat.
+Chargers are strong against Enforcers; Enforcers are strong against Specters; Specters are strong against Bombers; Bombers are strong against Chargers; and Hammers are weak against all units but strong in city siege.
+A Hero unlocks his second skill slot once he or she reaches level 5. When the Hero reaches level 20 with the base skill level being 10, he or she can be Enlightened. Once the Enlightenment state is obtained, a third skill slot will be unlocked. 
+Enhance a Hero by consuming his own Hero cards. The Hero gets 10 attribute points upon each enhancement.
+When a Hero reaches level 20 with the base skill level being 10, you can consume 2 Hero cards of the same rarity to Enlighten this Hero, unlocking a third skill slot.
+You can use Reset function once every 10 days. Resetting a Hero will recover the consumed Hero cards for Enhancement and Enlightenment as well as 80% of the consumed skill points.
+A Hero can inherit any "Inheritable Skill" from other Heroes, while you will lose the Hero that donates the skill, so use Skill Inheritance wisely.
+A Hero can equip up to 4 types of equipment after reaching level 20.
+A Hero gets 10 attribute points every 10 levels, and 10 extra  attribute points upon each enhancement.
+A Hero can acquire inheritable skills through Skill Inheritance. The Hero donating the skill (the Source Hero) will be gone upon Inheritance. A newly inherited skill initially has a 30% drill progress.
+Consume certain Hero cards to improve drill progress of an inherited skill. When the drill progress reaches 100%, it can be allocated to a Hero or Heroes who meet its learning requirements.
+Heroes with avaliable skill slots can learn inheritable skills. Each skill has limited allocations. When a Hero learns a skill, 1 allocation place will be deducted. When that Hero chooses to forget the skill, 1 allocation place will be added back to the skill. 
+The initial skill level is 1, and the maximum level is 10. You can use skill points to upgrade the skill once the Hero learns it.
+You can obtain skill points by transforming Hero cards. Transform with credits will earn you double skill points.
+There are 7 types of skills: Passive, Tactic, Unit, Command, Active, Assault and Economy. The type of skills determines their timing of triggering in the battle with Passive, Tactic, Unit, and Command skills in the preparation round and Active and Assault skills in the normal rounds. Economy skills only take effect when a Hero is appointed as a city officer.
+Check detailed information of current territories and resources output.
+Get a large amount of gold by collecting taxes.<br>You have free taxation once every day, and up to 3 times extra taxation using credits.
+You can exchange Silicon, Fuel, Ore or Food for a target resource at a certain trade ratio.<br>The trade function becomes avaliable when you build the market. The trade ratio is subject to the market level, Trade Secretary's bonus and his or her skill buff. 
+Use resources, gold or credits to buy a variety of items, e.g. gold, skill points and materials.<br>The shop items will refresh at 0 o'clock server time every 24 hours. Use 50 credits to get an extra refresh.<br>The market function becomes avaliable when a certain Chronicle Quest is completed.<br>Up to 30,000 war points is reserved for the next week while the exceeded part will be cleared at 0 o'clock server time every monday. Please use war points wisely in time. 
+You can manage Teleport, City Shutdown and Relocate here.
+Occupy 7 empty lands adjacent to each other to teleport.
+Fame reaches 5000 or above.<br>All formations are in idle status.<br>No buildings are under construction.<br>Once teleported, you need to wait 72 hours before the next teleport.<br>Teleport is not avaliable when you are captured.<br>Teleport costs 500 credits.<br>After teleport, the 7 blocks originally occupied by the city will become unoccupied.
+After a Shutdown is initiated, there is a preparation period before entering into the Shutdown status.<br>Preparation: 2.5 hours<br>Shutdown Duration: 6 hours<br>Cooldown: 6 hours<br>City Shutdown cannot be initiated when you are in newbie protection, Shutdown Cooldown or captured. 
+Once in Shutdown, your Main City and Satellite City will be exempt from war (free of attack and occupation) while your alliance members can garrison your cities. <br>Any order-giving actions on troops during the Shutdown will lead to automatical abortion of the Shutdown status.<br>Once the city is in Shutdown, all sent troops will automatically enter retreat status and return to their Main City or Satellite City.<br>Cancellation during preparation will not trigger a cooldown. When city is in Shutdown, cancellation will trigger a cooldown
+Relocation offers two options: Emergency Relocation and Start-over.<br>All territories and constructions will be abandoned after relocation. You will relocate to a random location in the selected state.<br>In a relocation, all reservists in the Main City and 80% of the resources will be retained.
+Relocation only becomes available 3 hours after Player character creation.
+There is a 72-hour cooldown between a successful relocation and the next relocation.<br>Emergency Relocation shares its cooldown time with Start-over.
+Emergency Relocation automatically selects the same state where Player character was created.<br>In an Emergency Relocation, the formations in the Main City automatically return to the city and those in Satellite City are automatically dismissed.<br>Emergency Relocation doesnot affect the activities of the Main City. The completed construction progress and the progress of city management, reservist recruitment, vehicle manufacturing, and Hero training will be retained.<br>In an Emergency Relocation, if the Main City is in the same state where Player character was created, it won't affect alliance and captive status.<br>In an Emergency Relocation, if the Main City is not in the same state where Player character was created, you will quit the alliance and your captive status will be terminated.
+Choose any state except Resource State to start over.<br>All formations will be automatically dismissed after a start-over.<br>In a Start-over, the construction progress in the Main City as well as the city management, reservist recruitment, vehicle manufacturing, and Hero training will be automatically restored to its initial status.<br>A Start-over will automatically terminate your alliance and your captive status.
+The trade function becomes avaliable when you build the Trade Port in city management.
+Upgrade the Trade Port to increase trade ratio.
+Appoint Trade Secretary to increase more trade ratio.
+Join an alliance to get resource output bonus.<br>Alliance gameplay becomes avaliable.<br>Alliance members can borrow lands from each other.<br>Siege cities with alliance members, obtain alliance's protection, and make friends.<br>Player can only join an alliance from the same state, unless an alliance from another state has entered your state and occupied a city in the state.
+When you leave the alliance, your alliance contribution will be cleared, and you will lose resource output bonus from the alliance.<br>You cannot borrow ally lands when you leave the alliance.<br>There is a 24-hours cooldown before you can join an alliance again.<br>The captive status does not change when you leave the alliance.
+The alliance's officers can organize members to siege a city together. Cities can only be occupied by alliances.<br>A successful city siege offers rewards to the alliance and its members, and increase the cap number of members. 
+Alliance contribution increases the level of an alliance. You gain alliance contribution by occupying territories or donating resources to the alliance.
+Increasing the alliance's level can increase the cap of alliance members and resources output bonus. The higher the alliance level, the higher the member cap, and the higher the resources output bonus.
+Once an alliance member becomes a captive, the alliance and its allied alliances can rescue the captive by city siege. The captive can also pay a ransom to get freedom.<br>If the Leader of an alliance is captured, the alliance warehouse will be cleared. Please make sure your alliance leader stay safe. 
+You will get resources output bonus when you are in an alliance.<br>The resources bonus depends on alliance level and cities the alliance has occupied. 
+Join an alliance to get resource output bonus.<br>Alliance gameplay becomes avaliable.<br>Alliance members can borrow lands from each other.<br>Siege cities with alliance members, obtain alliance's protection, and make friends.<br>Player can only join an alliance from the same state, unless an alliance from another state has entered your state and occupied a city in the state.
+When you leave the alliance, your alliance contribution will be cleared, and you will lose resource output bonus from the alliance.<br>You cannot borrow ally lands when you leave the alliance.<br>There is a 24-hours cooldown before you can join an alliance again.<br>The captive status does not change when you leave the alliance.
+The alliance's officers can organize members to siege a city together. Cities can only be occupied by alliances.<br>A successful city siege offers rewards to the alliance and its members, and increase the cap number of members. 
+Alliance contribution increases the level of an alliance. You gain alliance contribution by occupying territories or donating resources to the alliance.
+Increasing the alliance's level can increase the cap of alliance members and resources output bonus. The higher the alliance level, the higher the member cap, and the higher the resources output bonus.
+Once an alliance member becomes a captive, the alliance and its allied alliances can rescue the captive by city siege. The captive can also pay a ransom to get freedom.<br>If the Leader of an alliance is captured, the alliance warehouse will be cleared. Please make sure your alliance leader stay safe. 
+There are 7 challenges in each difficulty level. <br>You can choose the difficulty level only once per day.<br>A higher difficulty level of challenges will be unlocked after its previous level is cleared. 
+Your trial formation use the Heroes you already have, retaining their level, skills, attributes, equipment and enhancement status. <br>The troop strength of a trial formation is fixed and related to the chosen difficulty level. <br>Your Heroes in the trial formation and enemy Heroes only have team-up bonuses and no faction or units bonuses.
+Get 3x rewards if you complete trial within 3 attempts, and 2x rewards within 5 attempts.
+When you start a new season, your previous data will be processed separately.
+Credits and diamonds will be retained.<br>Equipment and materials will be retained.<br>Fame, territory cap, silicon, fuel, ore, food, order and gold will be RESET. 
+All Hero cards, Hero's enhancement and enlightenment status will be retained.<br>Hero's level, experience, attributes, base skill llevel and inherited skills will be RESET. 
+All drilled skills, inherited skills and drill progress will be retained. <br>Avaliable inheritance allocation and skill points will be RESET. 
+Building level, Satellite City, constructions on the map, territories, alliance buildings and NPC cities ownership will be RESET.
+Alliance relations, mailbox, battle reports, leaderboards, task progress, tax collection, trial progress, personal achievements and Chronicle Quests will be RESET.
+The initial summon pool of a new season and the Chronicle's special summon pools may differ from the previous season.
+Empty Land +3<br>Lvl 1 Territory +10    Lvl 2 Territory +20    Lvl 3 Territory +40<br>Lvl 4 Territory +60    Lvl 5 Territory +160    Lvl 6 Territory +200<br>Lvl 7 Territory +250    Lvl 8 Territory +300    Lvl 9 Territory +350<br>Lvl 10 Territory +400
+Outpost +50    Barricade +20    Satellite City +1000<br>Camp +20    Mint +200    Drone Hub +200<br>Bunk +200    Depot +200    Recreation Hub +200<br>Fort +100<br>Your Dominance increases as the Construction Level increases.<br>The default 7 blocks of land of your Main City do not add to Dominance.
+View your ranking by tapping the "Go To" button in the lower left.
+The alliance dominance equals the sum of all alliance members dominance.
+You will get 10 skill points and 1 Hero upon each summon.<br>There is a 5.5% chance to get a 5-star Hero.<br>There is a 36% chance to get a 4-star Hero.<br>There is a 58.4% chance to get 3-star Hero.<br>You can secure one 4-star Hero or 5-star Hero every 5 summons.<br>You can secure one 5-star Hero with up to 30 summons.
+You will get 1 Hero upon each summon.<br>There is a 0.2% chance to get a 4-star Hero.<br>There is a 2% chance to get a 3-star Hero.<br>There is a 38% chance to get 2-star Hero.<br>There is a 59.8% chance to get 1-star Hero.
+You will get 1 Hero upon each summon.<br>There is a 5.5% chance to get a 5-star Hero.<br>There is a 36% chance to get a 4-star Hero.<br>There is a 58.4% chance to get 3-star Hero.<br>You can secure one 4-star Hero or 5-star Hero every 5 summons.<br>You can secure one 5-star Hero with up to 30 summons.
+A Camp has 2 distance for its visual field.<br>The troops morale restores fully once the troops are in the camp.<br>The wounded soldiers will recover once the troops are in the camp.
+You can dispatch troops to the Camp. <br>The Camp will become the troops base after dispatch. The troops will return to the Camp after every march.<br>The march speed increases by 100% and the morale does not decrease during the dispatch.  
+You can recruit reservists in the Camp by consuming extra gold.<br>Only one recruiting queue is available in the Camp at the same time.
+An Outpost has 2 distance for its visual field.<br>Defense troops of the Outpost will attack members of non-friendly alliances when they enter any land adjacent to the tower. <br>The strength of defense troops is related to Outpost level.
+A Barricade blocks members of non-friendly alliances when their troops enter the territory. The troops cannot move once blocked by the Barricade.<br>Blocked troops can only return to the city, or move after the Barricade is removed. 
+A Bunk increases reservist cap of the Main City.<br>The effect of multiple bunks can stack. 
+A Drone Hub increases all resources output.<br>The effect of multiple drone hubs can stack. <br>You cannot collect resources in a drone hub.
+A Depot increases the resource storage cap.<br>The effect of multiple depots can stack. 
+A Mint increases gold output proportionately.<br>The effect of multiple mints can stack. 
+A Recreation Hub reduces the recovery time of Hero stamina in the Main City.<br>The effect of multiple recreation hubs can stack. 
+Satellite City has 5 distance for its visual field.<br>Satellite City has most of the features of the Main City, such as city construction and troop deployment.
+Fort occupation requires adjacent lands to be occupied first. <br>An unoccupied fort has two types of defense forces: city guard and garrison troops.<br>City guard's troop strength is 600, and it will defend the city every time the fort under attacking.<br>There are two garrison troops. each with 9,000 troop strength, which refresh every half hour.<br>An occupied fort has no defense troops.<br>You can occupy the fort when its duration is reduced to 0.
+A Fort has 2 distance for its visual field.<br>You can dispatch troops to the fort. The fort will become the troops base after dispatch, and the troops will return to the fort after every march.<br>The march speed increases by 100% and the morale does not decrease during the dispatch.<br>You can recruit reservists in the Fort by consuming extra gold.<br>Only one recruiting queue is available in the Fort at the same time.<br>The troops morale will be full immediately when the troops are in the fort.<br>The wounded soldiers will recover immediately when the troops are in the fort.
+The Leader, the Deputy Leader and the Diplomat of an alliance can set up its diplomatic relations with other alliances, which can be Neutral, Hostile or Friendly. 
+The default relation with other alliances upon the creation of a new alliance is Neutral. <br>When the relation between two alliances is Neutral, their troops will engage in battles when they meet each other. Governors from one alliance can occupy the lands of those from other Neutural alliances. 
+An alliance may set the relation with any other alliance as Hostile unilaterally, without the consent from the other party. <br>When the relation between two alliances is Hostile, their troops will engage in battles when they meet each other. Governors from one alliance can occupy the lands of those from other Hostile alliances. 
+The Friendly relation is bilateral. An alliance can set its relation with any other alliance as Friendly, but it will only come into effect after the other party agrees. <br>When the relation between two alliances is Friendly, their troops will NOT engage in battles when they meet each other. Governors from one alliance can NOT occupy the lands of those from other Friendly alliances. The troops of one alliance can defend the lands of their Friendly alliances. <br>Governors can go through the passes occupied by their Friendly alliances. However, they cannot occupy the lands adjacent to those of the Friendly alliances. <br>Either one of two alliances in a Friendly relation can choose to terminate the relation unilaterally. There is a 12-hour waiting time before the termination takes effect. <br>Friendly alliances  do NOT share their technology, city and level bonuses. 
+The sign-in reward is refreshed at midnight server time. The player obtains the sign-in bonus automatically the first time when they log in the game each day. <br>Check out the sign-in rewards on the Sign-in Reward Calendar. If one misses one or a few days, they will get the next reward following the last one he has claimed. <br>The sign-in reward is refreshed every 30 days. The progress of sign-in reward will be reset at the end of a season. 
+Improve your dominance to acquire rewards. 
+This campaign lasts over the entire season. 
+Participate in the campaign when you reach the given top-up amount. <br>Once the campaign is launched, claim rewards based on your dominance. 
+The campaign runs until you claim all the rewards.<br>For unclaimed rewards in one season, you may obtain them in later seasons once you meet the requirements on dominance. 
+The leadership of all the deployed Heroes in one formation cannot exceed the leadership cap value. You may increase the cap value by upgrading the levels of Stronghold and of War Council.
+You need replenish troops before marching. They won't be able to march when the troop strength of the Commander is 0. Replenishment consumes reservists you have in the city. Obtain reservists by recruiting or by defeating New Dawn Convoys. 
+The marching speed of your troops depends on the unit type. Increase the speed by enhancing troops into special units or by upgrading the levels of Speed Boost in City Management. 
+The city siege strength of your troops depends on the unit type. The basic siege strength of Chargers, Enforcers, Specters and Bombers is 40 and that of Hammers is 100. 
+When the Heroes in one formation satisfies certain requirements, the troops will obtain extra bonuses in combat, becoming more powerful in battles. 
+Switch unit types of the troops when they are in the city or the subcity. Pay attention to the different abilities of Heroes upon each unit type. Some skills will only be triggered upon their corresponding unit type. 
+Chargers are strong against Enforcers; Enforcers are strong against Specters; Specters are strong against Shock Troopers; Shock Troopers are strong against Chargers; and Sledgehammers are weak against all units but strong in city siege.
+The troops can only march after a Hero is deployed as the Commander. Each formation allows deployment of two Deputies in addition to the Commander. Each Hero can only be used once, be it in deployment, appointment or training. 
+The default stamina of Heroes in a formation is 100 upon marching. The stamina decreases as the troops march, which compromises the fighting capacity during battles. It will be restored to 100 once the troops return to the city or a camp and will recover over time when the troops is are standby in the field. 
+Improve construction levels to increase resource acquisition efficiency and fighting capacity. <br>Both the city and the subcity allow two construction queues at the same time. You may add up to three more queues by spending Gold. 
+Use credits to finish construction instantly. 
+Stronghold is the foundation to the level-up and unlocking of other facilities. Please prioritze the upgrading of your Stronghold. 
+You can recruit reservists in the city and the subcity at the expenses of resources. <br>The recruited reservists are refreshed every minute, allowing you to replenish troops instantly. <br>You can cancel recruiting at any time. The rest of the resources will be returned to you 100%. 
+There are in all 11 different economic officers, each offering bonuses in different aspects. <br>An ecnomic officer increases resource output and enhances the possibility of forging equipment of higher quality. <br>Unlock appointment of economic officers by upgrading buildings in the City Management. <br>The bonus effect depends on the Statecraft and Charisma of the appointed Hero. 
+Heroes with "Statecraft" and "Charisma" tags belongs to the economic type of Heroes.<br>Once a Hero of the economic type is appointed, they will obtain Exp over time during their appointment. <br>The Exp gained from appointment is affected by the total resource output bonus. 
+The Exp gained from Hero Training is a fixed value. If multiple Heroes are trained at the same time, they will share the Exp equally. <br>Upgrade Training Academy to increaase the Exp obtainable from each training. <br>Increase the Exp obtainable from each training by appointing a Hero as Chief Trainer. 
+Any Hero deployed in a formation cannot be trained. <br>Any Hero appointed in a economic position cannot be trained. 
+Carrying out Treasure Hunt consumes Gold and Hunt Quotas per day. <br>Increase the Hunt Quotas by upgrading Treasure Hunt in City Management. <br>You may obtain materials, Heroes and equipment in Treasure Hunt. 
+Appoint a Hero as Treasure Hunter to enhance the possibility of hunted objects.<br>The bonus from the Treasure Hunter depends on the Charisma of the appointed Hero.
+Check out the list of objects that can be obtained in Treasure Hunt by tapping on the Reward button on the upper righter corner of the page. 
+Upon the obtainment of a Hero in Treasure, they can be transferred to skill points based on your auto-transfer setting in the Summon page. 
+Consume recourses to manufacture vehicles. <br>You obtain one vehicle after a certain amount of manufacturing time. 
+The vehicle manufactured in the Vehicle Factory comes with random attributes. <br>Vehicles of Epic and Legendary levels have a certain possibility of carrying a special skill with them. 
+Appint a Hero as Chief Mechanic r to increase the possibility of acquiring vehicles of higher quality. <br>The bonus from the Chief Mechanic depends on the Charisma of the appointed Hero.
+Consume materials and resrouces to forge weapons and armors. 
+Equipment forged comes with random attributes. <br>Equipment of Epic and Legendary levels have a certain possibility of carrying a special skill with them. 
+Obtain materials by eliminating Scavengers. Open the materal box to obtain forge materials and blueprints. <br>You have a chance to obtain materials and blueprints in Treasure Hunt.<br>With a blueprint, you may unlock special forge and obtain a given Legendary equipment. 
+Appint a Hero as Chief Designer to increase the possibility of acquiring equipment of higher quality. <br>The bonus from the Chief Designer depends on the Charisma of the appointed Hero.
+There are five types of resource lands, namely:<br>- Silicon<br>- Ore<br>- Fuel<br>- Food<br>- Gold
+The lands that produces Silicon, Ore, Fuel, and Food come in 10 levels. Each level offers a certain amount of recourse output.<br>Empty Land + 100/h    Lvl 1 Land + 200/h     Lvl 2 Land + 300/h<br>Lvl 3 Land + 400/h   Lvl 4 Land + 600/h    Lvl5  Land + 1300/h<br>Lvl 6 Land + 1500/h    Lvl 7 Land + 1700/h    Lvl 8 Land + 1900/h<br>Lvl 9 Land + 2100/h    Lvl 10 Land + 2300/h<br>The lands that produces Gold come in Lvl 6 and upper. Each level offers a certain amount of Gold output.<br>Lvl 6 Land + 100/h    Lvl 7 Land + 200/h    Lvl 8 Land + 300/h<br>Lvl 9 Land + 400/h    Lvl 10 Land + 500/h
+Each land is guarded by Guard Troops. The higher the land level, the higher the troop strength. <br>Empty Land 200   Lvl 1 Land 400     Lvl 2 Land  1200<br>Lvl 3 Land 2400   Lvl 4 5400    Lvl5  Land 9000<br>Lands of lvl 6 and upper are guarded by multiple troops:<br>Lvl 6 Land 15000 x 2    Lvl 7 Land 21000 x 2    Lvl 8 Land 27000 x 2<br>Lvl 9 Land 36000 x 2    Lvl 10 Land 45000 x 3
+Introduction:<br>Level-up increases the attributes of a Hero.<br>A Hero gets 10 extra attributes every 10 levels that can be allocated freely. <br>A Hero unlocks their second skill slot upon level 5. A third skill slot is unlocked when the Hero reaches level 20 and their base skill reaches level 10. <br>A Hero obtains Exp by fighting Guard Troops of lands and enemy troops. <br>Build Training Academy (when Stronghold reaches level 7) to train Heroes for more Exp. 
+The higher troop strength a Hero carries, the more powerful they are in battles. <br>Improve Hero levels to increase the troop strength cap, with 100 extra per level-up.<br>Upgrade Barracks in Combat of City Management helps to increase Hero's troop strength quickly. 
+Each formation allows deployment of 3 Heroes, including 1 Commander and 2 Deputies. <br>The default number of Deputy slots in a formation is 1.<br>Unlock the second Deputy slot by upgrading Cadet Program in Combat of City Management. 
+Unlock the construction of your subcity when your fame reaches 6000.<br>You can only maintain one subcity and the name of the subcity cannot be changed. So make sure how you want to do it. <br>Like the main city, the subcity needs to be build on 7 lands adjacent to each other forming a hexagon, with the land in the center being level 6 or upper. 
+Subcity, once built, increases your fame by 1000. <br>Subcity offers similar functions that the main city has, such as reservist recruitment, troop deployment as well as resource output and warehouse capacity. <br>Subcity can be sieged by enemies. Once sieges, you will temporarily loose all the functions in the subcity. You must pay a certain amount of resources as ransom to get it back. 
+Upgrade Camp Construction in Defense of City Management to increase the number of camps you can build in the map.<br>Upgrade Engingeer Battalion to the max level of Outposts, Barricades and Camps. 
+You can dispatch troops to the Camp, which is the troops base when they are far away from the city. <br>Once dispatched, the troops will march from that Camp and return to it. <br>Once a Camp is built, you lose the original dominance value given by the land, but acquires the new dominance of the camp. A lvl 1 camp increases your dominance by 20, and offers 20 extra upon each upgrading. 
+Upgrade Engineer Regiment to increase the number of Outposts you can build. <br>Upgrade Engineer Battalion to increase the max level of Outposts. <br>Outposts can be built on land of any levels. 
+An Outpost has 2 distance for its visual field.<br>Defense troops of the Outpost will attack members of non-friendly alliances when they enter any land adjacent to the outpost. <br>The strength of defense troops is related to Outpost level.<br>Once an Outpost is built, you lose the original dominance value given by the land, but acquires the new dominance of the outpost. A lvl 1 camp increases your dominance by 50, and offers 25 extra upon each upgrading. 
+Upgrade Engineer Regiment  increase the number of Barricades you can build. <br>Upgrade Engineer Battalion to increase the max level of Barricades.<br>Barricades can be built on land of any levels. 
+A Barricade blocks members of non-friendly alliances when their troops enter the territory. The troops cannot move once blocked by the Barricade.<br>Blocked troops can only return to the city, or move after the Barricade is removed. <br>Once a Barricade is built, you lose the original dominance value given by the land, but acquires the new dominance of the Barricade. A lvl 1 Barricade increases your dominance by 20, and offers 20 extra upon each upgrading. 
+Tap on Scavengers on the map and choose Vanquish to have your troops Vanquish the scavengers. <br>Vanquishing scavengers consumes stamina. <br>Choosing Vanquish allows your troops to engage in battles with Scavengers, instead of the Guard Troops of the land where the Scavengers appear.
+Success in Vanquishing brings in rewards such as resources and material box. You may even obtain blueprints by defeating scavengers of higher levels. 
+Tap on Bandits on the map and choose Eliminate to have your troops eliminate the bandits. <br>Eliminating bandits consumes stamina. <br>Choosing Eliminate allows your troops to engage in battles with bandits, instead of the Guard Troops of the land 
+Success in Elimination brings in rewards of Gold and Hero Exps
+When your fame reaches 4000, New Dawn Convoys will appear near your city. <br>Tap the New Dawn Convoy to check its route. March your troops to the route to intercept the Convoy. <br>The New Dawn Convoy is refreshed at 1:00, 5:00, 13:00 and 21:00 UTC time everyday. If the previous New Dawn Convoy is intercepted, a new one will appear at the given time. If not or the Convoy has been refreshed 3 times in the same day, it will not be refreshed again. 
+Defeat the New Dawn Convoy earns you plenty of resources and reservists. 
+Tap any occupied resource lands and choose Sweep to send troops to sweep the land. <br>Sweeping a land consumes stamina. <br>Sweep allows your troops to engage in battles with the Guard Troops of that land but will not trigger a new occupation. 
+Sweep a land earn you Hero Exps, which helps Heroes to level up. 
+Tap any occupied resource lands and choose Collect to send troops to collect resources on that land. <br>Collecting resources on a land consumes stamina. <br>Collecting resrouces consumes Orders.<br>Collecting will not trigger battles between your troops and the Guard Troops on that land. It is recommended that you send your weaker troops for collection to save the stamina of your main combat troops. 
+Collecting allows you to obtain a large amout of resources of the same kind on a given land. <br>The higer the land level is, the more resources you gain from collecting. <br>Multiple troops can collect on one resource land at the same time and obtain resources respectively. 
+Introduction:<br>Officers of an alliance can ask their members to attack and siege cities or passes, which can only be sieged by alliances. <br>Members who participate in city siege can obtain siege Exp. The alliance will gain bonus of the max number of members allowed for the alliance. 
+Stamina
+Attributes
+Unit Type
+Counteract
+Skill
+Enhancement
+Enlightenment
+Hero Reset
+Inheritance
+City
+Teleport
+City Shutdown
+Relocation
+Emergency Relocation
+Start-over
+Trade
+Outpost
+Barricade
+Bunk
+Drone Hub
+Depot
+Mint
+Recreation Hub
+Satellite City
+Leadership
+Troop Strength
+Marching Speed
+Siege Points
+Bonus
+Units
+Units
+Deploy
+Morale
+Treasure Hunt
+Treasure Hunt
+Vehicle Factory
+Forge

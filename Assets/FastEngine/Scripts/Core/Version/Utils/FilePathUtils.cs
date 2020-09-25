@@ -104,7 +104,18 @@ namespace FastEngine
             if(clean) DirectoryClean(dest);
 
             var files = Directory.GetFiles(source, "*.*", SearchOption.TopDirectoryOnly);
-            
+            for (int i = 0; i < files.Length; i++)
+            {
+                File.Copy(files[i],files[i].Replace(source,dest));
+            }
+
+            var dirs = Directory.GetDirectories(source, "*.*", SearchOption.TopDirectoryOnly);
+            for (int i = 0; i < dirs.Length; i++)
+            {
+                var dir = dirs[i];
+                var newDir = dest + dir.Replace(source, "");
+                DirectoryCopy(dir,newDir);
+            }
         }
         /// <summary>
         /// 路径连接

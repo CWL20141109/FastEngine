@@ -1,0 +1,88 @@
+Silicon Master
+Fuel Master
+Ore Master
+Food Master
+Tax Secretary
+Treasure Hunter
+Trade Secretary
+Mayor
+Chief Designer
+Chief Trainer
+Chief Mechanic
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Charisma[/color])
+Bonus (Subject to [color=#7afd01]Charisma & Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Charisma & Statecraft[/color])
+Bonus (Subject to [color=#7afd01]Statecraft & Charisma[/color])
+Bonus (Subject to [color=#7afd01]Charisma & Statecraft[/color])
+(Statecraft: %s)
+(Statecraft: %s)
+(Statecraft: %s)
+(Statecraft: %s)
+(Statecraft: %s)
+(Charisma: %s)
+(Statecraft: %s, Charisma: %s)
+(Statecraft: %s)
+(Statecraft: %s, Charisma: %s)
+(Statecraft: %s, Charisma: %s)
+(Statecraft: %s, Charisma: %s)
+Silicon Output, Silicon Collection Bonus
+Fuel Output, Fuel Collection Bonus
+Ore Output, Ore Collection Bonus
+Food Output, Food Collection Bonus
+Gold Output
+Increase high-quality items chance
+Increase resource trade ratio
+Silicon Output, Ore Output, Food Output, Fuel Output, Gold Output
+Reduce forging consumption and increase high-quality items chance
+Increase EXP of trained heroes
+Reduce vehicle manufacturing time and consumption, increase high-quality vehicles chance
+Requirement to unlock: Silicon Lab lvl[color=#7afd01]10[/color]
+Requirement to unlock: Fuel Refinery lvl[color=#7afd01]10[/color]
+Requirement to unlock: Ore Reserve lvl[color=#7afd01]10[/color]
+Requirement to unlock: Farm lvl[color=#7afd01]10[/color]
+Requirement to unlock: Housing lvl[color=#7afd01]10[/color]
+Requirement to unlock: Treasure Hunt lvl[color=#7afd01]1[/color]
+Requirement to unlock: Trade Port lvl[color=#7afd01]1[/color]
+Requirement to unlock: Stronghold lvl[color=#7afd01]3[/color]
+Requirement to unlock: Arsenal lvl[color=#7afd01]1[/color]
+Requirement to unlock: Training Academy lvl[color=#7afd01]1[/color]
+Requirement to unlock: Vehicle Factory lvl[color=#7afd01]1[/color]
+Silicon Output
+Fuel Output
+Ore Output
+Food Output
+Gold Output
+High-Quality Items Chance
+Trade Ratio
+All Resources Output
+Forging Consumption
+Training EXP
+Vehicle Manufacturing Consumption
+Silicon Collection Bonus
+Fuel Collection Bonus
+Ore Collection Bonus
+Food Collection Bonus
+
+
+
+
+High-Quality Items Chance
+
+Vehicle Manufacturing Time
+
+
+
+
+
+
+
+
+
+
+High-Quality Items Chance

@@ -68,10 +68,11 @@ namespace FastEngine
         /// <returns></returns>
         public static string BuildRootDirectory()
         {
-            return FilePathUtils.Combine(FilePathUtils.GetTopDirectory(Application.dataPath), "Build",
-                PlatformUtils.PlatformId());
+                return FilePathUtils.Combine(Application.streamingAssetsPath, PlatformUtils.PlatformId());
         }
         #endregion
+
+
     }
 
 }

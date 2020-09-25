@@ -1,0 +1,67 @@
+Age of Chaos
+Rise of Powers
+New Dawn Rebellion
+Enclosure
+Invasion of Bandits
+Forces Assembled
+Territory Wars
+Raging Storms
+Show No Mercy
+Soaring Ambition
+Last Conquerors
+Legend of Unity
+All Governors occupy 100,000 lands.(%s/%s)
+12 alliances have 50 members.(%s/%s)
+All Governors eliminate 10,000 New Dawn's Convoys.(%s/%s)
+All Governors occupy 40,000 lands of Lvl.4 or above.(%s/%s)
+All Governors vanquish 10,000 bandits.(%s/%s)
+Alliance occupies a city of a Lvl.3 or above.(%s/%s)
+Alliance conquers a Lvl.5 city by the end of the event.
+Alliance conquers a County Seat by the end of the event.
+Alliance conquers a State Capital by the end of the event.
+Alliance conquers Asteria of the Great Mines or Asphodel of the Fertile Valley.
+Alliance conquers the Planetary Capital.
+Alliance conquers 8 State Capitals and the Planetary Capital.
+With Government failing, the path is paved for true conquerors. 
+Together, we stay strong.
+When mad man Solomon's New Dawn cult turns military, they must be put down. 
+Lands are strategic assets that you must have. Better lands, better returns. 
+Promise of peace has been made to your people.
+Lay the foundation for a stronger military presence.
+United, have a firm grip on dominance against the tides of war.
+Be one of the most prominent powers on the planet.
+Bluster them. Bend them. Break them. 
+The Valley or the Mines. They are your path to the Prime. 
+Sack the Capital and end the chaos.
+Create the one government to rule all. 
+Gain EXP from PvP battles
+Unlock Scavengers feature
+Unlock General Supplies feature
+Unlock Military Supplies feature
+Unlock Bandits feature
+Increase the initial level of any summoned hero to Lvl.5
+Increase Scavengers Level
+Increase Bandits Level
+Increase the initial level of any summoned hero to Lvl.10.
+Increase Exp on any appointed governance heroes.
+Increase current Bandits Level
+Increase the initial level of any summoned hero to Lvl.20.
+Increase current Scavengers Level
+New summon pool: Rise of Powers
+New summon pool: Enclosure
+New summon pool: Forces Assembled
+New summon pool: Territory Wars
+New summon pool: Raging Storms
+New summon pool: Show No Mercy
+Age of Chaos Completed
+Rise of Powers Completed
+New Dawn Rebellion Completed
+Enclosure Completed
+Invasion of Bandits Completed
+Forces Assembled Completed
+Territory Wars Completed
+Raging Storms Completed
+Show No Mercy Completed
+Soaring Ambition Completed
+Last Conquerors Completed
+Legend of Unity Completed

@@ -1,0 +1,142 @@
+Stronghold
+Warehouse
+Farm
+Ore Reserve
+Silicon Lab
+Fuel Refinery
+Housing
+Trade Port
+Arsenal
+Training Academy
+Treasure Hunt
+Vehicle Factory
+Media Center
+Headquarters
+Attack Boost
+Intelligence Boost
+Army Reserve
+Defense Boost
+Speed Boost
+Cadet Program
+United Colonists Alliance 
+The People’s Justice
+The Ascended
+The Wanderers
+Barracks
+War Council
+Enforcers Camp
+Chargers Camp
+Specters Camp
+Bombers Camp
+Hammers Camp
+Engineer Battalion
+Camp Construction
+City Shield
+Defense Watch
+Garrison
+Engineer Regiment
+Garrison Command
+Damage Augmentor 
+Damage Buffer
+Morale Boost
+Increase city duability and formation's leadership cap
+Increase resource storage cap
+Increase food output
+Increase ore output
+Increase silicon output
+Increase fuel output
+Unlock tax function and increase gold output
+Unlock trade function and increase resource trade ratio
+Unlock forge function and increase the quality of crafted equipment
+Unlock hero training function and increase training EXP
+Unlock treasure hunt function and increase daily hunting times
+Unlock vehicle manufacturing function and the quality of vehicles
+Increase Fame cap
+Increase the number of formations
+Increase formation's attack
+Increase formation's intelligence
+Increase reservists cap and reduce recruiting time
+Increase formation's defense
+Increase formation's speed
+Unlock deputy slots in the formation 
+Increase the hero's attributes of UCA faction. Requires 3 heroes of UCA faction in a formation to activate this bonus.
+Increase the hero's attributes of The People’s Justice faction. Requires 3 heroes of The People’s Justice in a formation to activate this bonus.
+Increase the hero's attributes of The Ascended faction. Requires 3 heroes of The Ascended in a formation to activate this bonus.
+Increase the hero's attributes of The Wanderers faction. Requires 3 heroes of The Wanderers in a formation to activate this bonus.
+Increase hero's troop strength
+Increase leadership cap
+Reduce damage received by Enforcers
+Increase march speed of Chargers
+Increase all battle attributes of Specters
+Increase attack damage of Bombers
+Increase siege ability of Hammers
+Increase maximum level of Outpost, Barricade and Camp
+Unlock Camp construction on the map, increase the number of camps
+Increase city durability
+Increase city visual field
+Have defense troops in this city and increase the troop strength
+Unlock Outpost and Barricade construction on the map, and increase the number of constructions
+Increase hero's strength of city defense troops
+Increase damage of friendly troops when battle takes place within this city field
+Reduce received damage of friendly troops when battle takes place within this city field 
+Increase morale cap
+Formation leadership cap
+Resource storage cap
+Food output
+Ore output
+Silicon output
+Fuel output
+Gold output
+Trade ratio
+Unlock basic forge function
+Hero training and get training EXP
+Increase daily hunting times
+Unlock basic vehicle manufacturing function
+Increase Fame cap
+Number of formations
+Formation's Attack
+Formation's Intelligence
+Reservists cap
+Formation's Defense
+Formation's Speed
+Deputy Slot 
+United Colonists Alliance faction bonus
+The People’s Justice faction bonus
+The Ascended faction bonus
+The Wanderers faction bonus
+Troop strength cap
+Leadership cap
+Damage received by Enforcers
+Chargers march speed
+Specters battle attributes
+Bombers attack damage
+Hammers siege points
+Maximum level of tactical buildings
+Number of Camps
+City durability
+Visual field
+Defense troop strength
+Number of Outposts
+Increase hero's strength of city defense troops
+Increase physical damage
+Reduce received physical damage
+Increase morale cap
+City Durability
+Reservist recruiting time
+Number of barricades
+Increase tactical damage
+Reduce received tactical damage
+Food Collection + 50%
+Ore Collection + 50%
+Silicon Collection + 50%
+Fuel Collection + 50%
+Increase gold from taxation + 2,000
+Increase UCA heroes exp in battle + 10%
+Increase The People’s Justice heroes exp in battle + 10%
+Increase The Ascended heroes exp in battle + 10%
+Increase The Wanderers heroes exp in battle + 10%
+Remedy: Enforcers (2 heroes) restored a certain amount of strength in the 5th round of the battle
+Whirlwind: Chargers Speed + 20 in the first round of battle
+Crossfire: When garrisoned, Specters randomly attack 1-2 enemy targets in the first round
+Breach: Bombers get the breakthrough status in the first round of the battle 
+Reinforced: Hammers March Speed + 25

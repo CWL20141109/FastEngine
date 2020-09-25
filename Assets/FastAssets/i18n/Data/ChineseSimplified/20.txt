@@ -1,0 +1,11 @@
+全部战报已读，无新的战报
+%s<br>Exp+<font color='#7afd01'>%s</font>
+<br>Upgraded to <font color='#7afd01'>Lv.%s</font>
+<font color='#898C40'>%s</font>分享了战报<font color='#898C40'>%s</font>对战<font color='#898C40'>%s</font>
+<font color='#898C40'>%s</font>分享了部队阵容%s队
+报！！启禀主公，敌军主将%s率<font color='#898c40'>%s</font>部队屯于前方！！
+世界
+本州
+军团
+好友
+群组

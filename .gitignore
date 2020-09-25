@@ -1,15 +1,17 @@
 # ---------------[ Unity generated ]------------------ #
 
-/Temp
+Temp
 
-/obj
+obj
 
-/UnityGenerated
+UnityGenerated
 
-/Library
+Library
 
+Build
 
- 
+Assets/StreamingAssets
+
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #
 
@@ -54,3 +56,4 @@ Icon?
 ehthumbs.db
 
 Thumbs.db
+

@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using LitJson;
-using UnityEngine;
-using UnityScript.Steps;
 
 namespace FastEngine.Core
 {

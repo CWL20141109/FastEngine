@@ -1,0 +1,25 @@
+Defense Troops (Level %s Resource): %s x%s
+Defense Troops: ???
+Unlock when Cadet Program reaches lvl %s
+Defense Troops %s x%s
+Auto-path failed
+This formation already in the target location.
+%s command cannot be executed when the formation %s.
+Please select a formation
+Failed to march, because the Commander has 0 troop strength.
+The formation cannot return to the Main City,  please return it to the Camp first.
+The formation cannot return to Satellite City, please return it to the Camp first.
+No available formations in the filter result.
+The March will automatically cancel the shutdown status. Do you wish to continue?
+The formation is fatigued and unable to execute the command.
+The formation is seriously injured and unable to execute the command.
+The formation is in recruiting and unable to execute the command.
+The hero is not recruiting any reservists.
+The recruitment number cannot be 0.
+The hero %s has 0 troop strength and cannot join the battle. Do you wish to continue?
+You can't send this formation because the formation is not idle in this city. Please choose another location.
+The collected resource will <font color='#ff2d2d'>exceed the cap of the warehouse</font>, and you <font color='#ff2d2d'>won't get</font> the exceed part. Do you wish to continue?
+1 Time
+2 Times
+3 Times
+Unlimited

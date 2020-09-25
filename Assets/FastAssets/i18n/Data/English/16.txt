@@ -1,0 +1,54 @@
+Unlock when the Cadet Program at lvl %s
+You can't edit the formation for now, because it's outside the city. Do you wish to jump to the formation's location?
+The Hero’s Troop Strength has reached its cap.
+Please select the replenishing number
+Do you wish to remove %s from the formation? The troop strength of the hero will be cleared. <font color='#ff2d2d'> You will NOT get back the reservists, but %s of the equivalent recruitment resources instead.</font>
+<font color='#ff2d2d'>Insufficient</font> reservists. Do you wish to recruit some now?
+The formation is not idle, please recall the formation to the city first.
+The heroes' leadership has exceeded the formation's cap.
+Chargers Bonus
+Enforcers Bonus
+Specters Bonus
+Bombers Bonus
+Hammers Bonus
+United Colonists Alliance Bonus
+The People’s Justice Bonus
+The Ascended Bonus
+The Wanderers Bonus
+Chargers Special Bonus
+Enforcers Specal Bonus
+Specters Special Bonus
+Bombers Special Bonus
+Hammers Special Bonus
+United Colonists Alliance Special Bonus
+The People’s Justice Special Bonus
+The Ascended Special Bonus
+The Wanderers Special Bonus
+Units Bonus
+Faction Bonus
+Team-up Bonus
+Unit
+Faction
+Team-up
+(Does not reduce damage)
+(Reduces damage by %s%%)
+Unlock at lvl %s Cadet Program
+The <font color='#ff2d2d'>leadership</font> of this formation has exceeded the cap, please upgrade the Stronghold first.
+You already appointed a Hero with the same name.
+You are training a Hero with the same name.
+You cannot exchange heroes, because they're in different cities.
+The formation is not idle, please recall the formation to the city first.
+You already deployed a Hero with the same name.
+The hero is in the appointment, cannot be trained at the same time.
+The hero is in the formation, cannot be trained at the same time.
+Please summon heroes first
+Upgrade the Cadet Program to unlock the deputy's slot.
+The <font color='#ff2d2d'>leadership</font> of this formation has exceeded the cap.
+Unlock when %s at lvl %s
+Bn %s
+Please edit the formation first
+The recruiting queue is full.
+Please replenish troop strength first.
+Insufficient resources, the number of recruitment has reached the maximum.
+Do you wish to remove %s from the formation?  The troop strength of the hero will be cleared, and it will return %s of reservists.
+You don't need to recruit more reservists for now.

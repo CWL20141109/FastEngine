@@ -4,7 +4,7 @@ using System.IO;
 using FastEngine.Core;
 using LitJson;
 using UnityEditor;
-using UnityEngine;
+using AssetBundleBrowser.AssetBundleDataSource;
 
 namespace FastEngine.Editor.AssetBundle
 {
@@ -20,7 +20,19 @@ namespace FastEngine.Editor.AssetBundle
         [MenuItem("FastEngine/AssetBundle -> 打包", false, 101)]
         static void Build()
         {
+            GenMapping();
+            CopySource();
+            string outPath = AppUtils.BuildRootDirectory();
+            if (!Directory.Exists(outPath))
+                Directory.CreateDirectory(outPath);
 
+            ABBuildInfo buildInfo = new ABBuildInfo();
+            buildInfo.outputDirectory = outPath;
+            buildInfo.options = BuildAssetBundleOptions.ChunkBasedCompression;
+            buildInfo.buildTarget = EditorUserBuildSettings.activeBuildTarget;
+
+            AssetBundleBrowser.AssetBundleModel.Model.DataSource.BuildAssetBundles(buildInfo);
+            AssetDatabase.Refresh();
         }
 
         [MenuItem("FastEngine/AssetBundle -> 生成映射配置",false,103)]
@@ -37,7 +49,7 @@ namespace FastEngine.Editor.AssetBundle
             {
                 var source = config.sources[i];
                 if (File.Exists(source.source)) FilePathUtils.FileCopy(source.source, source.dest);
-                else FilePathUtils.Dir;
+                else FilePathUtils.DirectoryCopy(source.source,FilePathUtils.Combine(AppUtils.BuildRootDirectory(),source.dest));
             }
         }
 

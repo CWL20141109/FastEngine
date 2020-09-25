@@ -1,0 +1,36 @@
+Bandits
+Bandits
+Bandits
+Bandits
+Bandits
+Scavengers
+Scrappers
+Marauders
+Mutineers
+Insurgents
+Insurgent
+Invaders
+Rioters
+The roaming bandits, <font color='#fc3333'>Vanquish</font> to get <font color='#33cc00'>10,000 gold</font> rewards.
+The roaming bandits, <font color='#fc3333'>Vanquish</font> to get <font color='#33cc00'>20,000 gold</font> rewards.
+The roaming bandits, <font color='#fc3333'>Vanquish</font> to get <font color='#33cc00'>30,000 gold</font> rewards.
+The roaming bandits, <font color='#fc3333'>Vanquish</font> to get <font color='#33cc00'>40,000 gold</font> rewards.
+The roaming bandits, <font color='#fc3333'>Vanquish</font> to get <font color='#33cc00'>50,000 gold</font> rewards.
+<font color='#fc3333'>Eliminate</font> the Scavengers to get <font color='#33cc00'>resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Scrappers to get <font color='#33cc00'>resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Marauders to get <font color='#33cc00'>resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Mutineers to get <font color='#33cc00'>resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Rebels to get <font color='#33cc00'>a large amount of resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Insurgent to get <font color='#33cc00'>a large amount of resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Invaders to get <font color='#33cc00'>a large amount of resources</font> and <font color='#33cc00'>forge materials</font>.
+<font color='#fc3333'>Eliminate</font> the Rioters to get <font color='#33cc00'>a large amount of resources</font> and <font color='#33cc00'>forge materials</font>.
+New Dawn Convoy
+New Dawn Convoy
+New Dawn Convoy
+New Dawn Convoy
+New Dawn Convoy
+Defeat the level 1 New Dawn Convoy to get <font color='#33cc00'>Reservists</font> and <font color='#33cc00'>Resources</font>.
+Defeat the level 2 New Dawn Convoy to get <font color='#33cc00'>Reservists</font> and <font color='#33cc00'>Resources</font>.
+Defeat the level 3 New Dawn Convoy to get <font color='#33cc00'>Reservists</font> and <font color='#33cc00'>Resources</font>.
+Defeat the level 4 New Dawn Convoy to get <font color='#33cc00'>Reservists</font> and <font color='#33cc00'>Resources</font>.
+Defeat the level 5 New Dawn Convoy to get <font color='#33cc00'>Reservists</font> and <font color='#33cc00'>Resources</font>.
