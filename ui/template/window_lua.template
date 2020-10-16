@@ -1,0 +1,40 @@
+--[[
+ * @Author: 
+ * @Description: 
+ ]]
+local window = fui.window_class()
+
+window.layer = FairyLayerType.Window
+window.com_name = "{component_name}"
+window.pack_name = "{package_name}"
+window.depend_pack_names = nil
+window.tcp_cmds = nil
+window.enabled_log = true
+window.log_mark = ""
+window.fullScreen = true
+
+function window:ctor()
+end
+
+function window:OnInit()
+end
+
+function window:OnShown()
+	{bind_event}
+end
+
+function window:OnRefresh()
+end
+
+function window:OnTCPReceived(pack)
+end
+
+function window:OnHide()
+end
+
+function window:callback_property()
+end
+
+{callback_function}
+
+return window

@@ -1,9 +1,0 @@
-Do you wish to save the current Statement content?
-Do you wish to save the current Message content?
-You cannot send an empty message.
-The Statement reaches the maximum number. You cannot publish new Statement now.
-From %s
-You cannot send an empty message.
-Successfully deleted.
-Do you wish to delete the Statement?
-This Player is in your blocklist.

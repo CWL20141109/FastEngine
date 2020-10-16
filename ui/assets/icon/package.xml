@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="iykavp9v">
+  <resources>
+    <component id="ly4q7" name="main_window.xml" path="/" exported="true"/>
+    <component id="ly4q8" name="Button1.xml" path="/component/" exported="true"/>
+    <component id="ly4q9" name="Label1.xml" path="/component/"/>
+    <component id="ly4qa" name="Component1.xml" path="/component/"/>
+    <component id="ly4qb" name="ComboBox1_item.xml" path="/component/"/>
+    <component id="ly4qc" name="ComboBox1_popup.xml" path="/component/"/>
+    <component id="ly4qd" name="ComboBox1.xml" path="/component/" exported="true"/>
+    <component id="ly4qe" name="ProgressBar1.xml" path="/component/"/>
+    <component id="ly4qf" name="Slider1_grip.xml" path="/component/"/>
+    <component id="ly4qg" name="Slider1.xml" path="/component/"/>
+    <movieclip id="ly4qi" name="MovieClip1.jta" path="/component/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

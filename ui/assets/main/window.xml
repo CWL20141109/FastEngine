@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="2048,1152">
+  <displayList>
+    <component id="n0_ly4q" name="n0" src="ly4q8" fileName="component/Button1.xml" pkg="iykavp9v" xy="200,154"/>
+    <component id="n1_ly4q" name="n1" src="ly4q6" fileName="component/Button1.xml" xy="361,339"/>
+    <component id="n2_ly4q" name="n2" src="ly4q6" fileName="component/Button1.xml" xy="206,357"/>
+  </displayList>
+</component>

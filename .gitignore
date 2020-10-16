@@ -1,16 +1,17 @@
 # ---------------[ Unity generated ]------------------ #
 
-Temp
+unity/Temp
 
-obj
+unity/obj
 
-UnityGenerated
+unity/UnityGenerated
 
-Library
+unity/Library
 
-Build
+unity/Build
 
-Assets/StreamingAssets
+unity/Assets/StreamingAssets
+/ui/.objs
 
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #

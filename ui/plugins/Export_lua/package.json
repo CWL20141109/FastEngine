@@ -1,0 +1,11 @@
+{
+  "name": "Export_lua",
+  "displayName": "Export_lua",
+  "description": "ui导出时生成对应的lua脚本",
+  "version": "1.0.0",
+  "author": {
+    "name": "Administrator"
+  },
+  "icon": "",
+  "main": "main.lua"
+}

@@ -1,0 +1,12 @@
+--[[ aotu generated from fastfairy plugin]]
+
+local component = fui.extension_class({export_com_type})
+local url = "{export_url}"
+
+function component:ctor()
+{export_child}
+end
+
+fui.register_extension(url, component)
+
+return component

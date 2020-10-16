@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="2048,1152">
+  <controller name="c1" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_ly4q" name="n0" src="ly4q6" fileName="component/Button1.xml" pkg="utblw55b" xy="392,58"/>
+    <component id="n1_ly4q" name="n1" src="ly4qd" fileName="component/ComboBox1.xml" xy="329,107">
+      <ComboBox visibleItemCount="10"/>
+    </component>
+    <component id="n2_ly4q" name="n2" src="ly4qa" fileName="component/Component1.xml" xy="-608,-417"/>
+    <component id="n3_ly4q" name="n3" src="ly4q9" fileName="component/Label1.xml" xy="131,47"/>
+    <component id="n4_ly4q" name="n4" src="ly4qe" fileName="component/ProgressBar1.xml" xy="844,251">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n5_ly4q" name="n5" src="ly4qg" fileName="component/Slider1.xml" xy="517,303">
+      <Slider value="50" max="100"/>
+    </component>
+    <component id="n6_ly4q" name="n6" src="ly4qf" fileName="component/Slider1_grip.xml" xy="601,319"/>
+    <movieclip id="n7_ly4q" name="n7" src="ly4qi" fileName="component/MovieClip1.jta" xy="223,297"/>
+    <list id="n8_ly4q" name="n8" xy="25,116" size="200,300" overflow="scroll"/>
+    <text id="n9_ly4q" name="n9" xy="294,361" size="40,19" fontSize="12" text=""/>
+    <richtext id="n10_ly4q" name="n10" xy="442,392" size="40,19" fontSize="12" text=""/>
+    <text id="n11_ly4q" name="n11" xy="381,415" size="40,19" fontSize="12" text="" input="true"/>
+    <graph id="n12_ly4q" name="n12" xy="548,390" size="100,100" type="rect"/>
+    <loader id="n13_ly4q" name="n13" xy="872,369" size="50,50"/>
+    <loader3D id="n14_ly4q" name="n14" xy="169,463" size="100,100" animation="" skin="" loop="true"/>
+  </displayList>
+  <transition name="t0"/>
+</component>
