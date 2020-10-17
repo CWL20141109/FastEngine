@@ -1,0 +1,27 @@
+Limited-time Summon Ends in %s
+<font color='#d777d1'>Epic Hero</font> or <font color='#fcae61'>Legendary Hero</font> Guaranteed in %s Summons
+<font color='#d777d1'>Epic Hero</font> or <font color='#fcae61'>Legendary Hero</font> guaranteed per summon
+Available Draw: %s/%s
+SUMMON x %s
+You have reached the maximum number of hero cards a player can have. Please organize them first.
+View Heroes
+Transform Skill Points
+Summon <font color='#fff150'>%s</font>  times and cost [img]ui://nyftdrjudpy25g[/img] %s
+Complete Summon <font color='#fff150'>%s</font> Times
+Received Skill Points: [img]ui://nyftdrjuekyy5l[/img]<b>%s</b>
+<font color='#bdcacb'><b>Common</b></font>
+<font color='#9aca6b'><b>Uncommon</b></font>
+<font color='#7bbff3'><b>Rare<b></font>
+%s(Auto transformed %s)<br>
+%s(Auto transformed %s and %s)<br>
+%s(Auto transformed %s, %s and %s)<br>
+%s Received <font color='#fcae61'><b>Legendary Hero</b></font>: <font color='#33fcf6'><b>%s</b></font>(<font color='#fcae61'>
+%s Received <font color='#d777d1'><b>Epic Hero</b></font>: <font color='#33fcf6'><b>%s</b></font>(<font color='#d777d1'>
+%s Received <font color='#7bbff3'><b>Rare Hero</b></font>: <font color='#33fcf6'><b>%s</b></font><br>
+%s Received <font color='#9aca6b'><b>Uncommon Hero</b></font>: <font color='#33fcf6'></b>%s</b></font><br>
+%s Received <font color='#bdcacb'><b>Common Hero</b></font>: <font color='#33fcf6'><b>%s</b></font><br>
+Transform Skill Points
+Transform low-level heroes with gold
+Transform low-level heroes with credits
+Please select the summon times
+The number of daily summon reaches the limit.

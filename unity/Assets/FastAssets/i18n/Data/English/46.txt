@@ -1,0 +1,113 @@
+Governor, the great strategist Niccolo Barca heard your name and the things you did for the people here. He has come to see you.
+This is <font color='#fcae61'>Niccolo Barca</font>. Many call him the Falcon of the People Justice.
+What you have done is truly impressive. You have saved this city from the unworthy. Now the people can take a break and live their lives.
+Since you are starting out, let me help you on some of the core businesses in city management.
+Since we are now between wars, we should take this opportunity to <font color='#7AFD01'>expand territories</font> and develop our base.
+You need Heroes to lead your troops. I'd like to introduce two men who can help you with early development. Let's go to the <font color='#FFDF5F'>"Summon"</font> now.
+Tap the Summon button
+Tap here to return
+Tap here to return
+Now you have two Heroes of Uncommon rarity. Let's deploy them in the formation.
+Tap the city
+Tap to enter the city
+Tap to edit formation
+Tap to choose a Commander
+Tap to deploy <font color='#7bbff3'>Lance Franklin</font>
+Tap to choose a Deputy
+Tap to deploy <font color='#7bbff3'>Wyatt "Elk"</font>
+Tap to replenish troop strength
+Confirm on the Replenish
+We need to defeat the <font color='#7AFD01'>defense troops</font> on a land before seizing it. Our formation is ready. It's time to expand!
+Select a formation
+Defeat the defense troops and seize the land
+After the defense troops are defeated, it takes <font color='#7AFD01'>a certain amount of time</font> to occupy it. Once seized, the land will become our territory.
+Tap to collect the first-time-occupation rewards.
+We can only give Seize command on lands adjacent to our territory. Now we can seize lands surrounding the newly occupied land.
+Injured units will automatically <font color='#7AFD01'>recover</font> when the formation returns to the city. Let's <font color='#FFDF5F'>recall</font> the troops and let the injured recover.
+Tap to recall the formation
+Governor! A group of <font color='#FF2D2D'>scavengers</font> is marching toward the city gate!
+Let's take a look.
+Boys, I guess luck is finally going our way. Let's take the city.
+The city is the last shelter for the downtrodden, the abandoned and the hungry. March forward, and today shall be your last day on the planet!
+This doesn't look good. The vigilantes are in a <font color='#7AFD01'>draw</font> with the scavengers. We need to give the good guys a helping hand.
+We can <font color='#7AFD01'>send a troop</font> to support that commander, giving him a better chance to defeat the scavengers.
+The unit types of a troop <font color='#FFDF5F'>restrict</font> one another during battles. We should take advantage of that.
+The scavengers come in Chargers. The units led by the vigilante commander are <font color='#7AFD01'>Enforcers</font>, who are <font color='#FF2D2D'>weaker</font> against <font color='#7AFD01'>Chargers</font>.
+It is <font color='#7AFD01'>Bombers</font> that are <font color='#FF2D2D'>strong</font> against <font color='#7AFD01'>Chargers</font>. Dispatch Bombers, and I am sure the enemy will be defeated in no time!
+Tap the city
+Tap to enter the city
+Tap to edit formation
+Open Unit interface
+Switch the unit type to Bombers
+<font color='#7AFD01'>A battle will be triggered</font> when formations meet each other en route. Please use the <font color='#FFDF5F'>March</font> command to send our troops to the land where the scavengers are.
+Tap the target land to support the vigilante troops
+Select a formation
+Tap <font color='#FFDF5F'>March</font> command
+The scavengers are gone. It's time to <font color='#FFDF5F'>recall</font> our formation.
+Tap to recall the formation
+Governor, Commander <font color='#d777d1'>Tristan "Lynx"</font> from the vigilante force is here.
+My name is Tristan Williams. People also call me the Lynx from the People's Justice. We could not have won the battle without your help. You have our sincere gratitude!
+If you are short of men here, I am sure I can be a helping hand.
+Congratulations, you have just earned another powerful Hero!
+Have <font color='#d777d1'>Tristan "Lynx"</font> as <font color='#7AFD01'>Commander</font> in the formation. He will help us win the upcoming battles.
+Thanks to the last battle, the Heroes have leveled up, increasing Troop Strength Cap as well. This will allow you to have more men in the formation. Now we can <font color='#FFDF5F'>replenish</font> troop strength.
+Tap the city
+Tap to enter the city
+Tap to edit formation
+Tap to remove <font color='#7bbff3'>Lance Franklin</font>
+Tap here to change Commander
+Tap to deploy <font color='#d777d1'>Tristan "Lynx"</font>
+Tap to replenish troop strength
+Confirm on the Replenish
+The scavengers are gone for now. We should sieze the time to <font color='#7AFD01'>claim more lands and gain more resources</font>.
+It looks like that the city is well on track, with everything up and running now.
+There is a list of <font color='#7AFD01'>Quests</font> that I made to help you develop the city and forces step by step. Do check them in time. Now please allow me to be excused. I look forward to hearing more about the city and your cause next time we meet.
+Governor, you have not given any orders yet. I am sure you are working on the planning.
+Niccolo Barca's Quest list is important, which can be used as the main reference for actions.
+Check Quests regularly and complete the task one by one.
+Tap to view <font color='#7AFD01'>quests</font>
+Congratulations! We now have another powerful Hero on board. Deploy him in the formation and let him fight for you!
+<b><font color='#fcae61'>Legendary</font></b> and <b><font color='#d777d1'>Epic</font></b> Heroes have stronger combat abilities.
+Deploy the Hero in the formation now.
+The leadership points of deployed Heroes combined cannot be higher than the formation leadership cap. Pay attention to Leadership when you deploy Heroes.
+You can abandon low-level resource lands and replace them with higher-level ones.
+Governor, the resources are limited at this time, so please use them on more urgent matters.
+Quest rewards are very useful since they offer more resources.
+Governor, someone named <font color='#9aca6b'>Tex Kuang</font> wishes to see you.
+Let him in.
+<font color='#9aca6b'>Tex Kuang</font> has oustanding talents in economic and development affairs. We can <font color='#FFDF5F'>inherit</font> his Skill and allocate it to Van "Elephant".
+The process of Skill Inheritance will consume the Hero donating the skill. Make sure you inherit the most useful skills.
+Tap to open Skill interface
+Tap to open Skill Inherit
+Choose a Hero to inherit the skill
+A newly inherited skill has to go through a Drilling process before it can be allocated to other Heroes.
+Similar to inheriting a skill, Heroes chosen for drilling will also be consumed as a cost to finish the process.
+Select Hero cards as drill material
+The drill is completed. We can <font color='#FFDF5F'>allocate</font> the inherited skill to a Hero now.
+Tap to open the Hero interface
+Select Van "Elephant" to learn the skill
+Learn the inherited skill
+The skill is really helpful, Governor. I will make good use of it.
+Van "Elephant" has learned the new skill <font color='#7AFD01'>Encourage</font>. you can <font color='#FFDF5F'>appoint</font> him as a city officer to handle city development affairs.
+It is an honor to have you in my army.
+I have heard so much about you, how courageous and how capable you are in battles. It is an honor to finally meet you in person.
+The honor is mine, sir. Every military man would want to fight alongside Tristan the Lynx.
+Governor, more and more Heroes have come to join us. We need to give more people a chance to contribute in the battlefield.
+How do we achieve that?
+We need to set up <font color='#FFDF5F'>Cadet Program</font> in City Management, which will allow us to deploy a second deputy in each formation.
+[Cadet Program] Upgrade Cadet Program<br>to unlock more deputy slots in the formation.
+After Cadet Program is built, we can deploy <font color='#7AFD01'>three Heroes</font> in the same formation. Make sure we deploy all the deputies and replenish troops.
+Deploy Later
+Deploy Now
+Abandon Now
+I don't care
+The current territory is at a lower level. You will get much more resources collecting on lands of level 3 and above. Do you wish to continue the collection?
+Soldiers, time to go home!
+New Dawn Rebels
+Take the city, and you will get whatever you want!
+Let's move!
+Kill them all!
+Hammers
+Vigilantes
+Let's destory them!
+They are coming to us! <br>Change formation now!

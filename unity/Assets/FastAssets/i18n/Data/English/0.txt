@@ -1,0 +1,149 @@
+Silicon
+Fuel
+Ore
+Food
+Gold
+Diamonds
+Credits
+Order
+NOTICE
+Confirm
+is moving
+is returning
+is retreating
+is seizing
+is sieging
+is blocked
+ends up with a draw in the last battle
+is collecting
+is dispatching
+is recruiting
+is defending
+is idle
+is stayby
+Move
+Seize
+Siege
+Dispatch
+Defend
+Sweep
+Collect
+Eliminate
+Vanquish
+Rescue
+The returned resources cannot exceed the cap of the warehouse, do you wish to continue?
+United Colonists Alliance
+The People’s Justice
+The Ascended
+The Wanderers
+Empty Land
+Silicon
+Fuel
+Ore
+Food
+Gold
+Do you wish to go to %s?
+Do you wish to abandon %s?
+Member
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Officer
+Diplomat
+Commandant
+Commandant
+Deputy Leader
+Alliance Leader
+%s D
+%sd ago
+%sh ago
+%sm ago
+Just now
+Attack
+Intelligence
+Leadership
+Speed
+Statecraft
+Charisma
+Resources
+Items
+Insufficient Silicon
+Insufficient Ore
+Insufficient Fuel
+Insufficient Food
+Insufficient Gold
+Insufficient Fame
+Insufficient Diamonds
+Insufficient Credits
+Insufficient Skill Points
+Insufficient War Points
+%sd%sh
+%sh%sm
+%sd%sh%sm
+%sh%sm%ss
+%sm%ss
+%ss
+None
+Your account has been logged in elsewhere.
+Unable to connect to the server, please check your network connection and try again.
+Insufficient Diamonds
+Day %s Sign-in Reward
+Say something about yourself! (Up to 100 characters)
+The Turing Creator
+The Visionary Cyborg
+Triple Rewards
+Failed to get account binding list
+The binding is successful.
+The binding is failed.[%s]
+Cancel account binding
+Your account has been successfully switched.
+Account switching failed.[%s]
+Cancel account switching
+Purchase Successful
+Purchase Falied [%s]
+Cancel Purchase
+Insufficient Diamonds, do you wish to charge?
+Sign-In Rewards
+Day %s
+You can't buy more today.
+Unranked 
+You have successfully terminated the action.
+Insufficient resources: 
+Login failed
+Connecting the game server…
+Checking the account…
+Registering the account…
+Loading the login server …
+Loading the server list…
+Loading the server configuration…
+Exceed the maximum word limit
+Contains invalid characters
+Please enter your nickname
+Failed to create character
+Please enter up to %s characters
+It contains one or more sensitive words, please edit and try again.
+Failed to initialize purchase. 
+Dear Governor, you have been inactive for too long and deemed having automatically left. Please choose a new state to start the journey. 
+Unbind successful
+Failed to unbind your account
+Failed to unbind your account
+Unbind failed, this account didn't bind with your game account.
+Unbind Account
+Do you wish to unbind current account?
+Failed to create a new account on this device. It might because this device has reached the maximum number of  accounts, or the time interval has not been created.
+This account has been locked.
+We can't find a player that has been bound to this third-party account.
+This player has been bound to another account of this third-party platform.
+This thrid-party account has been bound to another player.
+Account does not exist.
+Failed to login with RheaID, because this player has been bound to an account.
+The bound account does not match the player.
+System error.

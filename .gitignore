@@ -4,7 +4,7 @@ unity/Temp
 
 unity/obj
 
-/UnityGenerated
+unity/UnityGenerated
 
 unity/Library
 
@@ -12,7 +12,7 @@ unity/Build
 
 unity/Assets/StreamingAssets
 
-/.objs
+ui/.objs
 
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #

@@ -1,0 +1,6 @@
+%s <font color='#7afd01'>Completed</font>
+%s <font color='#898c40'>Ended</font>
+Ends in %s
+逐鹿天下
+暂未公布
+皇图霸业「%s」完成

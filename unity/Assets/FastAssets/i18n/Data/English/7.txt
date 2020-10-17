@@ -1,0 +1,10 @@
+<font color="#fcb733">(Activate at lvl %s)</font>%s
+<font color="#7afd01">(Activated)</font>%s
+<font color="#%s">%s lvl %s</font><br>
+Do you wish to get a new queue by<br>spending [img]ui://nyftdrjudpy25g[/img][color=#cc9900]%s[/color] gold?
+Do you wish to cancel the upgrade of %s? It will only return 80%%of resources.
+Do you wish to instant finish the upgrade of %s by spending [img]ui://nyftdrjudpy25i[/img]20 Credits?
+Maximum Level
+Please upgrade the %s to level %s.
+Insufficient resources
+Operation failed due to insufficient gold.

@@ -1,0 +1,10 @@
+You are about to dismiss this hero and [color=#ff2d2d]no longer get[/color] the appointment bonus. Do you wish to continue?
+Successfully appointed
+Please select a hero
+It will cost [color=#ff2d2d]60 stamina[/color] to appoint this hero. Do you wish to continue?
+Insufficient stamina
+It will cost [color=#ff2d2d]60 stamina[/color] to change the appointment. Do you wish to continue?
+The hero is in the formation, you cannot appoint this hero now.
+You cannot appoint the same hero multiple times.
+A non-economy officer won't gain experience from the appointment. Do you wish to continue?
+The hero is in training, you cannot appoint this hero now.

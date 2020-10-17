@@ -1,0 +1,14 @@
+Ends in %s
+Daily %s%s for 30 Days
+Daily %s%s for 30 Days Instantly %s
+Get %s%s Bonus for First Time Purchase
+%s%sDiamond
+Get %s%s Bonus
+Monthly card has been activated, please do not repeat purchase
+Limited-Time Pool
+Cumulative Purchase
+Growth Fund
+Monthly Card
+Purchase Diamonds
+You have claimed this reward.
+Current Progress %s/%s

@@ -1,0 +1,95 @@
+Metorpolis
+Guard Troops
+Garrison Troops
+Troops Recovery
+Silicon
+Fuel
+Ore
+Food
+Alliance Members Cap
+First Occupied Alliance
+Kill Ranking
+Siege Ranking
+Diamonds
+Credits
+Gold
+Defense Troops
+Conquer Records
+(Participated Members)
+(Top 3 Participants)
+None
+Seize
+Siege
+March
+Dispatch
+Defend
+Sweep
+Collect
+Eliminate
+Vanquish
+Rescue
+Construct
+Recruit
+Upgrade
+Enter
+<font color='#898C40'><a href='%s'>Conquer Records</a></font>
+Info
+Upgrading
+Constructing
+Abandoning
+You cannot abandon the building, because it's under construction. 
+You cannot abandon the Land, because it's in the protection period.
+New Dawn Convoy
+Protected
+Alliance Leader
+Alliance
+Player
+Captured by
+Occupied by
+%s is still in protection, cannot execute the <font color='#ff2d2d'>Seize</font> command.
+The <font color='#ff2d2d'>Seize</font> command can only be used to <font color='#a7ff59'>adjacent</font> territories of yourself or allied members.
+Non-alliance players cannot capture other players. Do you wish to continue?
+Non-alliance players cannot capture Satellite City. Do you wish to continue?
+Non-alliance players cannot occupy a city. Do you wish to continue?
+The <font color='#ff2d2d'>Siege</font> command can only be used to <font color='#a7ff59'>adjacent</font> territories of yourself or allied members.
+%s is still in protection, cannot execute the <font color='#ff2d2d'>Sweep</font> command.
+Insufficient Order
+The <font color='#ff2d2d'>Rescue</font> command can only be used to <font color='#a7ff59'>adjacent</font> territories of yourself or allied members.
+You can't dispatch more formations, because you have reached the maximum number.
+You've reached the maximum number of formations, please upgrade the Camp first.
+Borough
+City
+Metorpolis
+Pass
+City
+Player
+Alliance
+Unoccupied
+Fort
+Dispatch 5 formations
+The scouts haven't returned yet, please try again later.
+Confirm to abandon %s%s 
+The Seize command will temporarily cancel the formation's war-free status, and it requires additional stamina cost. Do you wish to continue?
+The Defend command will temporarily cancel the formation's war-free status. Do you wish to continue?
+Attacking a non-neutral building will terminate the Newbie's Protection. Do you wish to continue?
+The player is in Newbie's Protection. Seizing his or her territory will cost 30 stamina, do you wish to continue?
+Available for Mint construct (Increase Gold output)<br>Available for Satellite City construct
+Available for Drone Hub construct (Increase resources output)<br>Available for Satellite City construct
+Available for Bunk construct (Increase the reservists cap in the Main City)<br>Available for Satellite City construct
+Available for Depot construct (Increase the storage cap)<br>Available for Satellite City construct
+Available for Recreation Hub construct (Reduce the recovery time of hero's stamina)<br>Available for Satellite City construct
+The alliance will own the city by a successful siege.
+Scavengers Strength
+(Alliance Members)
+Access
+Repress
+The <font color='#ff2d2d'>Military Access</font> command can only be used to <font color='#a7ff59'>adjacent</font> territories of yourself or allied members.
+The <font color='#ff2d2d'>Repress</font> command can only be used to <font color='#a7ff59'>adjacent</font> territories of yourself or allied members.
+Friendly Allies' Captive
+This player is captured by friendly allies. All alliance members can can seize adjacent lands once one of your alliance members used the captive's territories.
+Rioted
+This main city has been captured within 24 hours, and the war-free time becomes %s hours after the next capture.
+This Main City has been captured multiple times within 24 hours, and it won't obtain war-free status after the next capture.
+This Satellite City has been captured within 24 hours, and the war-free time becomes %s hours after the next capture.
+This Satellite City has been captured multiple times within 24 hours, and it won't obtain war-free status after the next capture.
+%s is still in protection, cannot execute the <font color='#ff2d2d'>%s</font> command.

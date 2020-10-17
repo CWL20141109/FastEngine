@@ -1,0 +1,49 @@
+Teleport
+Satellite City
+Camp
+Outpost
+Barricade
+Bunk
+Drone Hub
+Depot
+Mint
+Recreation Hub
+Teleport
+Satellite City
+Camp
+Outpost
+Barricade
+Bunk
+Drone Hub
+Depot
+Mint
+Recreation Hub
+
+0
+Has most of the features of the main city, such as City Management and Formations.
+1. A Camp has 2 distance for its visual field.<br>2. You can dispatch formations to the Camp. The marching speed of a formation will be increased by 100% and its Morale does not decrease during the dispatch.
+1. An Outpost has 2 distances for its visual field.<br>2. Defense troops of the Outpost will attack members of non-friendly alliances when they enter any land adjacent to the tower. 
+1. A Barricade blocks members of non-friendly alliances when their troops enter the territory. The troops cannot move once blocked by the Barricade.<br>2. Blocked troops can only return to the city, or move after the Barricade is removed.
+1. A Bunk increases the reservist cap of the Main City. It won't affect Satellite City's reservist cap.<br>2. The effect of multiple bunks can stack.
+1. A Drone Hub increases all resources output.<br>2. The effect of multiple Drone Hubs can stack. <br>3. You cannot collect resources in a Drone Hub.
+1. A Depot increases the resource storage cap. <br>2. The effect of multiple depots can stack.
+1. A Mint increases gold output.<br>2. The effect of multiple mints can stack.<br>3. The amount of taxed gold will also be affected by mints.
+1. A Recreation Hub reduces the recovery time of Hero Stamina in the Main City. Heroes in Satellite City are not affected.<br>2.  The effect of multiple Recreation Hubs can stack.<br>3. The default stamina recovery time is 180 seconds per 1 point, and the recovery time will be reduced once you have the Recreation Hub.
+Teleport your city
+Dispatch troops
+Defend adjacent territories
+Block enemy troops
+Increase main city's reservist cap
+Increase all resources output
+Increase storage cap
+Increase Gold production
+Reduce stamina recovery time
+Provide city management and additional formations
+Allows you to dispatch %s formation(s)
+Provides 2 distances of visual field
+Blocks enemy troops
+Increases the reservist cap of Main City by %s
+Increases all resources output by %s per hour
+Increases the storage cap by %s
+Increases Gold output by %s per hour
+Reduces Hero's stamina recovery time in the Main City by %s

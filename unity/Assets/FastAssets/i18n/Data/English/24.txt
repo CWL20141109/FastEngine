@@ -1,0 +1,22 @@
+Fame
+Diamonds
+Credits
+Skill Points
+War Points
+Alliance EXP
+Silicon
+Fuel
+Ore
+Food
+Gold
+Fame
+A prized currency. It can be used to exchange for credits.
+A prized currency. It can be used to summon heroes.
+Use gold to summon heroes and get skill points. Skill points are used to upgrade skills and it's an important way to improve the battle performance.
+War Points
+A basic resource for upgrading buildings and recruiting reservists. Occupy resources land to improve its output.
+A basic resource for upgrading buildings and recruiting reservists. Occupy resources land to improve its output.
+A basic resource for upgrading buildings. Occupy resources land to improve its output.
+A basic resource for recruiting reservists. Occupy resources land to improve its output.
+An important resource can be obtained through taxes. Summon with gold can obtain skill points. The gold can also be used for camp recruitment.
+Reservists
