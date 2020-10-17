@@ -4,7 +4,7 @@ unity/Temp
 
 unity/obj
 
-/UnityGenerated
+unity/UnityGenerated
 
 unity/Library
 
@@ -14,6 +14,7 @@ unity/Assets/StreamingAssets
 
 /.objs
 
+ 
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #
 
@@ -58,4 +59,3 @@ Icon?
 ehthumbs.db
 
 Thumbs.db
-
