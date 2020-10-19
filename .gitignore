@@ -11,7 +11,8 @@ unity/Library
 unity/Build
 
 unity/Assets/StreamingAssets
-/ui/.objs
+
+ui/.objs
 
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #
