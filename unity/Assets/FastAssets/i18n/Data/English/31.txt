@@ -1,0 +1,24 @@
+Please enter text here
+Up to 300 characters
+Insufficient Credits
+Send
+Share Report
+Share Formation
+Player %s invites you to join Group %s.
+Do you wish to disband the group %s?
+Do you wish to quit the group %s?
+Alliance Member
+Delete friend
+Add Friend
+Failed to invite the player
+Successfully Added to Blocklist 
+Do you wish to delete this friend?
+Successfully applied
+Unable to find the player
+Please enter Player's Name or ID
+Successfully invited
+Please enter the group name
+Up to 20 characters
+You can't create more groups
+Successfully sent. Please wait for response.
+This player is in your blocklist.

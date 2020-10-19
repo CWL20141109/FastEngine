@@ -1,0 +1,48 @@
+Unlock at lvl 5 [%s]
+Unlock at lvl 20 [%s] and lvl 10 [%s]
+The selected heroes have reached the cap.
+Reset Available
+<font color='#7afd01'>Reset after</font> <font color='#ff2d2d'>%s</font>
+You cannot reset this hero. Please choose an Enlightened or Enhanced hero.
+You cannot enhance this hero further.
+Please select heroes
+The selected heroes are more than 2 stars, and the excess part will not be returned. Do you wish to continue?
+Enlighten the hero to unlock <br><font color='#7afd01'>the 3rd skill</font>
+Please select <font color='#7afd01'>2</font> heroes and <font color='#ff2d2d'>consume</font> them to Enlighten the hero.
+Add attribute points <font color='#7afd01'>%s</font>
+Please select <font color='#fcb733'>%s</font> and <font color='#ff2d2d'>consume</font> the card to Enhance the hero.
+The selected heroes are more than %s stars, and the excess part will not be returned. Do you wish to continue?
+No Inheritable Skills
+%s is equipped on %s now, do you wish to continue?
+Unlock the equipment slots after level 20
+QUALITY
+TYPE
+Please train at least one time
+Train up to 5 times
+Choose at least one hero to start the training
+Insufficient stamina
+Insufficient gold
+Insufficient stamina will cause training termination. Do you wish to continue?
+Insufficient gold will cause training termination. Do you wish to continue?
+It <font color='#ff2d2d'>won't return</font> the consumed stamina and gold, do you wish to continue?
+The hero is in training now.
+The hero is at the maximum level.
+Get 10 attribute points every 10 levels or every time after enhancement.
+This attribute has no assigned attribute points. 
+Injured
+Fatigued
+Recruiting
+This hero has no assigned attribute points.
+You are about to reset the attribute points. It costs [img]ui://nyftdrjudpy25i[/img]20 Credits, do you wish to continue?
+Reset  available after cooldown
+You can use the reset function every 10 days. Do you wish to reset this hero now?
+The hero is in the formation.
+The hero is in the appointment.
+The hero is in the training.
+<font color='#7afd01'>Reset after</font> <font color='#ff2d2d'>%s</font>
+Reset Available
+<font color='#7afd01'>Reset after</font> <font color='#ff2d2d'>%s</font>
+This feature is not available in the hero's preview.
+This hero has no assigned attribute points.
+You have gained  %s extra attribute points for the hero.
+The 3rd skill slot is available now. Please add skill.

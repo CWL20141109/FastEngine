@@ -1,0 +1,68 @@
+Iron Ore
+Copper Ore
+Fabric
+Obsidian
+Primarion
+Titanium Plate
+Silverlin
+Torbernite
+Apatite
+Meteorite
+Tourmaline
+Augite
+Orichalcom
+Mithryll
+Olivine
+Judgment Blueprint
+Conqueror Blueprint
+Wolf Blueprint
+Frontier Blueprint
+Polaris Blueprint
+Avalon Blueprint
+Warpath Blueprint
+Karmagun Blueprint
+Abyss Blueprint
+Supreme Blueprint
+Coldheart Blueprint
+Protostar Blueprint
+Neutron Blueprint
+Pulsar Blueprint
+Magnetstar Blueprint
+Supernova Blueprint
+Hypergiant Blueprint
+Asteroid Blueprint
+Supergiant Blueprint
+A common metal in Unity.
+A naturally occurring ore found in Unity.
+A highly dense textile with composite structure.
+A common mineral found in Unity, which has a reddish speckled appearance.
+A rare brick made out of light metals.
+A refined material, most commonly found in Ascension.
+A bar of refined silver.
+A hydrated green mineral in Unity.
+A mineral used in forging.
+A solid piece of debris, usually found in the The Great Unity Mines.
+A pink semi-precious stone.
+A rock-forming mineral, usually found around Asteria.
+A rare bar of refined gold.
+An advanced flexible woven metal fabric, very light and strong.
+A mineral often found in Asteria.
+A material necessary for forging the weapon Judgment.
+A material necessary for forging  the weapon Conqueror.
+A material necessary for forging  the weapon Wolf.
+A material necessary for forging the weapon Frontier.
+A material necessary for forging the weapon Wit.
+A material necessary for forging the weapon Avalon.
+A material necessary for forging the weapon Warpath.
+A material necessary for forging the weapon Karmagun.
+A material necessary for forging the weapon Abyss.
+A material necessary for forging the weapon Supreme.
+A material necessary for forging the weapon Coldheart.
+A material necessary for forging the armor Protostar.
+A material necessary for forging the armor Neutron.
+A material necessary for forging the armor Pulsar.
+A material necessary for forging the armor Magnetstar.
+A material necessary for forging the armor Supernova.
+A material necessary for forging the armor Hypergiant.
+A material necessary for forging the armor Asteroid.
+A material necessary for forging the armor Supergiant.

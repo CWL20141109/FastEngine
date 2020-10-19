@@ -1,0 +1,48 @@
+0
+0
+选中的军官已达上限
+可使用重塑功能
+0
+未觉醒的武将不能
+不能进阶了
+请选择需要消耗掉的武将
+选中武将的总星数大于2，超出部分不再返还，是否继续？
+Evolve hero to unlock <br><font color='#7afd01'>the 3rd skill</font>
+Please select <font color='#7afd01'>2</font>,<font color='#ff2d2d'>Consume</font> them to "Evolve"
+Add assignable attribute points <font color='#7afd01'>%s</font>
+Please select <font color='#fcb733'>%s</font>,<font color='#ff2d2d'>Consume</font> them to "Enhancement"
+选中武将的总星数大于%s，超出部分不再返还，是否继续？
+没有可传承的战法
+%s已经配予%s,是否继续穿戴?
+武将20级后解锁装备栏
+品质
+类型
+请至少练兵1次
+最多可练兵5次
+至少需要一个武将练兵
+武将体力不足
+铜币不足
+武将体力不足，会导致练兵中断，是否确认继续？
+铜币不足，会导致练兵中断，是否确认继续？
+扣除的体力和铜币<font color='#ff2d2d'>不会返还</font>，是否确认终止练兵？
+正在练兵中不能选择武将练兵
+武将已满级
+武将每10级或每次进阶可获得10点可分配属性点
+该属性未分配属性点
+重伤
+疲劳
+征兵
+该武将没有分配属性点
+洗点需要消耗[img]ui://nyftdrjudpy25i[/img]20金珠，重置全部已分配属性点，是否继续?
+倒计时结束才可以使用重塑功能
+每10天可使用1次重塑功能，是否要重塑该武将
+武将在部队中
+武将在委任中
+武将在练兵中
+<font color='#7afd01'>Reset after</font> <font color='#ff2d2d'>%s</font>
+Reset avaliable now
+<font color='#7afd01'>Reset after</font> <font color='#ff2d2d'>%s</font>
+武将预览中，无法使用此功能
+该武将没有进行加点
+可分配属性点增加%s
+0
