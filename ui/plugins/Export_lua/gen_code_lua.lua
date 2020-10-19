@@ -59,31 +59,30 @@ function msg:ctor(handler)
 
     handler.genCode = false
     handler.exportPath = self.exportpath
-    handler.exportCodePath = self.exportCodePath
-    
+
     log(handler.exportCodePath)
     ---@type CS.FairyEditor.PublishHandler.ClassInfo[]
     self.classes = handler:CollectClasses(self.settings.ignoreNoname, self.settings.ignoreNoname, nil)
 
     handler:SetupCodeFolder(self.exportCodePath, "") --check if target folder exists, and delete old files
-    handler:SetupCodeFolder(self.exportpath,"") -- 检查创建ui文件夹
+    handler:SetupCodeFolder(self.exportpath, "") -- 检查创建ui文件夹
 
     self:init()
 end
 
 ---初始化
 function msg:init()
-
-    gen_lua_root_path = self.exportpath  .. get_custom_properties("gen_lua_root_path")
-    gen_lua_window_path = self.exportpath  .. get_custom_properties("gen_lua_window_path")
+    gen_lua_root_path = get_custom_properties("gen_lua_root_path")
+    gen_lua_window_path = get_custom_properties("gen_lua_window_path")
     gen_lua_prefix = "fairy"
     --- define类前缀
     gen_define_path = "fairy"
     project_basePath = self.handler.project.basePath
     gen_class_lua_path = self:combine_path(gen_lua_root_path, self.handler.pkg.name)
 
-    -- 清理目录
-    -- self:directory_clear(gen_class_lua_path)
+    -- 清理目录   
+    self.handler:SetupCodeFolder(gen_class_lua_path, "")
+     
     self:execute()
 end
 
@@ -93,6 +92,7 @@ function msg:execute()
         self:gen_component_code(class)
         self:gen_ui_code(class)
     end
+    self:gen_require_define()
 end
 
 --- 组件代码
@@ -143,8 +143,8 @@ function msg:gen_component_code(info)
     end
     template = string.gsub(template, "{export_child}", export_child)
 
-    local file = io.open(class_path, 'w+b')
-    log("class_path ----> "..class_path)
+    local file = io.open(class_path, "w+b")
+    log("class_path ----> " .. class_path)
     io.output(file)
     io.write(template)
     io.close(file)
@@ -258,7 +258,7 @@ function msg:gen_require_define()
         str = str .. lcs[i]
     end
 
-    local file = io.open(self:combine_path(gen_lua_root_path, "/define.lua", "w+b"))
+    local file = io.open(self:combine_path(gen_lua_root_path, "/define.lua"),"w+b")
     io.output(file)
     io.write(str)
     io.close(file)
@@ -299,26 +299,6 @@ end
 ---@param path2 string
 function msg:combine_path(path1, path2)
     return path1 .. path2
-end
-
---- 删除目录
----@param path string
-function msg:directory_clear(path)
-    local tempTable = {}
-    --统计
-    log("path --->"..path)
-    local dirs_root = cIO.Directory.GetFiles(path)
-    dirs_root = dirs_root:GetEnumerator()
-    while dirs_root:MoveNext() do
-        local v = dirs_root.Current
-        table.insert(tempTable, v)
-    end
-    --删除
-    for i = 1, #tempTable do
-        if self:_existsPath(tempTable[i]) then
-            cIO.File.Delete(tempTable[i])
-        end
-    end
 end
 
 --- UI类名拼接
