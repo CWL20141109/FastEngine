@@ -354,12 +354,12 @@ namespace FastEngine
             }
 
             string[] directories = Directory.GetDirectories(_path);
-            for (int index = 0; index < directories.Length; index++)
-            {
-                if (!ZipDirectory(directories[index], Path.Combine(_parentRelPath, Path.GetFileName(_path)),
-                    _zipOutputStream, _zipCallback)) ;
-                return false;
-            }
+            // for (int index = 0; index < directories.Length; index++)
+            // {
+            //     if (!ZipDirectory(directories[index], Path.Combine(_parentRelPath, Path.GetFileName(_path)),
+            //         _zipOutputStream, _zipCallback)) ;
+            //     return false;
+            // }
 
             if (_zipCallback != null)
                 _zipCallback.OnPostZip(entry);
