@@ -41,6 +41,9 @@ namespace FastEngine.Core
         /// </summary>
         public ResState state { get { return m_state; } }
 
+        public ResType m_type;
+        public ResType type { get { return m_type; } }
+
         /// <summary>
         /// 资源对象
         /// </summary>
@@ -121,7 +124,7 @@ namespace FastEngine.Core
 
         protected void Notification(bool ready)
         {
-            m_notificationListener.InvokeGracefully(ready,this);
+            m_notificationListener.InvokeGracefully(ready, this);
         }
 
         /// <summary>
@@ -143,7 +146,7 @@ namespace FastEngine.Core
         public void Release()
         {
             --m_refCount;
-            if(m_refCount <= 0)
+            if (m_refCount <= 0)
             {
                 OnZeroRef();
             }

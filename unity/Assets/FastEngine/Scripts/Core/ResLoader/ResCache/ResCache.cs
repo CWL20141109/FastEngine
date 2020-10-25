@@ -17,16 +17,38 @@ namespace FastEngine.Core
         /// <returns></returns>
         readonly Dictionary<string, Res> resDictionary = new Dictionary<string, Res>();
 
-        // public Res _Get(ResData data, bool creat = false)
-        // {
-        //     Res res = null;
-
-        //     return res;
-        // }
-
-        public void test()
+        /// <summary>
+        /// 获取Res对象
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="creat"></param>
+        /// <returns></returns>
+        public Res _Get(ResData data, bool creat = false)
         {
+            Res res = null;
+            if (resDictionary.TryGetValue(data.poolkey, out res))
+            {
+                res.Retain();
+                return res;
+            }
+            if (!creat) return null;
 
+            res = ResFactory.Create(data);
+
+            if (res == null) return null;
+
+            res.Retain();
+            resDictionary.Add(data.poolkey, res);
+
+            return res;
+        }
+
+        public void _Remove(ResData data)
+        {
+            if(resDictionary.ContainsKey(data.poolkey))
+            {
+                resDictionary.Remove(data.poolkey);
+            }
         }
     }
 }

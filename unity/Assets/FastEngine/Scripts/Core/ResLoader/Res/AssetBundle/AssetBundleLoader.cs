@@ -33,7 +33,7 @@ namespace FastEngine.Core
         {
             var mapping = AssetBundleDB.GetMappingData(resPath);
             var loader = ObjectPool<AssetBundleLoader>.Instance.Allocate();
-
+            loader.Init(mapping.bundleName,mapping.assetName,listener);
             return loader;
         }
         #region IPoolObject
@@ -62,7 +62,7 @@ namespace FastEngine.Core
         {
             m_only = string.IsNullOrEmpty(assetName);
 
-            //m_bundleName
+            //m_bundleName = ResCache.
         }
 
         public override void Unload()
