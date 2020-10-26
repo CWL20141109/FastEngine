@@ -23,7 +23,8 @@ namespace FastEngine.Core
         public static BundleRes Allocate(ResData data)
         {
             var res = ObjectPool<BundleRes>.Instance.Allocate();
-            
+            res.Init(data);
+            return res;
         }
         public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
@@ -57,6 +58,8 @@ namespace FastEngine.Core
             m_bundleName = data.bundleName;
             m_state = ResState.Waiting;
             m_type = ResType.Bundle;
+            m_asset = null;
+            m_assetBundle = null;
         }
     }
 }

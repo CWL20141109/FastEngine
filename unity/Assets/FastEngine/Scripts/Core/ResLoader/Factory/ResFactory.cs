@@ -10,6 +10,8 @@ namespace FastEngine.Core
             switch (data.type)
             {
                 case ResType.Bundle:
+                    return BundleRes.Allocate(data);
+                case ResType.Asset:
                     return null;
                 default:
                     return null;
