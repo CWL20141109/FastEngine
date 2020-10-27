@@ -9,12 +9,13 @@ namespace FastEngine.Core
         private AssetBundleRequest m_request;
         private BundleRes m_bundleRes;
 
-        private static AssetRes Allocate(ResData data)
+        public static AssetRes Allocate(ResData data)
         {
             var res = ObjectPool<AssetRes>.Instance.Allocate();
             res.Init(data);
             return res;
         }
+        
         public void Init(ResData data)
         {
             m_bundleName = data.bundleName;
@@ -44,7 +45,7 @@ namespace FastEngine.Core
 
         public void Recycle()
         {
-            throw new System.NotImplementedException();
+            ResCache.Remove(ResData.AllocateAsset(assetName,bundleName));
         }
 
         public override void Unload()

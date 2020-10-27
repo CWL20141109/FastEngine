@@ -12,7 +12,7 @@ namespace FastEngine.Core
                 case ResType.Bundle:
                     return BundleRes.Allocate(data);
                 case ResType.Asset:
-                    return null;
+                    return AssetRes.Allocate(data);
                 default:
                     return null;
             }

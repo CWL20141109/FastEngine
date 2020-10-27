@@ -21,9 +21,9 @@ namespace FastEngine.Core
         /// 获取Res对象
         /// </summary>
         /// <param name="data"></param>
-        /// <param name="creat"></param>
+        /// <param name="create"></param>
         /// <returns></returns>
-        public Res _Get(ResData data, bool creat = false)
+        public Res _Get(ResData data, bool create = false)
         {
             Res res = null;
             if (resDictionary.TryGetValue(data.poolkey, out res))
@@ -31,7 +31,7 @@ namespace FastEngine.Core
                 res.Retain();
                 return res;
             }
-            if (!creat) return null;
+            if (!create) return null;
 
             res = ResFactory.Create(data);
 
@@ -45,10 +45,43 @@ namespace FastEngine.Core
 
         public void _Remove(ResData data)
         {
-            if(resDictionary.ContainsKey(data.poolkey))
+            if (resDictionary.ContainsKey(data.poolkey))
             {
                 resDictionary.Remove(data.poolkey);
             }
         }
+
+        #region API
+        /// <summary>
+        /// 获取资源
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="createNew"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static T Get<T>(ResData data, bool createNew = false) where T : Res
+        {
+            return Get(data, createNew) as T;
+        }
+
+        /// <summary>
+        /// 获取资源
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="createNew"></param>
+        /// <returns></returns>
+        public static Res Get(ResData data, bool createNew = false)
+        {
+            return Instance._Get(data, createNew);
+        }
+        /// <summary>
+        /// 资源移除
+        /// </summary>
+        /// <param name="data"></param>
+        public static void Remove(ResData data)
+        {
+            Instance._Remove(data);
+        }
+        #endregion
     }
 }

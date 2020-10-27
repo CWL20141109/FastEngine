@@ -49,9 +49,40 @@ namespace FastEngine.Core
 
         public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
+        /// <summary>
+        /// 分配asset 对象
+        /// </summary>
+        /// <param name="assetName"></param>
+        /// <param name="bundleName"></param>
+        /// <returns></returns>
+        public static ResData AllocateAsset(string assetName,string bundleName)
+        {
+            return Allocate(assetName,bundleName,ResType.Asset);
+        }
+
+        /// <summary>
+        /// 分配对象
+        /// </summary>
+        /// <param name="assetName"></param>
+        /// <param name="bundleName"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        private static ResData Allocate(string assetName,string bundleName,ResType type)
+        {
+            var data = ObjectPool<ResData>.Instance.Allocate();
+            data.Init(assetName,bundleName,type);
+            return data;
+        }
         public void Recycle()
         {
-            throw new System.NotImplementedException();
+            ObjectPool<ResData>.Instance.Recycle(this);
+        }
+
+        public void Init(string assetName,string bundleName,ResType type)
+        {
+            m_bundleName = bundleName;
+            m_assetName = assetName;
+            m_type = type;
         }
     }
 }
