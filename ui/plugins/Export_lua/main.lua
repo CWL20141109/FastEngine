@@ -8,7 +8,7 @@ function onPublish(handler)
 
     log("Handling gen code in plugin")
 
-    local gen_code_lua = msg.new(handler)
+    -- local gen_code_lua = msg.new(handler)
 end
 function onDestroy()
     -------do cleanup here-------

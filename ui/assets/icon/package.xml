@@ -13,5 +13,5 @@
     <component id="ly4qg" name="Slider1.xml" path="/component/"/>
     <movieclip id="ly4qi" name="MovieClip1.jta" path="/component/"/>
   </resources>
-  <publish name=""/>
+  <publish name="" genCode="true"/>
 </packageDescription>

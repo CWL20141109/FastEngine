@@ -1,9 +1,0 @@
-Please enter a marker name
-The marker's name is up to 24 characters.
-Reached the maximum number of markers.
-Successfully marked
-Successfully deleted
-The marker's description is up to 80 characters.
-Please enter a marker description
-Reached the maximum number of alliance markers.
-Do you wish to delete the alliance marker %s?

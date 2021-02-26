@@ -1,9 +1,0 @@
-Available when Fame reaches 3,500. 
-Available when Fame reaches 4,500.
-Available when Fame reaches 5,000.
-Available when Fame reaches 5,000.
-<font color='#7afd01'>[Collect]</font> After seizing a neutral land, you can consume orders to collect resources on it and obtain abundant resources.
-<font color='#7afd01'>[New Dawn Convoy]</font> The Convoy will appear near Main City every day.
-Intercept and defeat the Convoy troops on their marching route to obtain resources and reservists.
-<font color='#7afd01'>[Defend]</font> Your defending troops will attack the enemy when nearby territories of your alliance or friendly alliances are under attack.
-<font color='#7afd01'>[Construction]</font> Construct buildings on your territories.

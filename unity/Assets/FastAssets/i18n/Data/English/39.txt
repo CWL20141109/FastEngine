@@ -1,6 +1,0 @@
-%s <font color='#7afd01'>Completed</font>
-%s <font color='#898c40'>Ended</font>
-Ends in %s
-Great Conquest
-Not announced yet
-The Chronicles Quest [%s] is complete

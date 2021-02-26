@@ -48,7 +48,17 @@ namespace FastEngine.Core
         }
 
         public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
-
+        
+        /// <summary>
+        /// bundleRes
+        /// </summary>
+        /// <param name="bundleName"></param>
+        /// <returns></returns>
+        public static ResData AlloocateBundle(string bundleName)
+        {
+            return Allocate("", bundleName, ResType.Bundle);
+        }
+        
         /// <summary>
         /// 分配asset 对象
         /// </summary>

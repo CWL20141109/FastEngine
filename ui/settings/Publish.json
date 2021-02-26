@@ -8,8 +8,8 @@
   "jpegQuality": 80,
   "compressPNG": false,
   "codeGeneration": {
-    "allowGenCode": false,
-    "codePath": "../lua",
+    "allowGenCode": true,
+    "codePath": "../code",
     "classNamePrefix": "",
     "memberNamePrefix": "",
     "packageName": null,
