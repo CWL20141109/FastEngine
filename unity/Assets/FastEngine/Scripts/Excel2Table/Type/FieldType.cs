@@ -5,7 +5,7 @@
     /// </summary>
     public enum FieldType
     {
-        Byte,
+        Byte = 0,
         Int,
         Long,
         Float,

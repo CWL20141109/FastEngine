@@ -34,6 +34,15 @@ namespace FastEngine
 		{
 			return FilePathUtils.Combine(FastAssetsRootDirectory(), "Table", "Data");
 		}
+
+		/// <summary>
+		/// Table 数据对象输出目录
+		/// </summary>
+		/// <returns></returns>
+		public static string TableObjectDireDirectory()
+		{
+			return FilePathUtils.Combine(FastAssetsRootDirectory(), "Table", "TableObject");
+		}
         #endregion
 
         #region editor
@@ -69,7 +78,7 @@ namespace FastEngine
 			return FilePathUtils.Combine(Application.streamingAssetsPath, PlatformUtils.PlatformId());
 		}
         #endregion
-
+		
         #region i18n
 		/// <summary>
 		/// i18n excel 配置文件路径
