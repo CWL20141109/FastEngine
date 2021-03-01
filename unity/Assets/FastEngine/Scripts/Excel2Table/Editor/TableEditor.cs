@@ -36,6 +36,15 @@ namespace FastEngine.Editor.Excel2Table
                 options.dataFormatOptions = item.Value.DataFormatOptions;
                 var reader = new ExcelReader(string.Format("{0}/{1}.xlsx", AppUtils.TableExcelDirectory(), item.Value.TableName), options);
                 reader.Read();
+                switch (tableConfig.OutFormatOptions)
+                {
+                    case FormatOptions.CSV:
+                        break;
+                    case FormatOptions.JSON:
+                        break;
+                    case FormatOptions.LUA:
+                        break;
+                }
             });
 
 

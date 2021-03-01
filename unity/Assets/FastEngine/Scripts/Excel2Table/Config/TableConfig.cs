@@ -18,8 +18,7 @@ namespace FastEngine.Core.Excel2Table
         /// </summary>
         public DataFormatOptions DataFormatOptions { get; set; }
     }
-
-
+    
     public class TableConfig : ConfigObject
     {
         /// <summary>
