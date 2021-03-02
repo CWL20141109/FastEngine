@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FastEngine
 {
-    public static class IEnumerableExtension
+    public static class EnumerableExtension
     {
         #region Array Extension
         /// <summary>

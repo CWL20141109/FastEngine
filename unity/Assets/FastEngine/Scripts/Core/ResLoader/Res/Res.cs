@@ -17,64 +17,64 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string m_assetName;
+        protected string mAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string assetName { get { return m_assetName; } }
+        public string AssetName { get { return mAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string m_bundleName;
+        protected string mBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string bundleName { get { return m_bundleName; } }
+        public string BundleName { get { return mBundleName; } }
 
         /// <summary>
         /// 资源类型
         /// </summary>
-        protected ResState m_state;
+        protected ResState mState;
         /// <summary>
         /// 资源类型
         /// </summary>
-        public ResState state { get { return m_state; } }
+        public ResState State { get { return mState; } }
 
-        public ResType m_type;
-        public ResType type { get { return m_type; } }
+        public ResType mType;
+        public ResType Type { get { return mType; } }
 
         /// <summary>
         /// 资源对象
         /// </summary>
-        protected UnityEngine.Object m_asset;
+        protected UnityEngine.Object mAsset;
         /// <summary>
         /// 资源对象
         /// </summary>
-        public UnityEngine.Object asset { get { return m_asset; } }
+        public UnityEngine.Object Asset { get { return mAsset; } }
 
         /// <summary>
         /// bundle 对象
         /// </summary>
-        protected AssetBundle m_assetBundle;
+        protected AssetBundle mAssetBundle;
         /// <summary>
         /// bundle 对象
         /// </summary>
-        public AssetBundle assetBundle { get { return m_assetBundle; } }
+        public AssetBundle AssetBundle { get { return mAssetBundle; } }
 
         /// <summary>
         ///  资源引用计数
         /// </summary>
-        private int m_refCount = 0;
+        private int _mRefCount = 0;
         /// <summary>
         ///  资源引用计数
         /// </summary>
-        public int refCount { get { return m_refCount; } }
+        public int RefCount { get { return _mRefCount; } }
 
         /// <summary>
         /// 事件监听
         /// </summary>
-        protected event ResNotificationListener m_notificationListener;
+        protected event ResNotificationListener MNotificationListener;
         /// <summary>
         /// 同步加载
         /// </summary>
@@ -96,9 +96,9 @@ namespace FastEngine.Core
         /// <returns>UnityEngine.Object</returns>
         public T GetAsset<T>() where T : UnityEngine.Object
         {
-            if (m_asset == null)
+            if (mAsset == null)
                 return null;
-            return m_asset as T;
+            return mAsset as T;
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace FastEngine.Core
         public void AddNotification(ResNotificationListener listener)
         {
             if (listener == null) return;
-            m_notificationListener += listener;
+            MNotificationListener += listener;
         }
 
         /// <summary>
@@ -118,13 +118,13 @@ namespace FastEngine.Core
         public void RemoveNotification(ResNotificationListener listener)
         {
             if (listener == null) return;
-            if (m_notificationListener == null) return;
-            m_notificationListener -= listener;
+            if (MNotificationListener == null) return;
+            MNotificationListener -= listener;
         }
 
         protected void Notification(bool ready)
         {
-            m_notificationListener.InvokeGracefully(ready, this);
+            MNotificationListener.InvokeGracefully(ready, this);
         }
 
         /// <summary>
@@ -137,7 +137,7 @@ namespace FastEngine.Core
         /// </summary>
         public void Retain()
         {
-            ++m_refCount;
+            ++_mRefCount;
         }
 
         /// <summary>
@@ -145,8 +145,8 @@ namespace FastEngine.Core
         /// </summary>
         public void Release()
         {
-            --m_refCount;
-            if (m_refCount <= 0)
+            --_mRefCount;
+            if (_mRefCount <= 0)
             {
                 OnZeroRef();
             }

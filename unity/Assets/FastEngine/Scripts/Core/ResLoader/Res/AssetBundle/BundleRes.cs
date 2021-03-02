@@ -9,11 +9,11 @@ namespace FastEngine.Core
     public class BundleRes : Res, IPoolObject
     {
 
-        public AssetBundleCreateRequest m_request;
+        public AssetBundleCreateRequest mRequest;
 
-        private BundleRes[] m_dependencies;
+        private BundleRes[] _mDependencies;
 
-        private int m_dependWaitCount;
+        private int _mDependWaitCount;
 
         /// <summary>
         /// 分配对象
@@ -26,7 +26,7 @@ namespace FastEngine.Core
             res.Init(data);
             return res;
         }
-        public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        public bool IsRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public override bool LoadAsync()
         {
@@ -55,11 +55,11 @@ namespace FastEngine.Core
 
         public void Init(ResData data)
         {
-            m_bundleName = data.bundleName;
-            m_state = ResState.Waiting;
-            m_type = ResType.Bundle;
-            m_asset = null;
-            m_assetBundle = null;
+            mBundleName = data.BundleName;
+            mState = ResState.Waiting;
+            mType = ResType.Bundle;
+            mAsset = null;
+            mAssetBundle = null;
         }
     }
 }

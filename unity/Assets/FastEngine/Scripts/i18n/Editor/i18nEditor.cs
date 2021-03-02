@@ -46,7 +46,7 @@ namespace FastEngine.Editor.I18n
 		public static void Generate()
 		{
 			var opt = new ExcelReaderOptions();
-			opt.languages = Config.ReadEditorDirectory<i18nConfig>().languages;
+			opt.languages = Config.ReadEditorDirectory<I18NConfig>().Languages;
 			var reader = new ExcelReader(opt);
 			reader.Read();
 

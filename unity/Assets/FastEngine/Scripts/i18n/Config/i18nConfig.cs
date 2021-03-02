@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace FastEngine.Core
 {
-    public class i18nConfig : ConfigObject
+    public class I18NConfig : ConfigObject
     {
-        public List<SystemLanguage> languages { get; set; }
+        public List<SystemLanguage> Languages { get; set; }
 
         protected override void OnInitialize()
         {
-            if (languages == null)
+            if (Languages == null)
             {
-                languages = new List<SystemLanguage>();
+                Languages = new List<SystemLanguage>();
             }
         }
     }

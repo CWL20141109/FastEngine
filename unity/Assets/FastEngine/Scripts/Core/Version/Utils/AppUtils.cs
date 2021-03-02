@@ -84,7 +84,7 @@ namespace FastEngine
 		/// i18n excel 配置文件路径
 		/// </summary>
 		/// <returns></returns>
-		public static string i18nExcelFilePath()
+		public static string I18NExcelFilePath()
 		{
 			return FilePathUtils.Combine(FastAssetsRootDirectory(), "i18n", "Excel", "i18n.xlsx");
 		}
@@ -93,7 +93,7 @@ namespace FastEngine
 		/// i18n data 目录
 		/// </summary>
 		/// <returns></returns>
-		public static string i18nDataDirectory()
+		public static string I18NDataDirectory()
 		{
 			return FilePathUtils.Combine(FastAssetsRootDirectory(), "i18n", "Data");
 		}
@@ -102,7 +102,7 @@ namespace FastEngine
 		/// i18n index 目录
 		/// </summary>
 		/// <returns></returns>
-		public static string i18nIndexDirectory()
+		public static string I18NIndexDirectory()
 		{
 			return FilePathUtils.Combine(FastAssetsRootDirectory(), "i18n", "Index");
 		}

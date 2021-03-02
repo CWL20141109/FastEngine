@@ -5,7 +5,7 @@ namespace FastEngine.Core
     /// </summary>
     public interface IPool<T>
     {
-        int count{get;}
+        int Count{get;}
 
         T Allocate();
 

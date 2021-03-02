@@ -14,7 +14,7 @@
         Boolean,
         Vector2,
         Vector3,
-        i18n,
+        I18N,
         ArrayByte,
         ArrayInt,
         ArrayLong,
@@ -24,7 +24,7 @@
         ArrayBoolean,
         ArrayVector2,
         ArrayVector3,
-        Arrayi18n,
+        Arrayi18N,
         Ignore,
         Unknow,
     }

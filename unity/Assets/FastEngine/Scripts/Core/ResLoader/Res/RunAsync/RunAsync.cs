@@ -11,17 +11,17 @@ namespace FastEngine.Core
         /// <summary>
         /// 同时运行异步最大数
         /// </summary>
-        private const int maxRunCount = 8;
+        private const int MAXRunCount = 8;
         /// <summary>
         /// 当前运行异步数量
         /// </summary>
-        private int m_runCount;
+        private int _mRunCount;
         /// <summary>
         /// 异步链表
         /// </summary>
         /// <typeparam name="IRunAsyncObject"></typeparam>
         /// <returns></returns>
-        private LinkedList<IRunAsyncObject> m_enumerators = new LinkedList<IRunAsyncObject>();
+        private LinkedList<IRunAsyncObject> _mEnumerators = new LinkedList<IRunAsyncObject>();
 
         /// <summary>
         ///  添加异步
@@ -29,7 +29,7 @@ namespace FastEngine.Core
         /// <param name="enumerator"></param>
         public void Push(IRunAsyncObject enumerator)
         {
-            m_enumerators.AddLast(enumerator);
+            _mEnumerators.AddLast(enumerator);
             TryRun();
         }
 
@@ -38,13 +38,13 @@ namespace FastEngine.Core
         /// </summary>
         private void TryRun()
         {
-            if (m_enumerators.Count == 0) return;
-            if (m_runCount >= maxRunCount) return;
+            if (_mEnumerators.Count == 0) return;
+            if (_mRunCount >= MAXRunCount) return;
 
-            var enumerator = m_enumerators.First.Value;
-            m_enumerators.RemoveFirst();
+            var enumerator = _mEnumerators.First.Value;
+            _mEnumerators.RemoveFirst();
 
-            ++m_runCount;
+            ++_mRunCount;
             StartCoroutine(enumerator.AsyncRun(this));
         }
 
@@ -53,7 +53,7 @@ namespace FastEngine.Core
         /// </summary>
         private void TryNextRun()
         {
-            --m_runCount;
+            --_mRunCount;
             TryRun();
         }
 

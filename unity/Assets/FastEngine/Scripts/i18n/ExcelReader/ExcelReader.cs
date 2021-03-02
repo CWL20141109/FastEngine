@@ -5,21 +5,21 @@ namespace FastEngine.Core.I18n
 {
 	public class ExcelReader
 	{
-		public ExcelReaderOptions options { get; private set; }
-		public ExcelSheet[] sheets { get; private set; }
+		public ExcelReaderOptions Options { get; private set; }
+		public ExcelSheet[] Sheets { get; private set; }
 
 		public ExcelReader(ExcelReaderOptions options)
 		{
-			this.options = options;
+			this.Options = options;
 		}
 
 		public void Read()
 		{
-			using (var stream = File.Open(AppUtils.i18nExcelFilePath(), FileMode.Open, FileAccess.Read))
+			using (var stream = File.Open(AppUtils.I18NExcelFilePath(), FileMode.Open, FileAccess.Read))
 			{
 				using (var reader = ExcelReaderFactory.CreateReader(stream))
 				{
-					sheets = new ExcelSheet[reader.ResultsCount];
+					Sheets = new ExcelSheet[reader.ResultsCount];
 
 					var result = reader.AsDataSet();
 					for (int i = 0; i < reader.ResultsCount; i++)
@@ -51,7 +51,7 @@ namespace FastEngine.Core.I18n
 							}
 							sheet.columns[r] = excelColumn;
 						}
-						sheets[i] = sheet;
+						Sheets[i] = sheet;
 					}
 				}
 			}

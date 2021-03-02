@@ -7,9 +7,9 @@ namespace FastEngine.Core.Excel2Table
     /// </summary>
     public enum FormatOptions
     {
-        CSV,
-        JSON,
-        LUA,
+        Csv,
+        Json,
+        Lua,
     }
 
     /// <summary>
@@ -57,11 +57,11 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// 数据文件输出路径
         /// </summary>
-        public string dataOutFilePath
+        public string DataOutFilePath
         {
             get
             {
-                if (outFormatOptions == FormatOptions.CSV) return FilePathUtils.Combine(dataOutDirectory, tableName + ".csv");
+                if (outFormatOptions == FormatOptions.Csv) return FilePathUtils.Combine(dataOutDirectory, tableName + ".csv");
                 else return FilePathUtils.Combine(dataOutDirectory, tableName + ".csv");
             }
         }
@@ -69,12 +69,12 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// table model  文件输出路径
         /// </summary>
-        public string tableModelOutFilePath { get { return FilePathUtils.Combine(tableModelOutDirectory, tableName + "Table.cs"); } }
+        public string TableModelOutFilePath { get { return FilePathUtils.Combine(tableModelOutDirectory, tableName + "Table.cs"); } }
 
         /// <summary>
         /// lua 文件输出路径
         /// </summary>
-        public string luaOutFilePath { get { return FilePathUtils.Combine(luaOutDirectory, tableName + ".lua"); } }
+        public string LuaOutFilePath { get { return FilePathUtils.Combine(luaOutDirectory, tableName + ".lua"); } }
 
     }
 }

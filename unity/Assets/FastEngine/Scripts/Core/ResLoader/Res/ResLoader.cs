@@ -8,7 +8,7 @@ namespace FastEngine.Core
         /// <summary>
         /// 通知
         /// </summary>
-        protected ResNotificationListener m_listener;
+        protected ResNotificationListener mListener;
 
         /// <summary>
         /// 同步加载
@@ -30,7 +30,7 @@ namespace FastEngine.Core
         ///接收通知
         /// </summary>
         /// <param name="ready"></param>
-        /// <param name="Res"></param>
-        protected abstract void OnReceiveNotification(bool ready,Res Res);
+        /// <param name="res"></param>
+        protected abstract void OnReceiveNotification(bool ready,Res res);
     }
 }

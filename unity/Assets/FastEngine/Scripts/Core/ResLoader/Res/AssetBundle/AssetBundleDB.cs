@@ -22,13 +22,13 @@ namespace FastEngine.Core
     }
     public class AssetBundleDB
     {
-        private static bool initialized;
+        private static bool _initialized;
 
 
-        private static AssetBundle manifestBundle;
-        private static AssetBundleManifest manifest;
+        private static AssetBundle _manifestBundle;
+        private static AssetBundleManifest _manifest;
 
-        static Dictionary<string, AssetBundleMappingData> mapping = new Dictionary<string, AssetBundleMappingData>();
+        static Dictionary<string, AssetBundleMappingData> _mapping = new Dictionary<string, AssetBundleMappingData>();
 
 
         /// <summary>
@@ -36,13 +36,13 @@ namespace FastEngine.Core
         /// </summary>
         public static void Initialize()
         {
-            initialized = true;
+            _initialized = true;
 
-            manifestBundle = AssetBundle.LoadFromFile(FilePathUtils.Combine(AppUtils.BuildRootDirectory(), PlatformUtils.PlatformId()));
-            manifest = manifestBundle.LoadAsset("AssetBundleManifest") as AssetBundleManifest;
+            _manifestBundle = AssetBundle.LoadFromFile(FilePathUtils.Combine(AppUtils.BuildRootDirectory(), PlatformUtils.PlatformId()));
+            _manifest = _manifestBundle.LoadAsset("AssetBundleManifest") as AssetBundleManifest;
 
             var ms = File.ReadAllText(FilePathUtils.Combine(AppUtils.BuildRootDirectory(), PlatformUtils.PlatformId() + ".json"));
-            mapping = JsonMapper.ToObject<Dictionary<string, AssetBundleMappingData>>(ms);
+            _mapping = JsonMapper.ToObject<Dictionary<string, AssetBundleMappingData>>(ms);
         }
 
         /// <summary>
@@ -52,8 +52,8 @@ namespace FastEngine.Core
         /// <returns></returns>
         public static string[] GetDependencies(string bundleName)
         {
-            if (!initialized) Initialize();
-            return manifest.GetAllDependencies(bundleName);
+            if (!_initialized) Initialize();
+            return _manifest.GetAllDependencies(bundleName);
         }
 
         /// <summary>
@@ -63,9 +63,9 @@ namespace FastEngine.Core
         /// <returns></returns>
         public static AssetBundleMappingData GetMappingData(string resPath)
         {
-            if (!initialized) Initialize();
+            if (!_initialized) Initialize();
             AssetBundleMappingData data = null;
-            mapping.TryGetValue(resPath, out data);
+            _mapping.TryGetValue(resPath, out data);
             if (data == null)
             {
                 string result = resPath.Replace("Assets/", "");
@@ -74,7 +74,7 @@ namespace FastEngine.Core
                 result = result.Replace(".mp3", "");
                 result = result.Replace(".ogg", "");
                 result = result.Replace(".wav", "");
-                mapping.TryGetValue(result, out data);
+                _mapping.TryGetValue(result, out data);
             }
             if (data == null) Debug.LogError("assetbundle mapping data not exist:" + resPath);
             return data;

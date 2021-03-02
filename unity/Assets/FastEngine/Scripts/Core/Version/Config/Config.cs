@@ -6,7 +6,7 @@ namespace FastEngine.Core
 
 	public class Config
 	{
-		static Dictionary<string, ConfigObject> configDict = new Dictionary<string, ConfigObject>();
+		static Dictionary<string, ConfigObject> _configDict = new Dictionary<string, ConfigObject>();
 
 		/// <summary>
 		/// 读取Data目录配置
@@ -59,7 +59,7 @@ namespace FastEngine.Core
 		{
 			string cn = typeof(T).Name;
 			ConfigObject co = null;
-			if (configDict.TryGetValue(cn, out co))
+			if (_configDict.TryGetValue(cn, out co))
 				return (T)co;
 
 			var cp = FilePathUtils.Combine(AppUtils.ConfigEditorDirectory(), cn + ".json");

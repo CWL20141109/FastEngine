@@ -5,49 +5,49 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string m_assetName;
+        protected string mAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string assetName { get { return m_assetName; } }
+        public string AssetName { get { return mAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string m_bundleName;
+        protected string mBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string bundleName { get { return m_bundleName; } }
+        public string BundleName { get { return mBundleName; } }
 
         /// <summary>
         /// 资源类型
         /// </summary>
-        private ResType m_type;
+        private ResType _mType;
         /// <summary>
         /// 资源类型
         /// </summary>
-        public ResType type { get { return m_type; } }
+        public ResType Type { get { return _mType; } }
 
-        public string poolkey
+        public string Poolkey
         {
             get
             {
-                switch (m_type)
+                switch (_mType)
                 {
                     case ResType.Resource:
-                        return m_assetName.ToLower();
+                        return mAssetName.ToLower();
                     case ResType.Bundle:
-                        return m_bundleName.ToLower();
+                        return mBundleName.ToLower();
                     case ResType.Asset:
-                        return (m_bundleName + m_assetName).ToLower();
+                        return (mBundleName + mAssetName).ToLower();
                     default:
                         return "";
                 }
             }
         }
 
-        public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        public bool IsRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
         
         /// <summary>
         /// bundleRes
@@ -90,9 +90,9 @@ namespace FastEngine.Core
 
         public void Init(string assetName,string bundleName,ResType type)
         {
-            m_bundleName = bundleName;
-            m_assetName = assetName;
-            m_type = type;
+            mBundleName = bundleName;
+            mAssetName = assetName;
+            _mType = type;
         }
     }
 }

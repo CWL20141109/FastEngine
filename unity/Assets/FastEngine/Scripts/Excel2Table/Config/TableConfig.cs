@@ -24,7 +24,7 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// 导出格式
         /// </summary>
-        public FormatOptions OutFormatOptions;
+        public FormatOptions outFormatOptions;
         /// <summary>
         /// tableModel 命名空间
         /// </summary>

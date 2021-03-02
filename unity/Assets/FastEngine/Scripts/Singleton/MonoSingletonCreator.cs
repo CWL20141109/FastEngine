@@ -23,7 +23,7 @@ namespace FastEngine
                         {
                             continue;
                         }
-                        instance = CreateComponentOnGameObject<T>(defineAttri.pathInHierarchy, true);
+                        instance = CreateComponentOnGameObject<T>(defineAttri.PathInHierarchy, true);
                         break;
                     }
                     if(instance == null)

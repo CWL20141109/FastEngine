@@ -4,31 +4,31 @@ namespace FastEngine.Core.I18n
 {
 	public class Excel2Index
 	{
-		private StringBuilder m_builder = new StringBuilder();
+		private StringBuilder _mBuilder = new StringBuilder();
 
 		public Excel2Index(ExcelReader reader)
 		{
-			m_builder.Clear();
+			_mBuilder.Clear();
 
 			// model
-			m_builder.AppendLine("public static class LanguageModel");
-			m_builder.AppendLine("{");
+			_mBuilder.AppendLine("public static class LanguageModel");
+			_mBuilder.AppendLine("{");
 
-			for (int i = 0; i < reader.sheets.Length; i++)
+			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				m_builder.AppendLine(string.Format("\tpublic static int {0} = {1};", reader.sheets[i].name, i));
+				_mBuilder.AppendLine(string.Format("\tpublic static int {0} = {1};", reader.Sheets[i].name, i));
 			}
-			m_builder.AppendLine("}");
+			_mBuilder.AppendLine("}");
 
-			m_builder.AppendLine("public static class LanaguageKey");
-			m_builder.AppendLine("{");
+			_mBuilder.AppendLine("public static class LanaguageKey");
+			_mBuilder.AppendLine("{");
 
-			for (int i = 0; i < reader.sheets.Length; i++)
+			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				m_builder.AppendLine(reader.sheets[i].ToCSharpKeyString());
+				_mBuilder.AppendLine(reader.Sheets[i].ToCSharpKeyString());
 			}
-			m_builder.AppendLine("}");
-			FilePathUtils.FileWriteAllText(AppUtils.i18nIndexDirectory() + "/i18nIndex.cs", m_builder.ToString());
+			_mBuilder.AppendLine("}");
+			FilePathUtils.FileWriteAllText(AppUtils.I18NIndexDirectory() + "/i18nIndex.cs", _mBuilder.ToString());
 		}
 	}
 }

@@ -5,19 +5,19 @@ namespace FastEngine.Core
     public abstract class MonoSingleton<T> : MonoBehaviour, ISingleton where T : MonoSingleton<T>
     {
         protected static T instance = null;
-        private static readonly object obj = new object();
-        private static bool isQuitApplication = false;
+        private static readonly object Obj = new object();
+        private static bool _isQuitApplication = false;
 
         public static T Instance
         {
             get
             {
-                if (isQuitApplication)
+                if (_isQuitApplication)
                 {
                     Debug.LogError(string.Format("Try To Call [MonoSingleton] Instance {0} When The Application Already Quit, return null inside", typeof(T)));
                     return null;
                 }
-                lock (obj)
+                lock (Obj)
                 {
                     if (instance == null)
                     {
@@ -30,13 +30,13 @@ namespace FastEngine.Core
 
         private void Awake()
         {
-            isQuitApplication = false;
+            _isQuitApplication = false;
             this.InitializeSingleton();
         }
 
         public virtual void Dispose()
         {
-            isQuitApplication = true;
+            _isQuitApplication = true;
             Debug.Log("[MonoSingleton] OnDestroy '" + typeof(T) + "'");
             MonoSingleton<T>.instance = null;
             Destroy(gameObject);

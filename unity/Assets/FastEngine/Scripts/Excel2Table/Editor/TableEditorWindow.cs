@@ -77,7 +77,7 @@ namespace FastEngine.Editor.Excel2Table
 
 			EditorGUILayout.BeginVertical("box");
 			GUILayout.Label("Out Format");
-			m_table.OutFormatOptions = (FormatOptions)EditorGUILayout.EnumPopup("", m_table.OutFormatOptions);
+			m_table.outFormatOptions = (FormatOptions)EditorGUILayout.EnumPopup("", m_table.outFormatOptions);
 			EditorGUILayout.EndVertical();
 
 			EditorGUILayout.BeginVertical("box");

@@ -1,16 +1,16 @@
 ﻿namespace FastEngine.Core
 {
-	public class i18nObject
+	public class I18NObject
 	{
-		public int model { get; }
-		public int key { get; }
+		public int Model { get; }
+		public int Key { get; }
 
-		public i18nObject(int model, int key)
+		public I18NObject(int model, int key)
 		{
-			this.model = model;
-			this.key = key;
+			this.Model = model;
+			this.Key = key;
 		}
 
-		public override string ToString() { return i18n.Get(model, key); }
+		public override string ToString() { return I18N.Get(Model, Key); }
 	}
 }

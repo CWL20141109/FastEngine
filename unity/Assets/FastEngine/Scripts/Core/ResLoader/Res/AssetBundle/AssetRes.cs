@@ -6,8 +6,8 @@ namespace FastEngine.Core
     public class AssetRes : Res, IPoolObject, IRunAsyncObject
     {
 
-        private AssetBundleRequest m_request;
-        private BundleRes m_bundleRes;
+        private AssetBundleRequest _mRequest;
+        private BundleRes _mBundleRes;
 
         public static AssetRes Allocate(ResData data)
         {
@@ -18,15 +18,15 @@ namespace FastEngine.Core
         
         public void Init(ResData data)
         {
-            m_bundleName = data.bundleName;
-            m_assetName = data.assetName;
-            m_state = ResState.Waiting;
-            m_type = ResType.Asset;
-            m_asset = null;
-            m_asset = null;
+            mBundleName = data.BundleName;
+            mAssetName = data.AssetName;
+            mState = ResState.Waiting;
+            mType = ResType.Asset;
+            mAsset = null;
+            mAsset = null;
         }
 
-        public bool isRecycled { get; set; }
+        public bool IsRecycled { get; set; }
 
         public IEnumerator AsyncRun(IRunAsync async)
         {
@@ -45,7 +45,7 @@ namespace FastEngine.Core
 
         public void Recycle()
         {
-            ResCache.Remove(ResData.AllocateAsset(assetName,bundleName));
+            ResCache.Remove(ResData.AllocateAsset(AssetName,BundleName));
         }
 
         public override void Unload()

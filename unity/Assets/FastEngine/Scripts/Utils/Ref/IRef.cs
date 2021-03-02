@@ -2,7 +2,7 @@ namespace FastEngine.Core
 {
     public interface IRef
     {
-         int refCount {get;}
+         int RefCount {get;}
          void Retain();
          void Release();
     }

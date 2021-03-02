@@ -32,17 +32,17 @@ namespace FastEngine.Editor.Excel2Table
                 var options = new ExcelReaderOptions();
                 options.tableName = item.Value.TableName;
                 options.tableModelNamespace = tableConfig.TableModelNamespace;
-                options.outFormatOptions = tableConfig.OutFormatOptions;
+                options.outFormatOptions = tableConfig.outFormatOptions;
                 options.dataFormatOptions = item.Value.DataFormatOptions;
                 var reader = new ExcelReader(string.Format("{0}/{1}.xlsx", AppUtils.TableExcelDirectory(), item.Value.TableName), options);
                 reader.Read();
-                switch (tableConfig.OutFormatOptions)
+                switch (tableConfig.outFormatOptions)
                 {
-                    case FormatOptions.CSV:
+                    case FormatOptions.Csv:
                         break;
-                    case FormatOptions.JSON:
+                    case FormatOptions.Json:
                         break;
-                    case FormatOptions.LUA:
+                    case FormatOptions.Lua:
                         break;
                 }
             });

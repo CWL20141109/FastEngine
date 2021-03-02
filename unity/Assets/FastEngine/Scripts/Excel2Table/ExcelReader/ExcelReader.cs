@@ -6,36 +6,36 @@ namespace FastEngine.Core.Excel2Table
 {
     public class ExcelReader
     {
-        private string m_filePath;
-        public ExcelReaderOptions options { get; private set; }
-        public List<string> descriptions { get; set; }
-        public List<string> fields { get; private set; }
-        public List<FieldType> types { get; private set; }
-        public List<int> ignoreIndexs { get; private set; }
-        public List<ExcelReaderRow> rows { get; private set; }
+        private string _mFilePath;
+        public ExcelReaderOptions Options { get; private set; }
+        public List<string> Descriptions { get; set; }
+        public List<string> Fields { get; private set; }
+        public List<FieldType> Types { get; private set; }
+        public List<int> IgnoreIndexs { get; private set; }
+        public List<ExcelReaderRow> Rows { get; private set; }
         public ExcelReader(string filePath, ExcelReaderOptions options)
         {
-            m_filePath = filePath;
-            this.options = options;
-            descriptions = new List<string>();
-            fields = new List<string>();
-            types = new List<FieldType>();
-            ignoreIndexs = new List<int>();
-            rows = new List<ExcelReaderRow>();
+            _mFilePath = filePath;
+            this.Options = options;
+            Descriptions = new List<string>();
+            Fields = new List<string>();
+            Types = new List<FieldType>();
+            IgnoreIndexs = new List<int>();
+            Rows = new List<ExcelReaderRow>();
         }
 
         public void Read()
         {
-            descriptions.Clear();
-            fields.Clear();
-            types.Clear();
-            ignoreIndexs.Clear();
-            rows.Clear();
+            Descriptions.Clear();
+            Fields.Clear();
+            Types.Clear();
+            IgnoreIndexs.Clear();
+            Rows.Clear();
 
             FieldType fieldType;
             bool removeIgnore = false;
 
-            using (var stream = File.Open(m_filePath, FileMode.Open, FileAccess.Read))
+            using (var stream = File.Open(_mFilePath, FileMode.Open, FileAccess.Read))
             {
                 using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
@@ -54,19 +54,19 @@ namespace FastEngine.Core.Excel2Table
                                 var context = dataTable.Rows[r][c].ToString();
                                 if (r == 0)
                                 {
-                                    descriptions.Add(context);
+                                    Descriptions.Add(context);
                                 }
                                 else if (r == 1)
                                 {
-                                    fields.Add(context);
+                                    Fields.Add(context);
                                 }
                                 else if (r == 2)
                                 {
                                     fieldType = TypeUtils.TypeContentToFieldType(context);
-                                    types.Add(fieldType);
+                                    Types.Add(fieldType);
                                     if (fieldType == FieldType.Ignore)
                                     {
-                                        ignoreIndexs.Add(c);
+                                        IgnoreIndexs.Add(c);
                                     }
                                 }
                                 else
@@ -79,16 +79,16 @@ namespace FastEngine.Core.Excel2Table
                             {
                                 if (!removeIgnore)
                                 {
-                                    descriptions = RemoveIgnore<string>(descriptions, ignoreIndexs);
-                                    fields = RemoveIgnore<string>(fields, ignoreIndexs);
-                                    types = RemoveIgnore<FieldType>(types, ignoreIndexs);
+                                    Descriptions = RemoveIgnore<string>(Descriptions, IgnoreIndexs);
+                                    Fields = RemoveIgnore<string>(Fields, IgnoreIndexs);
+                                    Types = RemoveIgnore<FieldType>(Types, IgnoreIndexs);
                                     removeIgnore = true;
                                 }
-                                row.descriptions = descriptions;
-                                row.fields = fields;
-                                row.types = types;
-                                row.datas = RemoveIgnore<string>(row.datas, ignoreIndexs);
-                                rows.Add(row);
+                                row.descriptions = Descriptions;
+                                row.fields = Fields;
+                                row.types = Types;
+                                row.datas = RemoveIgnore<string>(row.datas, IgnoreIndexs);
+                                Rows.Add(row);
                             }
                         }
 

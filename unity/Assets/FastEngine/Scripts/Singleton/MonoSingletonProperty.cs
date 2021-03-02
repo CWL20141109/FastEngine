@@ -5,7 +5,7 @@ namespace FastEngine
     public class MonoSingletonProperty<T> : MonoBehaviour, ISingleton where T : MonoSingletonProperty<T>
     {
         protected static T instance = null;
-        private static readonly object obj = new object();
+        private static readonly object Obj = new object();
 
         public static T Instance
         {

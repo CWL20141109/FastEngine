@@ -15,10 +15,10 @@ namespace FastEngine.Core
     public abstract class BuildPlatformInfo
     {
         // 自增+1
-        public int bundleVersionCode { get; set; }
+        public int BundleVersionCode { get; set; }
 
         // C++ il2cpp
-        public bool il2cpp;
+        public bool il2CPP;
     }
 
 

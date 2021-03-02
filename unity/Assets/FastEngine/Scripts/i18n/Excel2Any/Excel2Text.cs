@@ -4,16 +4,16 @@
 	{
 		public Excel2Text(ExcelReader reader)
 		{
-			FilePathUtils.DirectoryClean(AppUtils.i18nDataDirectory());
+			FilePathUtils.DirectoryClean(AppUtils.I18NDataDirectory());
 
-			for (int i = 0; i < reader.sheets.Length; i++)
+			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				var sheet = reader.sheets[i];
-				for (int l = 0; l < reader.options.languages.Count; l++)
+				var sheet = reader.Sheets[i];
+				for (int l = 0; l < reader.Options.languages.Count; l++)
 				{
-					var language = reader.options.languages[l];
+					var language = reader.Options.languages[l];
 
-					FilePathUtils.FileWriteAllText(FilePathUtils.Combine(AppUtils.i18nDataDirectory(), language.ToString(), i.ToString() + ".txt"), sheet.ToValueString(l + 1));
+					FilePathUtils.FileWriteAllText(FilePathUtils.Combine(AppUtils.I18NDataDirectory(), language.ToString(), i.ToString() + ".txt"), sheet.ToValueString(l + 1));
 				}
 			}
 		}

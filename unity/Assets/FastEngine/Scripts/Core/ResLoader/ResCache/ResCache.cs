@@ -15,7 +15,7 @@ namespace FastEngine.Core
         /// <typeparam name="string"></typeparam>
         /// <typeparam name="Res"></typeparam>
         /// <returns></returns>
-        readonly Dictionary<string, Res> resDictionary = new Dictionary<string, Res>();
+        readonly Dictionary<string, Res> _resDictionary = new Dictionary<string, Res>();
 
         /// <summary>
         /// 获取Res对象
@@ -26,7 +26,7 @@ namespace FastEngine.Core
         public Res _Get(ResData data, bool create = false)
         {
             Res res = null;
-            if (resDictionary.TryGetValue(data.poolkey, out res))
+            if (_resDictionary.TryGetValue(data.Poolkey, out res))
             {
                 res.Retain();
                 return res;
@@ -38,16 +38,16 @@ namespace FastEngine.Core
             if (res == null) return null;
 
             res.Retain();
-            resDictionary.Add(data.poolkey, res);
+            _resDictionary.Add(data.Poolkey, res);
 
             return res;
         }
 
         public void _Remove(ResData data)
         {
-            if (resDictionary.ContainsKey(data.poolkey))
+            if (_resDictionary.ContainsKey(data.Poolkey))
             {
-                resDictionary.Remove(data.poolkey);
+                _resDictionary.Remove(data.Poolkey);
             }
         }
 

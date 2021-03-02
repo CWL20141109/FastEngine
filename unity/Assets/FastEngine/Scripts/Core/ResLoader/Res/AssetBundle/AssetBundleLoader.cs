@@ -27,18 +27,18 @@ namespace FastEngine.Core
 		/// <summary>
 		/// bundle 资源
 		/// </summary>
-		protected BundleRes m_bundleRes;
-		public BundleRes bundleres { get { return m_bundleRes; } }
+		protected BundleRes mBundleRes;
+		public BundleRes Bundleres { get { return mBundleRes; } }
 
 		/// <summary>
 		/// asset 资源
 		/// </summary>
-		protected AssetRes m_assetRes;
-		public AssetRes assetRes { get { return m_assetRes; } }
+		protected AssetRes mAssetRes;
+		public AssetRes AssetRes { get { return mAssetRes; } }
 		/// <summary>
 		/// 只加载bundle
 		/// </summary>
-		protected bool m_only;
+		protected bool mOnly;
 
 		public static AssetBundleLoader Allocate(string resPath, ResNotificationListener listener)
 		{
@@ -61,7 +61,7 @@ namespace FastEngine.Core
 		/// 回收标识
 		/// </summary>
 		/// <value></value>
-		public bool isRecycled { get; set; }
+		public bool IsRecycled { get; set; }
 
 		public override bool LoadAsync()
 		{
@@ -80,14 +80,14 @@ namespace FastEngine.Core
 
 		public void Init(string bundleName, string assetName, ResNotificationListener listener)
 		{
-			m_only = string.IsNullOrEmpty(assetName);
+			mOnly = string.IsNullOrEmpty(assetName);
 
-			m_bundleRes = ResCache.Get<BundleRes>(ResData.AlloocateBundle(bundleName), true);
+			mBundleRes = ResCache.Get<BundleRes>(ResData.AlloocateBundle(bundleName), true);
 
-			if (!m_only)
-				m_assetRes = ResCache.Get<AssetRes>(ResData.AllocateAsset(assetName, bundleName), true);
+			if (!mOnly)
+				mAssetRes = ResCache.Get<AssetRes>(ResData.AllocateAsset(assetName, bundleName), true);
 
-			m_listener = listener;
+			mListener = listener;
 
 		}
 
@@ -96,7 +96,7 @@ namespace FastEngine.Core
 			throw new System.NotImplementedException();
 		}
 
-		protected override void OnReceiveNotification(bool ready, Res Res)
+		protected override void OnReceiveNotification(bool ready, Res res)
 		{
 			throw new System.NotImplementedException();
 		}

@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace FastEngine.Core
 {
-	public class i18n
+	public class I18N
 	{
-		public static SystemLanguage language { get; private set; }
-		private static Dictionary<int, string[]> modelDictionary = new Dictionary<int, string[]>();
-		private static AssetBundleLoader resLoader;
+		public static SystemLanguage Language { get; private set; }
+		private static Dictionary<int, string[]> _modelDictionary = new Dictionary<int, string[]>();
+		private static AssetBundleLoader _resLoader;
 
 		/// <summary>
 		/// 初始化
@@ -16,24 +16,24 @@ namespace FastEngine.Core
 		/// <param name="defaultLanguage"> 默认语言 </param>
 		public static void Initialize(SystemLanguage systemLanguage, SystemLanguage defaultLanguage)
 		{
-			language = systemLanguage;
+			Language = systemLanguage;
 
-			if (language == SystemLanguage.Chinese)
-				language = SystemLanguage.ChineseSimplified;
+			if (Language == SystemLanguage.Chinese)
+				Language = SystemLanguage.ChineseSimplified;
 
 			var appConfig = Config.ReadResourceDirectory<AppConfig>();
-			if (!appConfig.supportedLanuLanguages.Contains(language))
-				language = defaultLanguage;
+			if (!appConfig.supportedLanuLanguages.Contains(Language))
+				Language = defaultLanguage;
 		}
 
 		public static string Get(int model, int key)
 		{
 			string[] ls = null;
-			if (!modelDictionary.TryGetValue(model, out ls))
+			if (!_modelDictionary.TryGetValue(model, out ls))
 			{
 				BuildModel(model);
 			}
-			if (modelDictionary.TryGetValue(model, out ls))
+			if (_modelDictionary.TryGetValue(model, out ls))
 			{
 				if (key >= 0 && key < ls.Length)
 				{
@@ -46,24 +46,24 @@ namespace FastEngine.Core
 
 		static void BuildModel(int model)
 		{
-			if (modelDictionary.ContainsKey(model)) return;
+			if (_modelDictionary.ContainsKey(model)) return;
 
 			string text = "";
-			if (App.runmodel == AppRunModel.Develop)
+			if (App.Runmodel == AppRunModel.Develop)
 			{
 				bool succeed = false;
-				text = FilePathUtils.FileReadAllText(FilePathUtils.Combine(AppUtils.i18nDataDirectory(), language.ToString(), language.ToString(), model + ".txt"), out succeed);
+				text = FilePathUtils.FileReadAllText(FilePathUtils.Combine(AppUtils.I18NDataDirectory(), Language.ToString(), Language.ToString(), model + ".txt"), out succeed);
 			}
 			else
 			{
-				if (resLoader == null)
+				if (_resLoader == null)
 				{
-					resLoader = AssetBundleLoader.Allocate("language/" + language.ToString().ToLower(), null);
-					resLoader.LoadSync();
+					_resLoader = AssetBundleLoader.Allocate("language/" + Language.ToString().ToLower(), null);
+					_resLoader.LoadSync();
 				}
-				text = resLoader.bundleres.assetBundle.LoadAsset<TextAsset>(model + ".txt").text;
+				text = _resLoader.Bundleres.AssetBundle.LoadAsset<TextAsset>(model + ".txt").text;
 			}
-			modelDictionary.Add(model, text.Split('\n'));
+			_modelDictionary.Add(model, text.Split('\n'));
 		}
 	}
 }
