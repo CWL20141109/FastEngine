@@ -36,11 +36,11 @@ namespace FastEngine.Core.Excel2Table
 				Dictionary<string, object> data = new Dictionary<string, object>();
 				for (int k = 0; k < reader.Fields.Count - 1; k++)
 				{
-					_mStringBuilder.Append(WrapContext(reader.Rows[i].datas[k], reader.Types[k]));
+					_mStringBuilder.Append(WrapContext(reader.Rows[i].Datas[k], reader.Types[k]));
 					_mStringBuilder.Append(",");
 				}
 
-				_mStringBuilder.Append(WrapContext(reader.Rows[i].datas[reader.Fields.Count - 1], reader.Types[reader.Fields.Count - 1]));
+				_mStringBuilder.Append(WrapContext(reader.Rows[i].Datas[reader.Fields.Count - 1], reader.Types[reader.Fields.Count - 1]));
 				_mStringBuilder.Append("\r\n");
 			}
 
@@ -94,20 +94,20 @@ namespace FastEngine.Core.Excel2Table
 				var modelField = model.GetField(datas[0]);
 
 				var key = typeof(LanaguageKey);
-				var keyField = model.GetField(string.Format("{0}_{1}", datas[0], datas[1]));
+				var keyField = model.GetField($"{datas[0]}_{datas[1]}");
 
 				if (modelField != null && keyField != null)
 				{
-					return string.Format("{0}:{1}", (int)modelField.GetValue(null), (int)keyField.GetValue(null));
+					return $"{(int)modelField.GetValue(null)}:{(int)keyField.GetValue(null)}";
 				}
 				else
 				{
-					Debug.LogError("[" + _mReader.Options.tableName + "] table not find i18n : " + datas[0] + " : " + datas[1]);
+					Debug.LogError($"[ {_mReader.Options.TableName}] table not find i18n : {datas[0]}  : {datas[1]}");
 				}
 			}
 			else
 			{
-				Debug.LogError("[" + _mReader.Options.tableName + "] table i18n format error!");
+				Debug.LogError($"[{  _mReader.Options.TableName }] table i18n format error!");
 			}
 			return "0:0";
 		}
@@ -122,7 +122,7 @@ namespace FastEngine.Core.Excel2Table
 				result += WrapI18NContext(datas[i]) + ",";
 			}
 			result += WrapI18NContext(datas[datas.Length]);
-			return string.Format("\"{0}\"", result);
+			return $"\"{result}\"";
 		}
 	}
 }

@@ -17,50 +17,50 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string mAssetName;
+        protected string MAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string AssetName { get { return mAssetName; } }
+        public string AssetName { get { return MAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string mBundleName;
+        protected string MBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string BundleName { get { return mBundleName; } }
+        public string BundleName { get { return MBundleName; } }
 
         /// <summary>
         /// 资源类型
         /// </summary>
-        protected ResState mState;
+        protected ResState MState;
         /// <summary>
         /// 资源类型
         /// </summary>
-        public ResState State { get { return mState; } }
+        public ResState State { get { return MState; } }
 
-        public ResType mType;
-        public ResType Type { get { return mType; } }
+        public ResType MType;
+        public ResType Type { get { return MType; } }
 
         /// <summary>
         /// 资源对象
         /// </summary>
-        protected UnityEngine.Object mAsset;
+        protected UnityEngine.Object MAsset;
         /// <summary>
         /// 资源对象
         /// </summary>
-        public UnityEngine.Object Asset { get { return mAsset; } }
+        public UnityEngine.Object Asset { get { return MAsset; } }
 
         /// <summary>
         /// bundle 对象
         /// </summary>
-        protected AssetBundle mAssetBundle;
+        protected AssetBundle MAssetBundle;
         /// <summary>
         /// bundle 对象
         /// </summary>
-        public AssetBundle AssetBundle { get { return mAssetBundle; } }
+        public AssetBundle AssetBundle { get { return MAssetBundle; } }
 
         /// <summary>
         ///  资源引用计数
@@ -96,9 +96,9 @@ namespace FastEngine.Core
         /// <returns>UnityEngine.Object</returns>
         public T GetAsset<T>() where T : UnityEngine.Object
         {
-            if (mAsset == null)
+            if (MAsset == null)
                 return null;
-            return mAsset as T;
+            return MAsset as T;
         }
 
         /// <summary>

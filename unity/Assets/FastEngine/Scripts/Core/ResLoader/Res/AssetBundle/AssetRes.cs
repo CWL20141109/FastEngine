@@ -18,12 +18,12 @@ namespace FastEngine.Core
         
         public void Init(ResData data)
         {
-            mBundleName = data.BundleName;
-            mAssetName = data.AssetName;
-            mState = ResState.Waiting;
-            mType = ResType.Asset;
-            mAsset = null;
-            mAsset = null;
+            MBundleName = data.BundleName;
+            MAssetName = data.AssetName;
+            MState = ResState.Waiting;
+            MType = ResType.Asset;
+            MAsset = null;
+            MAsset = null;
         }
 
         public bool IsRecycled { get; set; }

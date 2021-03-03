@@ -18,7 +18,7 @@ namespace FastEngine.Core.Excel2Table
 				Dictionary<string, object> data = new Dictionary<string, object>();
 				for (int k = 0; k < reader.Fields.Count; k++)
 				{
-					data.Add(reader.Fields[k], reader.Rows[i].datas[k]);
+					data.Add(reader.Fields[k], reader.Rows[i].Datas[k]);
 				}
 				dataList.Add(data);
 			}

@@ -5,6 +5,6 @@ namespace FastEngine.Core.I18n
 {
     public class ExcelReaderOptions
     {
-        public List<SystemLanguage> languages;
+        public List<SystemLanguage> Languages;
     }
 }

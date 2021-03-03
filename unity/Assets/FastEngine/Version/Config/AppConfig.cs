@@ -27,7 +27,7 @@ namespace FastEngine.Core
 		/// <summary>
 		/// 支持语言
 		/// </summary>
-		public List<SystemLanguage> supportedLanuLanguages;
+		public List<SystemLanguage> SupportedLanuLanguages;
 		
 	}
 }

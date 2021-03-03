@@ -18,7 +18,7 @@ namespace FastEngine.Core
         public int BundleVersionCode { get; set; }
 
         // C++ il2cpp
-        public bool il2CPP;
+        public bool Il2CPP;
     }
 
 

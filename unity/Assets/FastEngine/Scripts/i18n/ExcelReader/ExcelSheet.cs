@@ -4,15 +4,15 @@ namespace FastEngine.Core.I18n
 {
 	public class ExcelSheet
 	{
-		public string name;
-		public ExcelColumn[] columns;
+		public string Name;
+		public ExcelColumn[] Columns;
 
 		public string ToLuaKeyString()
 		{
 			StringBuilder builder = new StringBuilder();
-			for (int i = 1; i < columns.Length; i++)
+			for (int i = 1; i < Columns.Length; i++)
 			{
-				builder.AppendLine(string.Format("\t{0}_{1} = {2},", name, columns[i].key, i - 1));
+				builder.AppendLine(string.Format("\t{0}_{1} = {2},", Name, Columns[i].Key, i - 1));
 			}
 			return builder.ToString().TrimEnd('\r', '\n');
 		}
@@ -20,9 +20,9 @@ namespace FastEngine.Core.I18n
 		public string ToCSharpKeyString()
 		{
 			StringBuilder builder = new StringBuilder();
-			for (int i = 1; i < columns.Length; i++)
+			for (int i = 1; i < Columns.Length; i++)
 			{
-				builder.AppendLine(string.Format("\tpublic static int {0}_{1} = {2};", name, columns[i].key, i - 1));
+				builder.AppendLine(string.Format("\tpublic static int {0}_{1} = {2};", Name, Columns[i].Key, i - 1));
 			}
 			return builder.ToString().TrimEnd('\r', '\n');
 		}
@@ -31,16 +31,16 @@ namespace FastEngine.Core.I18n
 		{
 			StringBuilder builder = new StringBuilder();
 
-			for (int i = 1; i < columns.Length; i++)
+			for (int i = 1; i < Columns.Length; i++)
 			{
-				builder.AppendLine(columns[i].values[index].TrimEnd('\r', '\n') + "\n");
+				builder.AppendLine(Columns[i].Values[index].TrimEnd('\r', '\n') + "\n");
 			}
 			return builder.ToString().TrimEnd('\r', '\n');
 		}
 
 		public override string ToString()
 		{
-			return "sheet name :" + name + " column count: " + columns.Length;
+			return "sheet name :" + Name + " column count: " + Columns.Length;
 		}
 	}
 }

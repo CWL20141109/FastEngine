@@ -221,8 +221,8 @@ namespace FastEngine.Editor.AssetBundle
                 if (!mapping.ContainsKey(rp))
                 {
                     var data = new AssetBundleMappingData();
-                    data.bundleName = importer.assetBundleName;
-                    data.assetName = FilePathUtils.GetFileName(filePath, true);
+                    data.BundleName = importer.assetBundleName;
+                    data.AssetName = FilePathUtils.GetFileName(filePath, true);
                     mapping.Add(rp, data);
                 }
             }

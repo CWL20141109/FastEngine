@@ -5,20 +5,20 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string mAssetName;
+        protected string MAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string AssetName { get { return mAssetName; } }
+        public string AssetName { get { return MAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string mBundleName;
+        protected string MBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string BundleName { get { return mBundleName; } }
+        public string BundleName { get { return MBundleName; } }
 
         /// <summary>
         /// 资源类型
@@ -36,11 +36,11 @@ namespace FastEngine.Core
                 switch (_mType)
                 {
                     case ResType.Resource:
-                        return mAssetName.ToLower();
+                        return MAssetName.ToLower();
                     case ResType.Bundle:
-                        return mBundleName.ToLower();
+                        return MBundleName.ToLower();
                     case ResType.Asset:
-                        return (mBundleName + mAssetName).ToLower();
+                        return (MBundleName + MAssetName).ToLower();
                     default:
                         return "";
                 }
@@ -90,8 +90,8 @@ namespace FastEngine.Core
 
         public void Init(string assetName,string bundleName,ResType type)
         {
-            mBundleName = bundleName;
-            mAssetName = assetName;
+            MBundleName = bundleName;
+            MAssetName = assetName;
             _mType = type;
         }
     }

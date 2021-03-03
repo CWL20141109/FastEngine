@@ -8,10 +8,10 @@ namespace FastEngine.Core.Excel2Table
 {
 	public abstract class Excel2Any
 	{
-		protected ExcelReader reader;
+		protected ExcelReader Reader;
 		public Excel2Any(ExcelReader reader)
 		{
-			this.reader = reader;
+			this.Reader = reader;
 		}
 	}
 }

@@ -9,21 +9,21 @@ namespace FastEngine.Core
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        protected readonly Stack<T> mStacks = new Stack<T>();
+        protected readonly Stack<T> MStacks = new Stack<T>();
 
         /// <summary>
         /// 对象池数量
         /// </summary>
         /// <value></value>
-        public int Count { get { return mStacks.Count; } }
+        public int Count { get { return MStacks.Count; } }
         /// <summary>
         /// 对象工厂
         /// </summary>
-        public IObjectFactory<T> mFactory;
+        public IObjectFactory<T> MFactory;
         /// <summary>
         /// 池默认最大数量
         /// </summary>
-        public int mMAXCount = 12;
+        public int MMAXCount = 12;
 
         /// <summary>
         /// 分配对象
@@ -31,7 +31,7 @@ namespace FastEngine.Core
         /// <returns></returns>
         public virtual T Allocate()
         {
-            return mStacks.Count == 0 ?mFactory.Create():mStacks.Pop();
+            return MStacks.Count == 0 ?MFactory.Create():MStacks.Pop();
         }
 
         public abstract bool Recycle(T obj);

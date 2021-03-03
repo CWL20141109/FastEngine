@@ -16,7 +16,7 @@ namespace FastEngine.Core.I18n
 
 			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				_mBuilder.AppendLine(string.Format("\tpublic static int {0} = {1};", reader.Sheets[i].name, i));
+				_mBuilder.AppendLine(string.Format("\tpublic static int {0} = {1};", reader.Sheets[i].Name, i));
 			}
 			_mBuilder.AppendLine("}");
 

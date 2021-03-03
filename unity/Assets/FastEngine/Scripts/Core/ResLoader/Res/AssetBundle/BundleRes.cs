@@ -9,7 +9,7 @@ namespace FastEngine.Core
     public class BundleRes : Res, IPoolObject
     {
 
-        public AssetBundleCreateRequest mRequest;
+        public AssetBundleCreateRequest MRequest;
 
         private BundleRes[] _mDependencies;
 
@@ -55,11 +55,11 @@ namespace FastEngine.Core
 
         public void Init(ResData data)
         {
-            mBundleName = data.BundleName;
-            mState = ResState.Waiting;
-            mType = ResType.Bundle;
-            mAsset = null;
-            mAssetBundle = null;
+            MBundleName = data.BundleName;
+            MState = ResState.Waiting;
+            MType = ResType.Bundle;
+            MAsset = null;
+            MAssetBundle = null;
         }
     }
 }

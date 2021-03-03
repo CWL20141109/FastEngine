@@ -71,7 +71,7 @@ namespace FastEngine.Core.Excel2Table
                                 }
                                 else
                                 {
-                                    row.datas.Add(context);
+                                    row.Datas.Add(context);
                                 }
                             }
 
@@ -84,10 +84,10 @@ namespace FastEngine.Core.Excel2Table
                                     Types = RemoveIgnore<FieldType>(Types, IgnoreIndexs);
                                     removeIgnore = true;
                                 }
-                                row.descriptions = Descriptions;
-                                row.fields = Fields;
-                                row.types = Types;
-                                row.datas = RemoveIgnore<string>(row.datas, IgnoreIndexs);
+                                row.Descriptions = Descriptions;
+                                row.Fields = Fields;
+                                row.Types = Types;
+                                row.Datas = RemoveIgnore<string>(row.Datas, IgnoreIndexs);
                                 Rows.Add(row);
                             }
                         }

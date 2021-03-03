@@ -8,7 +8,7 @@ namespace FastEngine.Core
 
         protected ObjectPool()
         {
-            mFactory = new ObjectFactory<T>();
+            MFactory = new ObjectFactory<T>();
         }
 
         public static ObjectPool<T> Instance
@@ -28,20 +28,20 @@ namespace FastEngine.Core
         /// <value></value>
         public int MAXCount
         {
-            get { return mMAXCount; }
+            get { return MMAXCount; }
             set
             {
-                mMAXCount = value;
-                if (mStacks != null)
+                MMAXCount = value;
+                if (MStacks != null)
                 {
-                    if (mMAXCount > 0)
+                    if (MMAXCount > 0)
                     {
-                        if (mMAXCount < mStacks.Count)
+                        if (MMAXCount < MStacks.Count)
                         {
-                            int removeCount = mStacks.Count - mMAXCount;
+                            int removeCount = MStacks.Count - MMAXCount;
                             while (removeCount > 0)
                             {
-                                mStacks.Pop();
+                                MStacks.Pop();
                                 --removeCount;
                             }
                         }
@@ -94,15 +94,15 @@ namespace FastEngine.Core
             if (obj == null || obj.IsRecycled)
                 return false;
 
-            if (mMAXCount > 0)
+            if (MMAXCount > 0)
             {
-                if (mStacks.Count >= mMAXCount)
+                if (MStacks.Count >= MMAXCount)
                 {
                     return false;
                 }
             }
             obj.IsRecycled = true;
-            mStacks.Push(obj);
+            MStacks.Push(obj);
 
             return true;
         }

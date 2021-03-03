@@ -22,7 +22,7 @@ namespace FastEngine.Core
 				Language = SystemLanguage.ChineseSimplified;
 
 			var appConfig = Config.ReadResourceDirectory<AppConfig>();
-			if (!appConfig.supportedLanuLanguages.Contains(Language))
+			if (!appConfig.SupportedLanuLanguages.Contains(Language))
 				Language = defaultLanguage;
 		}
 

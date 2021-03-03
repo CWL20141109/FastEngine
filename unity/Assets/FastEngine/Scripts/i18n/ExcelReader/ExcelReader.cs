@@ -29,27 +29,27 @@ namespace FastEngine.Core.I18n
 						var rowCount = dataTable.Rows.Count;
 
 						var sheet = new ExcelSheet();
-						sheet.name = dataTable.TableName;
-						sheet.columns = new ExcelColumn[rowCount];
+						sheet.Name = dataTable.TableName;
+						sheet.Columns = new ExcelColumn[rowCount];
 
-						sheet.columns[0] = new ExcelColumn();
+						sheet.Columns[0] = new ExcelColumn();
 						for (int r = 1; r < rowCount; r++)
 						{
 							var excelColumn = new ExcelColumn();
-							excelColumn.values = new string[columnCount];
+							excelColumn.Values = new string[columnCount];
 							for (int c = 0; c < columnCount; c++)
 							{
 								var context = dataTable.Rows[r][c].ToString();
 								if (c == 0)
 								{
-									excelColumn.key = context;
+									excelColumn.Key = context;
 								}
 								else
 								{
-									excelColumn.values[c] = context;
+									excelColumn.Values[c] = context;
 								}
 							}
-							sheet.columns[r] = excelColumn;
+							sheet.Columns[r] = excelColumn;
 						}
 						Sheets[i] = sheet;
 					}

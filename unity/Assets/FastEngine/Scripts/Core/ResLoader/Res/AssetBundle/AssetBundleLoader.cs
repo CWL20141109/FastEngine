@@ -27,24 +27,24 @@ namespace FastEngine.Core
 		/// <summary>
 		/// bundle 资源
 		/// </summary>
-		protected BundleRes mBundleRes;
-		public BundleRes Bundleres { get { return mBundleRes; } }
+		protected BundleRes MBundleRes;
+		public BundleRes Bundleres { get { return MBundleRes; } }
 
 		/// <summary>
 		/// asset 资源
 		/// </summary>
-		protected AssetRes mAssetRes;
-		public AssetRes AssetRes { get { return mAssetRes; } }
+		protected AssetRes MAssetRes;
+		public AssetRes AssetRes { get { return MAssetRes; } }
 		/// <summary>
 		/// 只加载bundle
 		/// </summary>
-		protected bool mOnly;
+		protected bool MOnly;
 
 		public static AssetBundleLoader Allocate(string resPath, ResNotificationListener listener)
 		{
 			var mapping = AssetBundleDB.GetMappingData(resPath);
 			var loader = ObjectPool<AssetBundleLoader>.Instance.Allocate();
-			loader.Init(mapping.bundleName, mapping.assetName, listener);
+			loader.Init(mapping.BundleName, mapping.AssetName, listener);
 			return loader;
 		}
 
@@ -80,14 +80,14 @@ namespace FastEngine.Core
 
 		public void Init(string bundleName, string assetName, ResNotificationListener listener)
 		{
-			mOnly = string.IsNullOrEmpty(assetName);
+			MOnly = string.IsNullOrEmpty(assetName);
 
-			mBundleRes = ResCache.Get<BundleRes>(ResData.AlloocateBundle(bundleName), true);
+			MBundleRes = ResCache.Get<BundleRes>(ResData.AlloocateBundle(bundleName), true);
 
-			if (!mOnly)
-				mAssetRes = ResCache.Get<AssetRes>(ResData.AllocateAsset(assetName, bundleName), true);
+			if (!MOnly)
+				MAssetRes = ResCache.Get<AssetRes>(ResData.AllocateAsset(assetName, bundleName), true);
 
-			mListener = listener;
+			MListener = listener;
 
 		}
 

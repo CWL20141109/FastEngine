@@ -5,30 +5,30 @@ namespace FastEngine.Core.I18n
 {
 	public class Excel2LuaIndex
 	{
-		public StringBuilder mBilder = new StringBuilder();
+		public StringBuilder MBilder = new StringBuilder();
 
 		public Excel2LuaIndex(ExcelReader reader)
 		{
-			mBilder.Clear();
+			MBilder.Clear();
 
 			// model
-			mBilder.AppendLine("language_model = {");
+			MBilder.AppendLine("language_model = {");
 			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				mBilder.AppendLine(string.Format("\t{0} = {1},", reader.Sheets[i].name, i));
+				MBilder.AppendLine(string.Format("\t{0} = {1},", reader.Sheets[i].Name, i));
 			}
-			mBilder.AppendLine("}");
+			MBilder.AppendLine("}");
 			
 
 			// key
-			mBilder.AppendLine("language_key = {");
+			MBilder.AppendLine("language_key = {");
 			for (int i = 0; i < reader.Sheets.Length; i++)
 			{
-				mBilder.AppendLine(reader.Sheets[i].ToLuaKeyString());
+				MBilder.AppendLine(reader.Sheets[i].ToLuaKeyString());
 			}
-			mBilder.AppendLine("}");
+			MBilder.AppendLine("}");
 
-			FilePathUtils.FileWriteAllText(FilePathUtils.Combine(Application.dataPath, "LuaScripts/language.lua"), mBilder.ToString());
+			FilePathUtils.FileWriteAllText(FilePathUtils.Combine(Application.dataPath, "LuaScripts/language.lua"), MBilder.ToString());
 		}
 	}
 }
