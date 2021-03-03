@@ -47,13 +47,13 @@ namespace FastEngine.Core.Excel2Table
 				case FieldType.String:
 					return "string";
 				case FieldType.Boolean:
-					return "i18nObject";
+					return "bool";
 				case FieldType.Vector2:
 					return "Vector2";
 				case FieldType.Vector3:
 					return "Vector3";
 				case FieldType.I18N:
-					return "i18nObject";
+					return "I18NObject";
 				case FieldType.ArrayByte:
 					return "byte[]";
 				case FieldType.ArrayInt:
@@ -72,8 +72,8 @@ namespace FastEngine.Core.Excel2Table
 					return "Vector2[]";
 				case FieldType.ArrayVector3:
 					return "Vector3[]";
-				case FieldType.Arrayi18N:
-					return "i18nObject[]";
+				case FieldType.ArrayI18N:
+					return "I18NObject[]";
 				default:
 					return "";
 			}

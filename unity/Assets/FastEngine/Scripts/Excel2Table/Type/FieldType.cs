@@ -24,7 +24,7 @@
         ArrayBoolean,
         ArrayVector2,
         ArrayVector3,
-        Arrayi18N,
+        ArrayI18N,
         Ignore,
         Unknow,
     }

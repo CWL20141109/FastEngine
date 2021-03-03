@@ -35,6 +35,11 @@ namespace FastEngine
 			return FilePathUtils.Combine(FastAssetsRootDirectory(), "Table", "Data");
 		}
 
+		public static string TableDataBundleRootDirectory()
+		{
+			return FilePathUtils.Combine("FastAssets", "Table", "Data");
+		}
+
 		/// <summary>
 		/// Table 数据对象输出目录
 		/// </summary>

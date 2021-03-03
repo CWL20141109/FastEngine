@@ -48,7 +48,7 @@ namespace FastEngine.Core
 			return loader;
 		}
 
-		public static AssetBundleLoader Allocate(string bundleName, string assetName, ResNotificationListener listener)
+		public static AssetBundleLoader Allocate(string bundleName, string assetName, string listener)
 		{
 			var loader = ObjectPool<AssetBundleLoader>.Instance.Allocate();
 			loader.Init(bundleName, assetName, listener);

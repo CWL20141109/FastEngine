@@ -1,17 +1,18 @@
 ﻿namespace FastEngine.Core
 {
-	public struct I18NObject
-	{
-		public int Model { get; }
-		public int Key { get; }
+    public struct I18NObject
+    {
+        public int Model { get; }
+        public int Key { get; }
+        private string m_text;
+        public I18NObject(int model, int key)
+        {
 
-		public I18NObject(int model, int key)
-		{
+            Model = model;
+            Key = key;
+            m_text = null;
+        }
 
-			Model = model;
-			Key = key;
-		}
-
-		public override string ToString() { return I18N.Get(Model, Key); }
-	}
+        public override string ToString() { return m_text ?? (m_text = I18N.Get(Model, Key)); }
+    }
 }

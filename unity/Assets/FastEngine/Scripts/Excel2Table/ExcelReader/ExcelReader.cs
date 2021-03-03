@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using ExcelDataReader;
+using UnityEngine;
 
 namespace FastEngine.Core.Excel2Table
 {
@@ -40,61 +41,76 @@ namespace FastEngine.Core.Excel2Table
                 using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
                     var result = reader.AsDataSet();
-                    for (int i = 0; i < reader.ResultsCount; i++)
+
+                    var dataTable = result.Tables[0];
+                    var columCount = dataTable.Columns.Count;
+                    var rowCount = dataTable.Rows.Count;
+                    bool isRun = true;
+                    int r = 0;
+                    while (isRun)
                     {
-                        var dataTable = result.Tables[i];
-                        var columCount = dataTable.Columns.Count;
-                        var rowCount = dataTable.Rows.Count;
-
-                        for (int r = 0; r < rowCount; r++)
+                        var row = new ExcelReaderRow();
+                        for (int c = 0; c < columCount; c++)
                         {
-                            var row = new ExcelReaderRow();
-                            for (int c = 0; c < columCount; c++)
-                            {
-                                var context = dataTable.Rows[r][c].ToString();
-                                if (r == 0)
-                                {
-                                    Descriptions.Add(context);
-                                }
-                                else if (r == 1)
-                                {
-                                    Fields.Add(context);
-                                }
-                                else if (r == 2)
-                                {
-                                    fieldType = TypeUtils.TypeContentToFieldType(context);
-                                    Types.Add(fieldType);
-                                    if (fieldType == FieldType.Ignore)
-                                    {
-                                        IgnoreIndexs.Add(c);
-                                    }
-                                }
-                                else
-                                {
-                                    row.Datas.Add(context);
-                                }
-                            }
+                            var context = dataTable.Rows[r][c].ToString();
 
-                            if (r > 2)
+                            if (r == 0)
                             {
-                                if (!removeIgnore)
+                                Descriptions.Add(context);
+                            }
+                            else if (r == 1)
+                            {
+                                Fields.Add(context);
+                            }
+                            else if (r == 2)
+                            {
+                                fieldType = TypeUtils.TypeContentToFieldType(context);
+                                Types.Add(fieldType);
+                                if (fieldType == FieldType.Ignore)
                                 {
-                                    Descriptions = RemoveIgnore<string>(Descriptions, IgnoreIndexs);
-                                    Fields = RemoveIgnore<string>(Fields, IgnoreIndexs);
-                                    Types = RemoveIgnore<FieldType>(Types, IgnoreIndexs);
-                                    removeIgnore = true;
+                                    IgnoreIndexs.Add(c);
                                 }
-                                row.Descriptions = Descriptions;
-                                row.Fields = Fields;
-                                row.Types = Types;
-                                row.Datas = RemoveIgnore<string>(row.Datas, IgnoreIndexs);
-                                Rows.Add(row);
+                                if (string.IsNullOrEmpty(context))
+                                {
+                                    isRun = false;
+                                }
+
+                            }
+                            else
+                            {
+                                row.Datas.Add(context);
                             }
                         }
 
+                        if (r > 2)
+                        {
+                            if (!removeIgnore)
+                            {
+                                Descriptions = RemoveIgnore<string>(Descriptions, IgnoreIndexs);
+                                Fields = RemoveIgnore<string>(Fields, IgnoreIndexs);
+                                Types = RemoveIgnore<FieldType>(Types, IgnoreIndexs);
+                                removeIgnore = true;
+                            }
+                            row.Descriptions = Descriptions;
+                            row.Fields = Fields;
+                            row.Types = Types;
+                            row.Datas = RemoveIgnore<string>(row.Datas, IgnoreIndexs);
+                            Rows.Add(row);
+                        }
+                        r++;
+                        if (r >= rowCount)
+                        {
+                            isRun = false;
+                        }
                     }
+                    // for (int r = 0; r < rowCount; r++)
+                    // {
+                    //    
+                    // }
+
                 }
             }
+
         }
 
         /// <summary>

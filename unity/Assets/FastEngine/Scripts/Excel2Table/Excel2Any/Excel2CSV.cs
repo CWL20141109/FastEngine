@@ -12,11 +12,11 @@ using UnityEngine;
 namespace FastEngine.Core.Excel2Table
 {
 
-	public class Excel2Csv : Excel2Any
+	public class Excel2CSV : Excel2Any
 	{
 		private StringBuilder _mStringBuilder = new StringBuilder();
 		private ExcelReader _mReader;
-		public Excel2Csv(ExcelReader reader) : base(reader)
+		public Excel2CSV(ExcelReader reader) : base(reader)
 		{
 			_mReader = reader;
 
@@ -76,10 +76,10 @@ namespace FastEngine.Core.Excel2Table
 						return content;
 					case FieldType.I18N:
 						return WrapI18NContext(content);
-					case FieldType.Arrayi18N:
+					case FieldType.ArrayI18N:
 						return WrapArrayI18NContext(content);
 					default:
-						return string.Format("\"{0}\"", content);
+						return $"\"{content}\"";
 				}
 			}
 		}

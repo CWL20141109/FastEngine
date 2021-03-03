@@ -49,7 +49,7 @@ namespace FastEngine.Core
 			if (_modelDictionary.ContainsKey(model)) return;
 
 			string text = "";
-			if (App.Runmodel == AppRunModel.Develop)
+			if (App.RunModel == AppRunModel.Develop)
 			{
 				bool succeed = false;
 				text = FilePathUtils.FileReadAllText(FilePathUtils.Combine(AppUtils.I18NDataDirectory(), Language.ToString(), Language.ToString(), model + ".txt"), out succeed);
