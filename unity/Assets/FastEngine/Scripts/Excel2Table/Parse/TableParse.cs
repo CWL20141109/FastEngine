@@ -63,5 +63,6 @@ namespace FastEngine.Core.Excel2Table
 		/// </summary>
 		/// <returns></returns>
 		public abstract Dictionary<int, Dictionary<int, T>> ParseInt2IntDictionary();
+		
 	}
 }

@@ -245,7 +245,7 @@ namespace FastEngine.Core.Excel2Table
 		/// </summary>
 		/// <param name="content"></param>
 		/// <returns></returns>
-		public static string[] ContentToArrayString2Value(string content)
+		public static string[] ContentToArrayStringValue(string content)
 		{
 			return string.IsNullOrEmpty(content) ? null : ContentSeparator(content, Separator);
 		}

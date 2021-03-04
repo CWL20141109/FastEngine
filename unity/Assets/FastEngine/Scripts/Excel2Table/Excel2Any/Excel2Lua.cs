@@ -82,7 +82,7 @@ namespace FastEngine.Core.Excel2Table
 
 				case FieldType.ArrayString:
 					{
-						string[] values = TypeUtils.ContentToArrayString2Value(context);
+						string[] values = TypeUtils.ContentToArrayStringValue(context);
 						int max = values.Length - 1;
 						for (int i = 0; i < max; i++)
 						{
