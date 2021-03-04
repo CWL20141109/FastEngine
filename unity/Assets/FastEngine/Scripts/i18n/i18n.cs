@@ -5,7 +5,7 @@ namespace FastEngine.Core
 {
 	public class I18N
 	{
-		public static SystemLanguage Language { get; private set; }
+		public static SystemLanguage language { get; private set; }
 		private static Dictionary<int, string[]> _modelDictionary = new Dictionary<int, string[]>();
 		private static AssetBundleLoader _resLoader;
 
@@ -16,14 +16,14 @@ namespace FastEngine.Core
 		/// <param name="defaultLanguage"> 默认语言 </param>
 		public static void Initialize(SystemLanguage systemLanguage, SystemLanguage defaultLanguage)
 		{
-			Language = systemLanguage;
+			language = systemLanguage;
 
-			if (Language == SystemLanguage.Chinese)
-				Language = SystemLanguage.ChineseSimplified;
+			if (language == SystemLanguage.Chinese)
+				language = SystemLanguage.ChineseSimplified;
 
 			var appConfig = Config.ReadResourceDirectory<AppConfig>();
-			if (!appConfig.SupportedLanuLanguages.Contains(Language))
-				Language = defaultLanguage;
+			if (!appConfig.supportedLanuLanguages.Contains(language))
+				language = defaultLanguage;
 		}
 
 		public static string Get(int model, int key)
@@ -49,19 +49,19 @@ namespace FastEngine.Core
 			if (_modelDictionary.ContainsKey(model)) return;
 
 			string text = "";
-			if (App.RunModel == AppRunModel.Develop)
+			if (App.runModel == AppRunModel.Develop)
 			{
 				bool succeed = false;
-				text = FilePathUtils.FileReadAllText(FilePathUtils.Combine(AppUtils.I18NDataDirectory(), Language.ToString(), Language.ToString(), model + ".txt"), out succeed);
+				text = FilePathUtils.FileReadAllText(FilePathUtils.Combine(AppUtils.I18NDataDirectory(), language.ToString(), language.ToString(), model + ".txt"), out succeed);
 			}
 			else
 			{
 				if (_resLoader == null)
 				{
-					_resLoader = AssetBundleLoader.Allocate("language/" + Language.ToString().ToLower(), null);
+					_resLoader = AssetBundleLoader.Allocate("language/" + language.ToString().ToLower(), null);
 					_resLoader.LoadSync();
 				}
-				text = _resLoader.Bundleres.AssetBundle.LoadAsset<TextAsset>(model + ".txt").text;
+				text = _resLoader.bundleres.assetBundle.LoadAsset<TextAsset>(model + ".txt").text;
 			}
 			_modelDictionary.Add(model, text.Split('\n'));
 		}

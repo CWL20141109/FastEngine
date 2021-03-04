@@ -31,8 +31,8 @@ namespace Table
 		//属性7
 		public Vector3 property7 { get; }
 		//属性8
-		private I18NObject _property8;
-		public string property8 { get { return _property8.ToString(); } }
+		private I18NObject _property8_I18N;
+		public string property8 { get { return _property8_I18N.ToString(); } }
 		//属性9
 		public byte[] property9 { get; }
 		//属性10
@@ -58,7 +58,7 @@ namespace Table
 
     public class TestTable : Singleton<TestTable>, ITableObject
     {
-        public string TableName { get { return "Test"; } }
+        public string tableName { get { return "Test"; } }
         public int maxCount { get { return m_tableDatas.Length; } }
         
         public DataFormatOptions dataFormatOptions = DataFormatOptions.IntDictionary;
@@ -72,16 +72,16 @@ namespace Table
             switch (dataFormatOptions)
             {
                 case DataFormatOptions.Array:
-                   // m_tableDatas = new TableParseCSV(TableName).ParseArray<TestTableData>();
+                   // m_tableDatas = new TableParseCSV(tableName).ParseArray<TestTableData>();
                     break;
                 case DataFormatOptions.IntDictionary:
-                   // m_tableDataIntDictionary = new TableParseCSV(TableName).ParseIntDictionary<TestTableData>();
+                   // m_tableDataIntDictionary = new TableParseCSV(tableName).ParseIntDictionary<TestTableData>();
                     break;
                 case DataFormatOptions.StringDictionary:
-                   // m_tableDataStringDictionary = new TableParseCSV(TableName).ParseStringDictionary<TestTableData>();
+                   // m_tableDataStringDictionary = new TableParseCSV(tableName).ParseStringDictionary<TestTableData>();
                     break;
                 case DataFormatOptions.Int2IntDictionary:
-                   // m_tableDataInt2IntDictionary = new TableParseCSV(TableName).ParseInt2IntDictionary<TestTableData>();
+                   // m_tableDataInt2IntDictionary = new TableParseCSV(tableName).ParseInt2IntDictionary<TestTableData>();
                     break;
             }
         }

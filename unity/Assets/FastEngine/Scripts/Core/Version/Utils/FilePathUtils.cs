@@ -170,13 +170,10 @@ namespace FastEngine
         {
             try
             {
-
                 FileInfo info = new FileInfo(path);
                 if (!info.Directory.Exists) info.Directory.Create();
                 if (info.Exists) info.Delete();
-
-                Debug.Log(path);
-                Debug.Log(info.Exists);
+                
                 File.WriteAllText(path, context);
 
             }

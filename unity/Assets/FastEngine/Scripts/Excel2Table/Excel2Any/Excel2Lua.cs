@@ -17,27 +17,27 @@ namespace FastEngine.Core.Excel2Table
 		public Excel2Lua(ExcelReader reader) : base(reader)
 		{
 			// descriptions
-			for (int i = 0; i < reader.Descriptions.Count; i++)
+			for (int i = 0; i < reader.descriptions.Count; i++)
 			{
-				_mStringBuilder.Append(reader.Descriptions[i] + ",");
+				_mStringBuilder.Append(reader.descriptions[i] + ",");
 			}
 			_template = _template.Replace("$descriptions$", _mStringBuilder.ToString());
 
 			// data
 			_mStringBuilder.Clear();
-			for (int i = 0; i < reader.Rows.Count; i++)
+			for (int i = 0; i < reader.rows.Count; i++)
 			{
 				_mStringBuilder.Append("\t[" + i + "] = {");
-				for (int k = 0; k < reader.Fields.Count - 1; k++)
+				for (int k = 0; k < reader.fields.Count - 1; k++)
 				{
-					_mStringBuilder.Append($"{reader.Fields[k]} = {WrapContext(reader.Rows[i].Datas[k], reader.Types[k])}, ");
+					_mStringBuilder.Append($"{reader.fields[k]} = {WrapContext(reader.rows[i].datas[k], reader.types[k])}, ");
 				}
-				_mStringBuilder.Append($"{reader.Fields[reader.Fields.Count - 1]} = {WrapContext(reader.Rows[i].Datas[reader.Fields.Count - 1], reader.Types[reader.Fields.Count - 1])}");
+				_mStringBuilder.Append($"{reader.fields[reader.fields.Count - 1]} = {WrapContext(reader.rows[i].datas[reader.fields.Count - 1], reader.types[reader.fields.Count - 1])}");
 				_mStringBuilder.Append("},\r\n");
 			}
 			_mStringBuilder.Append("}\r\n");
 			_template = _template.Replace("$line", _mStringBuilder.ToString());
-			FilePathUtils.FileWriteAllText(reader.Options.LuaOutFilePath, _template);
+			FilePathUtils.FileWriteAllText(reader.options.luaOutFilePath, _template);
 		}
 
 

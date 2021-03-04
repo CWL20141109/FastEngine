@@ -11,22 +11,22 @@ namespace FastEngine.Core
 
         public static AssetRes Allocate(ResData data)
         {
-            var res = ObjectPool<AssetRes>.Instance.Allocate();
+            var res = ObjectPool<AssetRes>.instance.Allocate();
             res.Init(data);
             return res;
         }
         
         public void Init(ResData data)
         {
-            MBundleName = data.BundleName;
-            MAssetName = data.AssetName;
-            MState = ResState.Waiting;
-            MType = ResType.Asset;
-            MAsset = null;
-            MAsset = null;
+            mBundleName = data.bundleName;
+            mAssetName = data.assetName;
+            mState = ResState.Waiting;
+            mType = ResType.Asset;
+            mAsset = null;
+            mAsset = null;
         }
 
-        public bool IsRecycled { get; set; }
+        public bool isRecycled { get; set; }
 
         public IEnumerator AsyncRun(IRunAsync async)
         {
@@ -45,7 +45,7 @@ namespace FastEngine.Core
 
         public void Recycle()
         {
-            ResCache.Remove(ResData.AllocateAsset(AssetName,BundleName));
+            ResCache.Remove(ResData.AllocateAsset(assetName,bundleName));
         }
 
         public override void Unload()

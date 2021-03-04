@@ -8,12 +8,12 @@ namespace FastEngine.Core
 
         protected ObjectPool()
         {
-            MFactory = new ObjectFactory<T>();
+            mFactory = new ObjectFactory<T>();
         }
 
-        public static ObjectPool<T> Instance
+        public static ObjectPool<T> instance
         {
-            get { return SingletonProperty<ObjectPool<T>>.Instance; }
+            get { return SingletonProperty<ObjectPool<T>>.instance; }
         }
 
         public void Dispose()
@@ -26,22 +26,22 @@ namespace FastEngine.Core
         /// 如果池中数量大于最大数，就移除多余的对象
         /// </summary>
         /// <value></value>
-        public int MAXCount
+        public int maxCount
         {
-            get { return MMAXCount; }
+            get { return mmaxCount; }
             set
             {
-                MMAXCount = value;
-                if (MStacks != null)
+                mmaxCount = value;
+                if (mStacks != null)
                 {
-                    if (MMAXCount > 0)
+                    if (mmaxCount > 0)
                     {
-                        if (MMAXCount < MStacks.Count)
+                        if (mmaxCount < mStacks.Count)
                         {
-                            int removeCount = MStacks.Count - MMAXCount;
+                            int removeCount = mStacks.Count - mmaxCount;
                             while (removeCount > 0)
                             {
-                                MStacks.Pop();
+                                mStacks.Pop();
                                 --removeCount;
                             }
                         }
@@ -57,16 +57,16 @@ namespace FastEngine.Core
         /// <param name="initCount">池对象初始数量</param>
         public void Init(int maxCount, int initCount)
         {
-            this.MAXCount = maxCount;
+            this.maxCount = maxCount;
 
             if (maxCount > 0)
             {
                 initCount = Mathf.Min(maxCount, initCount);
             }
 
-            if (Count < initCount)
+            if (count < initCount)
             {
-                for (int i = Count; i < initCount; i++)
+                for (int i = count; i < initCount; i++)
                 {
                     Recycle(new T());
                 }
@@ -80,7 +80,7 @@ namespace FastEngine.Core
         public override T Allocate()
         {
             var obj = base.Allocate();
-            obj.IsRecycled = false;
+            obj.isRecycled = false;
             return obj;
         }
 
@@ -91,18 +91,18 @@ namespace FastEngine.Core
         /// <returns></returns>
         public override bool Recycle(T obj)
         {
-            if (obj == null || obj.IsRecycled)
+            if (obj == null || obj.isRecycled)
                 return false;
 
-            if (MMAXCount > 0)
+            if (mmaxCount > 0)
             {
-                if (MStacks.Count >= MMAXCount)
+                if (mStacks.Count >= mmaxCount)
                 {
                     return false;
                 }
             }
-            obj.IsRecycled = true;
-            MStacks.Push(obj);
+            obj.isRecycled = true;
+            mStacks.Push(obj);
 
             return true;
         }

@@ -17,50 +17,50 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string MAssetName;
+        protected string mAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string AssetName { get { return MAssetName; } }
+        public string assetName { get { return mAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string MBundleName;
+        protected string mBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string BundleName { get { return MBundleName; } }
+        public string bundleName { get { return mBundleName; } }
 
         /// <summary>
         /// 资源类型
         /// </summary>
-        protected ResState MState;
+        protected ResState mState;
         /// <summary>
         /// 资源类型
         /// </summary>
-        public ResState State { get { return MState; } }
+        public ResState state { get { return mState; } }
 
-        public ResType MType;
-        public ResType Type { get { return MType; } }
+        public ResType mType;
+        public ResType type { get { return mType; } }
 
         /// <summary>
         /// 资源对象
         /// </summary>
-        protected UnityEngine.Object MAsset;
+        protected UnityEngine.Object mAsset;
         /// <summary>
         /// 资源对象
         /// </summary>
-        public UnityEngine.Object Asset { get { return MAsset; } }
+        public UnityEngine.Object asset { get { return mAsset; } }
 
         /// <summary>
         /// bundle 对象
         /// </summary>
-        protected AssetBundle MAssetBundle;
+        protected AssetBundle mAssetBundle;
         /// <summary>
         /// bundle 对象
         /// </summary>
-        public AssetBundle AssetBundle { get { return MAssetBundle; } }
+        public AssetBundle assetBundle { get { return mAssetBundle; } }
 
         /// <summary>
         ///  资源引用计数
@@ -69,7 +69,7 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源引用计数
         /// </summary>
-        public int RefCount { get { return _mRefCount; } }
+        public int refCount { get { return _mRefCount; } }
 
         /// <summary>
         /// 事件监听
@@ -96,9 +96,9 @@ namespace FastEngine.Core
         /// <returns>UnityEngine.Object</returns>
         public T GetAsset<T>() where T : UnityEngine.Object
         {
-            if (MAsset == null)
+            if (mAsset == null)
                 return null;
-            return MAsset as T;
+            return mAsset as T;
         }
 
         /// <summary>

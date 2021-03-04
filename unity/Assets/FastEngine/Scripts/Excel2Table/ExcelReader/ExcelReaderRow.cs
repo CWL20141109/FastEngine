@@ -8,26 +8,26 @@ namespace FastEngine.Core.Excel2Table
 		/// <summary>
 		/// 描述
 		/// </summary>
-		public List<string> Descriptions;
+		public List<string> descriptions;
 		/// <summary>
 		/// 字段
 		/// </summary>
-		public List<string> Fields;
+		public List<string> fields;
 		/// <summary>
 		/// 类型
 		/// </summary>
-		public List<FieldType> Types;
+		public List<FieldType> types;
 		/// <summary>
 		/// 数据
 		/// </summary>
-		public List<string> Datas;
+		public List<string> datas;
 
 		public ExcelReaderRow()
 		{
-			Descriptions = new List<string>();
-			Fields = new List<string>();
-			Types = new List<FieldType>();
-			Datas = new List<string>();
+			descriptions = new List<string>();
+			fields = new List<string>();
+			types = new List<FieldType>();
+			datas = new List<string>();
 		}
 	}
 }

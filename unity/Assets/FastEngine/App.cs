@@ -48,7 +48,7 @@ namespace FastEngine
 		/// <summary>
 		/// 运行模式
 		/// </summary>
-		public static AppRunModel RunModel { get; private set; }
+		public static AppRunModel runModel { get; private set; }
 		
 	}
 }

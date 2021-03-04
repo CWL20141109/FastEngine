@@ -13,16 +13,16 @@ namespace FastEngine.Core.Excel2Table
 		public Excel2Json(ExcelReader reader) : base(reader)
 		{
 			List<Dictionary<string, object>> dataList = new List<Dictionary<string, object>>();
-			for (int i = 0; i < reader.Rows.Count; i++)
+			for (int i = 0; i < reader.rows.Count; i++)
 			{
 				Dictionary<string, object> data = new Dictionary<string, object>();
-				for (int k = 0; k < reader.Fields.Count; k++)
+				for (int k = 0; k < reader.fields.Count; k++)
 				{
-					data.Add(reader.Fields[k], reader.Rows[i].Datas[k]);
+					data.Add(reader.fields[k], reader.rows[i].datas[k]);
 				}
 				dataList.Add(data);
 			}
-			FilePathUtils.FileWriteAllText(reader.Options.DataOutFilePath, JsonConvert.SerializeObject(dataList, Newtonsoft.Json.Formatting.Indented));
+			FilePathUtils.FileWriteAllText(reader.options.dataOutFilePath, JsonConvert.SerializeObject(dataList, Newtonsoft.Json.Formatting.Indented));
 		}
 	}
 }

@@ -7,7 +7,7 @@ namespace FastEngine.Core
     {
         public static Res Create(ResData data)
         {
-            switch (data.Type)
+            switch (data.type)
             {
                 case ResType.Bundle:
                     return BundleRes.Allocate(data);

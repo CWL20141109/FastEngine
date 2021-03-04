@@ -5,20 +5,20 @@ namespace FastEngine.Core
         /// <summary>
         ///  资源名称
         /// </summary>
-        protected string MAssetName;
+        protected string mAssetName;
         /// <summary>
         ///  资源名称
         /// </summary>
-        public string AssetName { get { return MAssetName; } }
+        public string assetName { get { return mAssetName; } }
 
         /// <summary>
         /// bundle名称
         /// </summary>
-        protected string MBundleName;
+        protected string mBundleName;
         /// <summary>
         /// bundle名称
         /// </summary>
-        public string BundleName { get { return MBundleName; } }
+        public string bundleName { get { return mBundleName; } }
 
         /// <summary>
         /// 资源类型
@@ -27,27 +27,27 @@ namespace FastEngine.Core
         /// <summary>
         /// 资源类型
         /// </summary>
-        public ResType Type { get { return _mType; } }
+        public ResType type { get { return _mType; } }
 
-        public string Poolkey
+        public string poolkey
         {
             get
             {
                 switch (_mType)
                 {
                     case ResType.Resource:
-                        return MAssetName.ToLower();
+                        return mAssetName.ToLower();
                     case ResType.Bundle:
-                        return MBundleName.ToLower();
+                        return mBundleName.ToLower();
                     case ResType.Asset:
-                        return (MBundleName + MAssetName).ToLower();
+                        return (mBundleName + mAssetName).ToLower();
                     default:
                         return "";
                 }
             }
         }
 
-        public bool IsRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        public bool isRecycled { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
         
         /// <summary>
         /// bundleRes
@@ -79,19 +79,19 @@ namespace FastEngine.Core
         /// <returns></returns>
         private static ResData Allocate(string assetName,string bundleName,ResType type)
         {
-            var data = ObjectPool<ResData>.Instance.Allocate();
+            var data = ObjectPool<ResData>.instance.Allocate();
             data.Init(assetName,bundleName,type);
             return data;
         }
         public void Recycle()
         {
-            ObjectPool<ResData>.Instance.Recycle(this);
+            ObjectPool<ResData>.instance.Recycle(this);
         }
 
         public void Init(string assetName,string bundleName,ResType type)
         {
-            MBundleName = bundleName;
-            MAssetName = assetName;
+            mBundleName = bundleName;
+            mAssetName = assetName;
             _mType = type;
         }
     }

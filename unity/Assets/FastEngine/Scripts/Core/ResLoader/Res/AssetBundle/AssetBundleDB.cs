@@ -14,11 +14,11 @@ namespace FastEngine.Core
         /// <summary>
         /// bundle 名字
         /// </summary>
-        public string BundleName;
+        public string bundleName;
         /// <summary>
         /// res 名字
         /// </summary>
-        public string AssetName;
+        public string assetName;
     }
     public class AssetBundleDB
     {

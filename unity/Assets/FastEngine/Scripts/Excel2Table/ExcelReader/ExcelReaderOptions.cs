@@ -7,9 +7,9 @@ namespace FastEngine.Core.Excel2Table
     /// </summary>
     public enum FormatOptions
     {
-        Csv,
-        Json,
-        Lua,
+        CSV,
+        JSON,
+        LUA,
     }
 
     /// <summary>
@@ -28,53 +28,53 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// 导出格式
         /// </summary>
-        public FormatOptions OutFormatOptions;
+        public FormatOptions outFormatOptions;
         /// <summary>
         /// 数据格式
         /// </summary>
-        public DataFormatOptions DataFormatOptions;
+        public DataFormatOptions dataFormatOptions;
         /// <summary>
         /// 表名字
         /// </summary>
-        public string TableName;
+        public string tableName;
         /// <summary>
         /// tableModel 的命名空间
         /// </summary>
-        public string TableModelNamespace;
+        public string tableModelNamespace;
         /// <summary>
         /// 数据文件输出目录
         /// </summary>
-        public string DataOutDirectory;
+        public string dataOutDirectory;
         /// <summary>
         /// tableModel 文件输出目录
         /// </summary>
-        public string TableModelOutDirectory;
+        public string tableModelOutDirectory;
         /// <summary>
         /// lua 文件输出目录
         /// </summary>
-        public string LuaOutDirectory;
+        public string luaOutDirectory;
 
         /// <summary>
         /// 数据文件输出路径
         /// </summary>
-        public string DataOutFilePath
+        public string dataOutFilePath
         {
             get
             {
-                if (OutFormatOptions == FormatOptions.Csv) return FilePathUtils.Combine(DataOutDirectory, TableName + ".csv");
-                else return FilePathUtils.Combine(DataOutDirectory, TableName + ".csv");
+                if (outFormatOptions == FormatOptions.CSV) return FilePathUtils.Combine(dataOutDirectory, tableName + ".csv");
+                else return FilePathUtils.Combine(dataOutDirectory, tableName + ".csv");
             }
         }
 
         /// <summary>
         /// table model  文件输出路径
         /// </summary>
-        public string TableModelOutFilePath { get { return FilePathUtils.Combine(TableModelOutDirectory, TableName + "Table.cs"); } }
+        public string tableModelOutFilePath { get { return FilePathUtils.Combine(tableModelOutDirectory, tableName + "Table.cs"); } }
 
         /// <summary>
         /// lua 文件输出路径
         /// </summary>
-        public string LuaOutFilePath { get { return FilePathUtils.Combine(LuaOutDirectory, TableName + ".lua"); } }
+        public string luaOutFilePath { get { return FilePathUtils.Combine(luaOutDirectory, tableName + ".lua"); } }
 
     }
 }

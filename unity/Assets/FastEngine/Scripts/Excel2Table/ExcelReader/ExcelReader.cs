@@ -8,30 +8,30 @@ namespace FastEngine.Core.Excel2Table
     public class ExcelReader
     {
         private string _mFilePath;
-        public ExcelReaderOptions Options { get; private set; }
-        public List<string> Descriptions { get; set; }
-        public List<string> Fields { get; private set; }
-        public List<FieldType> Types { get; private set; }
-        public List<int> IgnoreIndexs { get; private set; }
-        public List<ExcelReaderRow> Rows { get; private set; }
+        public ExcelReaderOptions options { get; private set; }
+        public List<string> descriptions { get; set; }
+        public List<string> fields { get; private set; }
+        public List<FieldType> types { get; private set; }
+        public List<int> ignoreIndexs { get; private set; }
+        public List<ExcelReaderRow> rows { get; private set; }
         public ExcelReader(string filePath, ExcelReaderOptions options)
         {
             _mFilePath = filePath;
-            this.Options = options;
-            Descriptions = new List<string>();
-            Fields = new List<string>();
-            Types = new List<FieldType>();
-            IgnoreIndexs = new List<int>();
-            Rows = new List<ExcelReaderRow>();
+            this.options = options;
+            descriptions = new List<string>();
+            fields = new List<string>();
+            types = new List<FieldType>();
+            ignoreIndexs = new List<int>();
+            rows = new List<ExcelReaderRow>();
         }
 
         public void Read()
         {
-            Descriptions.Clear();
-            Fields.Clear();
-            Types.Clear();
-            IgnoreIndexs.Clear();
-            Rows.Clear();
+            descriptions.Clear();
+            fields.Clear();
+            types.Clear();
+            ignoreIndexs.Clear();
+            rows.Clear();
 
             FieldType fieldType;
             bool removeIgnore = false;
@@ -56,19 +56,19 @@ namespace FastEngine.Core.Excel2Table
 
                             if (r == 0)
                             {
-                                Descriptions.Add(context);
+                                descriptions.Add(context);
                             }
                             else if (r == 1)
                             {
-                                Fields.Add(context);
+                                fields.Add(context);
                             }
                             else if (r == 2)
                             {
                                 fieldType = TypeUtils.TypeContentToFieldType(context);
-                                Types.Add(fieldType);
+                                types.Add(fieldType);
                                 if (fieldType == FieldType.Ignore)
                                 {
-                                    IgnoreIndexs.Add(c);
+                                    ignoreIndexs.Add(c);
                                 }
                                 if (string.IsNullOrEmpty(context))
                                 {
@@ -78,7 +78,7 @@ namespace FastEngine.Core.Excel2Table
                             }
                             else
                             {
-                                row.Datas.Add(context);
+                                row.datas.Add(context);
                             }
                         }
 
@@ -86,16 +86,16 @@ namespace FastEngine.Core.Excel2Table
                         {
                             if (!removeIgnore)
                             {
-                                Descriptions = RemoveIgnore<string>(Descriptions, IgnoreIndexs);
-                                Fields = RemoveIgnore<string>(Fields, IgnoreIndexs);
-                                Types = RemoveIgnore<FieldType>(Types, IgnoreIndexs);
+                                descriptions = RemoveIgnore<string>(descriptions, ignoreIndexs);
+                                fields = RemoveIgnore<string>(fields, ignoreIndexs);
+                                types = RemoveIgnore<FieldType>(types, ignoreIndexs);
                                 removeIgnore = true;
                             }
-                            row.Descriptions = Descriptions;
-                            row.Fields = Fields;
-                            row.Types = Types;
-                            row.Datas = RemoveIgnore<string>(row.Datas, IgnoreIndexs);
-                            Rows.Add(row);
+                            row.descriptions = descriptions;
+                            row.fields = fields;
+                            row.types = types;
+                            row.datas = RemoveIgnore<string>(row.datas, ignoreIndexs);
+                            rows.Add(row);
                         }
                         r++;
                         if (r >= rowCount)

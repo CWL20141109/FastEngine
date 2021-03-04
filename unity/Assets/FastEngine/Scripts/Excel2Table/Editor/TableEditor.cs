@@ -26,28 +26,28 @@ namespace FastEngine.Editor.Excel2Table
             FilePathUtils.DirectoryClean(AppUtils.TableDataDirectory());
             FilePathUtils.DirectoryClean(AppUtils.TableObjectDireDirectory());
 
-            tableConfig.TableDictionary.ForEach((item) =>
+            tableConfig.tableDictionary.ForEach((item) =>
             {
-                Debug.Log("[Excel To Table] Generate : " + item.Value.TableName);
+                Debug.Log("[Excel To Table] Generate : " + item.Value.tableName);
                 // I18n.LocalizationEditor.Generate();
                 var options = new ExcelReaderOptions();
-                options.TableName = item.Value.TableName;
-                options.TableModelNamespace = tableConfig.TableModelNamespace;
-                options.OutFormatOptions = tableConfig.OutFormatOptions;
-                options.DataFormatOptions = item.Value.DataFormatOptions;
-                options.DataOutDirectory = AppUtils.TableDataDirectory();
-                options.TableModelOutDirectory = AppUtils.TableObjectDireDirectory();
-                var reader = new ExcelReader($"{AppUtils.TableExcelDirectory()}/{item.Value.TableName}.xlsx", options);
+                options.tableName = item.Value.tableName;
+                options.tableModelNamespace = tableConfig.tableModelNamespace;
+                options.outFormatOptions = tableConfig.outFormatOptions;
+                options.dataFormatOptions = item.Value.dataFormatOptions;
+                options.dataOutDirectory = AppUtils.TableDataDirectory();
+                options.tableModelOutDirectory = AppUtils.TableObjectDireDirectory();
+                var reader = new ExcelReader($"{AppUtils.TableExcelDirectory()}/{item.Value.tableName}.xlsx", options);
                 reader.Read();
-                switch (tableConfig.OutFormatOptions)
+                switch (tableConfig.outFormatOptions)
                 {
-                    case FormatOptions.Csv:
-                        new Excel2CSV(reader);
+                    case FormatOptions.CSV:
+                        new Excel2Csv(reader);
                         break;
-                    case FormatOptions.Json:
+                    case FormatOptions.JSON:
                         new Excel2Json(reader);
                         break;
-                    case FormatOptions.Lua:
+                    case FormatOptions.LUA:
                         new Excel2Lua(reader);
                         break;
                 }

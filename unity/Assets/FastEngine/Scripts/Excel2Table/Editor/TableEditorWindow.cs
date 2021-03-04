@@ -31,27 +31,27 @@ namespace FastEngine.Editor.Excel2Table
 				{
 					var fileName = FilePathUtils.GetFileName(files[i], false);
 					fileHashSet.Add(fileName);
-					if (!m_table.TableDictionary.ContainsKey(fileName))
+					if (!m_table.tableDictionary.ContainsKey(fileName))
 					{
 						var item = new TableItem();
-						item.TableName = fileName;
-						item.DataFormatOptions = DataFormatOptions.Array;
-						m_table.TableDictionary.Add(fileName, item);
+						item.tableName = fileName;
+						item.dataFormatOptions = DataFormatOptions.Array;
+						m_table.tableDictionary.Add(fileName, item);
 					}
 				}
 
 				List<string> removes = new List<string>();
-				m_table.TableDictionary.ForEach((item) =>
+				m_table.tableDictionary.ForEach((item) =>
 				{
-					if (!fileHashSet.Contains(item.Value.TableName))
+					if (!fileHashSet.Contains(item.Value.tableName))
 					{
-						removes.Add(item.Value.TableName);
+						removes.Add(item.Value.tableName);
 					}
 				});
 
 				for (int i = 0; i < removes.Count; i++)
 				{
-					m_table.TableDictionary.Remove(removes[i]);
+					m_table.tableDictionary.Remove(removes[i]);
 				}
 			}
 		}
@@ -77,15 +77,15 @@ namespace FastEngine.Editor.Excel2Table
 
 			EditorGUILayout.BeginVertical("box");
 			GUILayout.Label("Out Format");
-			m_table.OutFormatOptions = (FormatOptions)EditorGUILayout.EnumPopup("", m_table.OutFormatOptions);
+			m_table.outFormatOptions = (FormatOptions)EditorGUILayout.EnumPopup("", m_table.outFormatOptions);
 			EditorGUILayout.EndVertical();
 
 			EditorGUILayout.BeginVertical("box");
 			GUILayout.Label("Table Object Namespace");
-			m_table.TableModelNamespace = EditorGUILayout.TextField(m_table.TableModelNamespace);
-			if (string.IsNullOrEmpty(m_table.TableModelNamespace))
+			m_table.tableModelNamespace = EditorGUILayout.TextField(m_table.tableModelNamespace);
+			if (string.IsNullOrEmpty(m_table.tableModelNamespace))
 			{
-				m_table.TableModelNamespace = "Table";
+				m_table.tableModelNamespace = "Table";
 			}
 			EditorGUILayout.EndHorizontal();
 
@@ -94,14 +94,14 @@ namespace FastEngine.Editor.Excel2Table
 			m_scrollPosition = EditorGUILayout.BeginScrollView(m_scrollPosition);
 			EditorGUILayout.BeginVertical("box");
 
-			m_table.TableDictionary.ForEach((item) =>
+			m_table.tableDictionary.ForEach((item) =>
 			{
 				EditorGUILayout.BeginVertical("box");
-				GUILayout.Label("Table : " + item.Value.TableName);
+				GUILayout.Label("Table : " + item.Value.tableName);
 
 				EditorGUILayout.BeginVertical("box");
 				GUILayout.Label("Access To Data");
-				item.Value.DataFormatOptions = (DataFormatOptions)EditorGUILayout.EnumPopup("", item.Value.DataFormatOptions);
+				item.Value.dataFormatOptions = (DataFormatOptions)EditorGUILayout.EnumPopup("", item.Value.dataFormatOptions);
 				EditorGUILayout.EndVertical();
 				EditorGUILayout.EndVertical();
 			});

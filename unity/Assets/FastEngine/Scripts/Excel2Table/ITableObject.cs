@@ -7,6 +7,6 @@ namespace FastEngine.Core.Excel2Table
     /// </summary>
     public interface ITableObject
     {
-        string TableName { get; }
+        string tableName { get; }
     }
 }

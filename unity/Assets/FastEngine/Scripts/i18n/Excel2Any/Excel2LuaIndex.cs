@@ -5,30 +5,30 @@ namespace FastEngine.Core.I18n
 {
 	public class Excel2LuaIndex
 	{
-		public StringBuilder MBilder = new StringBuilder();
+		public StringBuilder mBilder = new StringBuilder();
 
 		public Excel2LuaIndex(ExcelReader reader)
 		{
-			MBilder.Clear();
+			mBilder.Clear();
 
 			// model
-			MBilder.AppendLine("language_model = {");
-			for (int i = 0; i < reader.Sheets.Length; i++)
+			mBilder.AppendLine("language_model = {");
+			for (int i = 0; i < reader.sheets.Length; i++)
 			{
-				MBilder.AppendLine(string.Format("\t{0} = {1},", reader.Sheets[i].Name, i));
+				mBilder.AppendLine(string.Format("\t{0} = {1},", reader.sheets[i].name, i));
 			}
-			MBilder.AppendLine("}");
+			mBilder.AppendLine("}");
 			
 
 			// key
-			MBilder.AppendLine("language_key = {");
-			for (int i = 0; i < reader.Sheets.Length; i++)
+			mBilder.AppendLine("language_key = {");
+			for (int i = 0; i < reader.sheets.Length; i++)
 			{
-				MBilder.AppendLine(reader.Sheets[i].ToLuaKeyString());
+				mBilder.AppendLine(reader.sheets[i].ToLuaKeyString());
 			}
-			MBilder.AppendLine("}");
+			mBilder.AppendLine("}");
 
-			FilePathUtils.FileWriteAllText(FilePathUtils.Combine(Application.dataPath, "LuaScripts/language.lua"), MBilder.ToString());
+			FilePathUtils.FileWriteAllText(FilePathUtils.Combine(Application.dataPath, "LuaScripts/language.lua"), mBilder.ToString());
 		}
 	}
 }

@@ -34,20 +34,20 @@ namespace FastEngine.Editor.I18n
 
 			if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Plus")))
 			{
-				config.Languages.Add(SystemLanguage.Unknown);
+				config.languages.Add(SystemLanguage.Unknown);
 			}
 			EditorGUILayout.EndHorizontal();
 
 			_scrollPosition = EditorGUILayout.BeginScrollView(_scrollPosition);
 
-			for (int i = 0; i < config.Languages.Count; i++)
+			for (int i = 0; i < config.languages.Count; i++)
 			{
 				EditorGUILayout.BeginVertical("box");
 				EditorGUILayout.BeginHorizontal();
-				config.Languages[i] = (SystemLanguage)EditorGUILayout.EnumPopup("", config.Languages[i]);
+				config.languages[i] = (SystemLanguage)EditorGUILayout.EnumPopup("", config.languages[i]);
 				if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Minus")))
 				{
-					config.Languages.RemoveAt(i);
+					config.languages.RemoveAt(i);
 					break;
 				}
 				EditorGUILayout.EndHorizontal();

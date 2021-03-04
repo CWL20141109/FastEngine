@@ -6,7 +6,7 @@ namespace FastEngine
 
         private static readonly object Obj = new object();
 
-        public static T Instance
+        public static T instance
         {
             get
             {

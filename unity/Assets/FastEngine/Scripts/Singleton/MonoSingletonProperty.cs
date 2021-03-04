@@ -4,29 +4,29 @@ namespace FastEngine
 {
     public class MonoSingletonProperty<T> : MonoBehaviour, ISingleton where T : MonoSingletonProperty<T>
     {
-        protected static T instance = null;
+        protected static T _instance = null;
         private static readonly object Obj = new object();
 
-        public static T Instance
+        public static T instance
         {
             get
             {
-                if (null == instance)
+                if (null == _instance)
                 {
-                    instance = MonoSingletonCreator.CreateMonoSingleton<T>();
+                    _instance = MonoSingletonCreator.CreateMonoSingleton<T>();
                 }
-                return MonoSingletonProperty<T>.instance;
+                return _instance;
             }
         }
 
-        private void Awake() { this.InitializeSingleton(); }
+        private void Awake() { InitializeSingleton(); }
 
         public virtual void InitializeSingleton() { }
 
         public void Dispose()
         {
             GameObject.Destroy(instance.gameObject);
-            instance = null;
+            _instance = null;
         }
     }
 }

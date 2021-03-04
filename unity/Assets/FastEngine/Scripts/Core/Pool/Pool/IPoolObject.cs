@@ -9,7 +9,7 @@
         /// 回收标识
         /// </summary>
         /// <value></value>
-        bool IsRecycled { get; set; }
+        bool isRecycled { get; set; }
         /// <summary>
         /// 回收
         /// </summary>

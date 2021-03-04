@@ -6,13 +6,13 @@ namespace FastEngine.Core
 {
     public class I18NConfig : ConfigObject
     {
-        public List<SystemLanguage> Languages { get; set; }
+        public List<SystemLanguage> languages { get; set; }
 
         protected override void OnInitialize()
         {
-            if (Languages == null)
+            if (languages == null)
             {
-                Languages = new List<SystemLanguage>();
+                languages = new List<SystemLanguage>();
             }
         }
     }

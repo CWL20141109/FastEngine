@@ -12,39 +12,47 @@ using UnityEngine;
 namespace FastEngine.Core.Excel2Table
 {
 
-	public class Excel2CSV : Excel2Any
+	public class Excel2Csv : Excel2Any
 	{
 		private StringBuilder _mStringBuilder = new StringBuilder();
 		private ExcelReader _mReader;
-		public Excel2CSV(ExcelReader reader) : base(reader)
+		public Excel2Csv(ExcelReader reader) : base(reader)
 		{
 			_mReader = reader;
 
 			// fields
 			_mStringBuilder.Clear();
-			for (int i = 0; i < reader.Fields.Count - 1; i++)
+			for (int i = 0; i < reader.fields.Count - 1; i++)
 			{
-				_mStringBuilder.Append(reader.Fields[i]);
+				if (reader.types[i] == FieldType.I18N)
+				{
+					_mStringBuilder.Append($"_{reader.fields[i]}_I18N");
+				}
+				else
+				{
+					_mStringBuilder.Append(reader.fields[i]);
+				}
+				
 				_mStringBuilder.Append(",");
 			}
-			_mStringBuilder.Append(reader.Fields[reader.Fields.Count - 1]);
+			_mStringBuilder.Append(reader.fields[reader.fields.Count - 1]);
 			_mStringBuilder.Append("\r\n");
 
 			// data
-			for (int i = 0; i < reader.Rows.Count - 1; i++)
+			for (int i = 0; i < reader.rows.Count - 1; i++)
 			{
 				Dictionary<string, object> data = new Dictionary<string, object>();
-				for (int k = 0; k < reader.Fields.Count - 1; k++)
+				for (int k = 0; k < reader.fields.Count - 1; k++)
 				{
-					_mStringBuilder.Append(WrapContext(reader.Rows[i].Datas[k], reader.Types[k]));
+					_mStringBuilder.Append(WrapContext(reader.rows[i].datas[k], reader.types[k]));
 					_mStringBuilder.Append(",");
 				}
 
-				_mStringBuilder.Append(WrapContext(reader.Rows[i].Datas[reader.Fields.Count - 1], reader.Types[reader.Fields.Count - 1]));
+				_mStringBuilder.Append(WrapContext(reader.rows[i].datas[reader.fields.Count - 1], reader.types[reader.fields.Count - 1]));
 				_mStringBuilder.Append("\r\n");
 			}
 
-			FilePathUtils.FileWriteAllText(reader.Options.DataOutFilePath, _mStringBuilder.ToString());
+			FilePathUtils.FileWriteAllText(reader.options.dataOutFilePath, _mStringBuilder.ToString());
 		}
 
 		private string WrapContext(string content, FieldType type)
@@ -102,12 +110,12 @@ namespace FastEngine.Core.Excel2Table
 				}
 				else
 				{
-					Debug.LogError($"[ {_mReader.Options.TableName}] table not find i18n : {datas[0]}  : {datas[1]}");
+					Debug.LogError($"[ {_mReader.options.tableName}] table not find i18n : {datas[0]}  : {datas[1]}");
 				}
 			}
 			else
 			{
-				Debug.LogError($"[{  _mReader.Options.TableName }] table i18n format error!");
+				Debug.LogError($"[{  _mReader.options.tableName }] table i18n format error!");
 			}
 			return "0:0";
 		}

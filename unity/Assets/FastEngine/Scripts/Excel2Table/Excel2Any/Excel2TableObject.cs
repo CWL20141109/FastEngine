@@ -7,9 +7,9 @@
 using System.Text;
 namespace FastEngine.Core.Excel2Table
 {
-    public class Excel2TableObject : Excel2Any
-    {
-        private string _template = @"// FastEngine
+	public class Excel2TableObject : Excel2Any
+	{
+		private string _template = @"// FastEngine
 // excel2table auto generate
 
 using System.Collections;
@@ -28,7 +28,7 @@ $variable$
 
     public class $tableName$Table : Singleton<$tableName$Table>, ITableObject
     {
-        public string TableName { get { return $tableNameStr$; } }
+        public string tableName { get { return $tableNameStr$; } }
         public int maxCount { get { return m_tableDatas.Length; } }
         
         public DataFormatOptions dataFormatOptions = DataFormatOptions.$dataFormat$;
@@ -42,16 +42,16 @@ $variable$
             switch (dataFormatOptions)
             {
                 case DataFormatOptions.Array:
-                   // m_tableDatas = new TableParseCSV(TableName).ParseArray<$tableName$TableData>();
+                   // m_tableDatas = new TableParseCSV(tableName).ParseArray<$tableName$TableData>();
                     break;
                 case DataFormatOptions.IntDictionary:
-                   // m_tableDataIntDictionary = new TableParseCSV(TableName).ParseIntDictionary<$tableName$TableData>();
+                   // m_tableDataIntDictionary = new TableParseCSV(tableName).ParseIntDictionary<$tableName$TableData>();
                     break;
                 case DataFormatOptions.StringDictionary:
-                   // m_tableDataStringDictionary = new TableParseCSV(TableName).ParseStringDictionary<$tableName$TableData>();
+                   // m_tableDataStringDictionary = new TableParseCSV(tableName).ParseStringDictionary<$tableName$TableData>();
                     break;
                 case DataFormatOptions.Int2IntDictionary:
-                   // m_tableDataInt2IntDictionary = new TableParseCSV(TableName).ParseInt2IntDictionary<$tableName$TableData>();
+                   // m_tableDataInt2IntDictionary = new TableParseCSV(tableName).ParseInt2IntDictionary<$tableName$TableData>();
                     break;
             }
         }
@@ -115,47 +115,47 @@ $variable$
             return null;
         }
 
-        public static $tableName$TableData GetIndexData(int index) { return Instance._GetIndexData(index); }
-        public static $tableName$TableData GetKeyData(int key) { return Instance._GetKeyData(key); }
-        public static $tableName$TableData GetKeyData(string key) { return Instance._GetKeyData(key); }
-        public static $tableName$TableData GetKeyData(int key1, int key2) { return Instance._GetKeyData(key1, key2); }
+        public static $tableName$TableData GetIndexData(int index) { return instance._GetIndexData(index); }
+        public static $tableName$TableData GetKeyData(int key) { return instance._GetKeyData(key); }
+        public static $tableName$TableData GetKeyData(string key) { return instance._GetKeyData(key); }
+        public static $tableName$TableData GetKeyData(int key1, int key2) { return instance._GetKeyData(key1, key2); }
     }
 }";
 
-        private StringBuilder _mStringBuilder = new StringBuilder();
-        public Excel2TableObject(ExcelReader reader) : base(reader)
-        {
-            if (string.IsNullOrEmpty(reader.Options.TableModelNamespace))
-            {
-                reader.Options.TableName = "Table";
-            }
+		private StringBuilder _mStringBuilder = new StringBuilder();
+		public Excel2TableObject(ExcelReader reader) : base(reader)
+		{
+			if (string.IsNullOrEmpty(reader.options.tableModelNamespace))
+			{
+				reader.options.tableName = "Table";
+			}
 
-            _template = _template.Replace("$namespace$", reader.Options.TableModelNamespace);
-            _template = _template.Replace("$tableName$", reader.Options.TableName);
-            _template = _template.Replace("$tableNameStr$", $"\"{reader.Options.TableName}\"");
-            _template = _template.Replace("$dataFormat$", reader.Options.DataFormatOptions.ToString());
-            _template = _template.Replace("$GetIndexDataError$", $"Debug.LogError(\"[{reader.Options.TableName}Table] DataFormatOptions: {DataFormatOptions.Array.ToString()}. Please use the GetKeyData(index)\");");
-            _template = _template.Replace("$GetIntKeyDataError$", $"Debug.LogError(\"[{reader.Options.TableName}Table] DataFormatOptions: {DataFormatOptions.IntDictionary.ToString()}. Please use the GetKeyData(int-key)\");");
-            _template = _template.Replace("$GetStringKeyDataError$", $"Debug.LogError(\"[{reader.Options.TableName}Table] DataFormatOptions: {DataFormatOptions.StringDictionary.ToString()}. Please use the GetKeyData(string-key)\");");
-            _template = _template.Replace("$GetInt2IntKeyDataError$", $"Debug.LogError(\"[{reader.Options.TableName}Table] DataFormatOptions: {DataFormatOptions.Int2IntDictionary.ToString()}. Please use the GetKeyData(int-key, int-key)\");");
+			_template = _template.Replace("$namespace$", reader.options.tableModelNamespace);
+			_template = _template.Replace("$tableName$", reader.options.tableName);
+			_template = _template.Replace("$tableNameStr$", $"\"{reader.options.tableName}\"");
+			_template = _template.Replace("$dataFormat$", reader.options.dataFormatOptions.ToString());
+			_template = _template.Replace("$GetIndexDataError$", $"Debug.LogError(\"[{reader.options.tableName}Table] DataFormatOptions: {DataFormatOptions.Array.ToString()}. Please use the GetKeyData(index)\");");
+			_template = _template.Replace("$GetIntKeyDataError$", $"Debug.LogError(\"[{reader.options.tableName}Table] DataFormatOptions: {DataFormatOptions.IntDictionary.ToString()}. Please use the GetKeyData(int-key)\");");
+			_template = _template.Replace("$GetStringKeyDataError$", $"Debug.LogError(\"[{reader.options.tableName}Table] DataFormatOptions: {DataFormatOptions.StringDictionary.ToString()}. Please use the GetKeyData(string-key)\");");
+			_template = _template.Replace("$GetInt2IntKeyDataError$", $"Debug.LogError(\"[{reader.options.tableName}Table] DataFormatOptions: {DataFormatOptions.Int2IntDictionary.ToString()}. Please use the GetKeyData(int-key, int-key)\");");
 
-            _mStringBuilder.Clear();
-            for (int i = 0; i < reader.Fields.Count; i++)
-            {
-                _mStringBuilder.AppendLine($"\t\t//{reader.Descriptions[i]}");
+			_mStringBuilder.Clear();
+			for (int i = 0; i < reader.fields.Count; i++)
+			{
+				_mStringBuilder.AppendLine($"\t\t//{reader.descriptions[i]}");
 
-                if (reader.Types[i] == FieldType.I18N)
-                {
-                    _mStringBuilder.AppendLine($"\t\tprivate {TypeUtils.FieldTypeToTypeContent(reader.Types[i])} _{reader.Fields[i]};");
-                    _mStringBuilder.AppendLine($"\t\tpublic string {reader.Fields[i]} {{ get {{ return _{reader.Fields[i]}.ToString(); }} }}");
-                }
-                else
-                {
-                    _mStringBuilder.AppendLine($"\t\tpublic {TypeUtils.FieldTypeToTypeContent(reader.Types[i])} {reader.Fields[i]} {{ get; }}");
-                }
-            }
-            _template = _template.Replace("$variable$", _mStringBuilder.ToString());
-            FilePathUtils.FileWriteAllText(reader.Options.TableModelOutFilePath, _template);
-        }
-    }
+				if (reader.types[i] == FieldType.I18N)
+				{
+					_mStringBuilder.AppendLine($"\t\tprivate {TypeUtils.FieldTypeToTypeContent(reader.types[i])} _{reader.fields[i]}_I18N;");
+					_mStringBuilder.AppendLine($"\t\tpublic string {reader.fields[i]} {{ get {{ return _{reader.fields[i]}_I18N.ToString(); }} }}");
+				}
+				else
+				{
+					_mStringBuilder.AppendLine($"\t\tpublic {TypeUtils.FieldTypeToTypeContent(reader.types[i])} {reader.fields[i]} {{ get; }}");
+				}
+			}
+			_template = _template.Replace("$variable$", _mStringBuilder.ToString());
+			FilePathUtils.FileWriteAllText(reader.options.tableModelOutFilePath, _template);
+		}
+	}
 }

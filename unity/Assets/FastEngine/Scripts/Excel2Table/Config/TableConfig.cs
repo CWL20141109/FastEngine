@@ -12,11 +12,11 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// 数据表名称
         /// </summary>
-        public string TableName { get; set; }
+        public string tableName { get; set; }
         /// <summary>
         /// 数据格式
         /// </summary>
-        public DataFormatOptions DataFormatOptions { get; set; }
+        public DataFormatOptions dataFormatOptions { get; set; }
     }
     
     public class TableConfig : ConfigObject
@@ -24,21 +24,21 @@ namespace FastEngine.Core.Excel2Table
         /// <summary>
         /// 导出格式
         /// </summary>
-        public FormatOptions OutFormatOptions;
+        public FormatOptions outFormatOptions;
         /// <summary>
         /// tableModel 命名空间
         /// </summary>
-        public string TableModelNamespace { get; set; }
+        public string tableModelNamespace { get; set; }
         /// <summary>
         /// 数据表
         /// </summary>
-        public Dictionary<string, TableItem> TableDictionary { get; set; }
+        public Dictionary<string, TableItem> tableDictionary { get; set; }
 
         protected override void OnInitialize()
         {
-            if (TableDictionary == null)
+            if (tableDictionary == null)
             {
-                TableDictionary = new Dictionary<string, TableItem>();
+                tableDictionary = new Dictionary<string, TableItem>();
             }
         }
     }

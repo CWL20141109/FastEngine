@@ -26,7 +26,7 @@ namespace FastEngine.Core
         public Res _Get(ResData data, bool create = false)
         {
             Res res = null;
-            if (_resDictionary.TryGetValue(data.Poolkey, out res))
+            if (_resDictionary.TryGetValue(data.poolkey, out res))
             {
                 res.Retain();
                 return res;
@@ -38,16 +38,16 @@ namespace FastEngine.Core
             if (res == null) return null;
 
             res.Retain();
-            _resDictionary.Add(data.Poolkey, res);
+            _resDictionary.Add(data.poolkey, res);
 
             return res;
         }
 
         public void _Remove(ResData data)
         {
-            if (_resDictionary.ContainsKey(data.Poolkey))
+            if (_resDictionary.ContainsKey(data.poolkey))
             {
-                _resDictionary.Remove(data.Poolkey);
+                _resDictionary.Remove(data.poolkey);
             }
         }
 
@@ -72,7 +72,7 @@ namespace FastEngine.Core
         /// <returns></returns>
         public static Res Get(ResData data, bool createNew = false)
         {
-            return Instance._Get(data, createNew);
+            return instance._Get(data, createNew);
         }
         /// <summary>
         /// 资源移除
@@ -80,7 +80,7 @@ namespace FastEngine.Core
         /// <param name="data"></param>
         public static void Remove(ResData data)
         {
-            Instance._Remove(data);
+            instance._Remove(data);
         }
         #endregion
     }

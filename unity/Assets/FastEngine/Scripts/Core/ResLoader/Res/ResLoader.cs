@@ -8,7 +8,7 @@ namespace FastEngine.Core
         /// <summary>
         /// 通知
         /// </summary>
-        protected ResNotificationListener MListener;
+        protected ResNotificationListener mListener;
 
         /// <summary>
         /// 同步加载

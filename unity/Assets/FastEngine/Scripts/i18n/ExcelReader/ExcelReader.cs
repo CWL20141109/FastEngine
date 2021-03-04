@@ -5,12 +5,12 @@ namespace FastEngine.Core.I18n
 {
 	public class ExcelReader
 	{
-		public ExcelReaderOptions Options { get; private set; }
-		public ExcelSheet[] Sheets { get; private set; }
+		public ExcelReaderOptions options { get; private set; }
+		public ExcelSheet[] sheets { get; private set; }
 
 		public ExcelReader(ExcelReaderOptions options)
 		{
-			this.Options = options;
+			this.options = options;
 		}
 
 		public void Read()
@@ -19,7 +19,7 @@ namespace FastEngine.Core.I18n
 			{
 				using (var reader = ExcelReaderFactory.CreateReader(stream))
 				{
-					Sheets = new ExcelSheet[reader.ResultsCount];
+					sheets = new ExcelSheet[reader.ResultsCount];
 
 					var result = reader.AsDataSet();
 					for (int i = 0; i < reader.ResultsCount; i++)
@@ -29,29 +29,29 @@ namespace FastEngine.Core.I18n
 						var rowCount = dataTable.Rows.Count;
 
 						var sheet = new ExcelSheet();
-						sheet.Name = dataTable.TableName;
-						sheet.Columns = new ExcelColumn[rowCount];
+						sheet.name = dataTable.TableName;
+						sheet.columns = new ExcelColumn[rowCount];
 
-						sheet.Columns[0] = new ExcelColumn();
+						sheet.columns[0] = new ExcelColumn();
 						for (int r = 1; r < rowCount; r++)
 						{
 							var excelColumn = new ExcelColumn();
-							excelColumn.Values = new string[columnCount];
+							excelColumn.values = new string[columnCount];
 							for (int c = 0; c < columnCount; c++)
 							{
 								var context = dataTable.Rows[r][c].ToString();
 								if (c == 0)
 								{
-									excelColumn.Key = context;
+									excelColumn.key = context;
 								}
 								else
 								{
-									excelColumn.Values[c] = context;
+									excelColumn.values[c] = context;
 								}
 							}
-							sheet.Columns[r] = excelColumn;
+							sheet.columns[r] = excelColumn;
 						}
-						Sheets[i] = sheet;
+						sheets[i] = sheet;
 					}
 				}
 			}

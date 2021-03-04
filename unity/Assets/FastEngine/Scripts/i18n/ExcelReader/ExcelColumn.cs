@@ -2,7 +2,7 @@
 {
     public class ExcelColumn
     {
-        public string Key;
-        public string[] Values;
+        public string key;
+        public string[] values;
     }
 }

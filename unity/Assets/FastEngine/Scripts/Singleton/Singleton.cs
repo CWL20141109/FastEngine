@@ -9,15 +9,15 @@ namespace FastEngine
     public abstract class Singleton<T> : ISingleton where T : Singleton<T>
     {
         private static T _instance;
-        private static readonly object obj = new object();
+        private static readonly object Obj = new object();
 
-        protected static T Instance
+        protected static T instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    lock (obj)
+                    lock (Obj)
                     {
                         if (_instance == null)
                         {
