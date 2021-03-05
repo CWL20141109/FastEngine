@@ -13,46 +13,46 @@ namespace Table
     public class TestTableData
     {
 		//id
-		public byte id { get; }
+		public byte id;
 		//名字
-		public int name { get; }
+		public int name;
 		//属性1
-		public long property1 { get; }
+		public long property1;
 		//属性2
-		public float property2 { get; }
+		public float property2;
 		//属性3
-		public double property3 { get; }
+		public double property3;
 		//属性4
-		public string property4 { get; }
+		public string property4;
 		//属性5
-		public bool property5 { get; }
+		public bool property5;
 		//属性6
-		public Vector2 property6 { get; }
+		public Vector2 property6;
 		//属性7
-		public Vector3 property7 { get; }
+		public Vector3 property7;
 		//属性8
 		private I18NObject _property8_I18N;
 		public string property8 { get { return _property8_I18N.ToString(); } }
 		//属性9
-		public byte[] property9 { get; }
+		public byte[] property9;
 		//属性10
-		public int[] property10 { get; }
+		public int[] property10;
 		//属性11
-		public long[] property11 { get; }
+		public long[] property11;
 		//属性12
-		public float[] property12 { get; }
+		public float[] property12;
 		//属性13
-		public double[] property13 { get; }
+		public double[] property13;
 		//属性14
-		public string[] property14 { get; }
+		public string[] property14;
 		//属性15
-		public bool[] property15 { get; }
+		public bool[] property15;
 		//属性16
-		public Vector2[] property16 { get; }
+		public Vector2[] property16;
 		//属性17
-		public Vector3[] property17 { get; }
+		public Vector3[] property17;
 		//属性18
-		public I18NObject[] property18 { get; }
+		public I18NObject[] property18;
 
     }
 
@@ -72,16 +72,16 @@ namespace Table
             switch (dataFormatOptions)
             {
                 case DataFormatOptions.Array:
-                   // m_tableDatas = new TableParseCSV(tableName).ParseArray<TestTableData>();
+                    m_tableDatas = new TableParseCSV<TestTableData>(tableName).ParseArray();
                     break;
                 case DataFormatOptions.IntDictionary:
-                   // m_tableDataIntDictionary = new TableParseCSV(tableName).ParseIntDictionary<TestTableData>();
+                    m_tableDataIntDictionary = new TableParseCSV<TestTableData>(tableName).ParseIntDictionary();
                     break;
                 case DataFormatOptions.StringDictionary:
-                   // m_tableDataStringDictionary = new TableParseCSV(tableName).ParseStringDictionary<TestTableData>();
+                    m_tableDataStringDictionary = new TableParseCSV<TestTableData>(tableName).ParseStringDictionary();
                     break;
                 case DataFormatOptions.Int2IntDictionary:
-                   // m_tableDataInt2IntDictionary = new TableParseCSV(tableName).ParseInt2IntDictionary<TestTableData>();
+                    m_tableDataInt2IntDictionary = new TableParseCSV<TestTableData>(tableName).ParseInt2IntDictionary();
                     break;
             }
         }
@@ -145,9 +145,9 @@ namespace Table
             return null;
         }
 
-        public static TestTableData GetIndexData(int index) { return Instance._GetIndexData(index); }
-        public static TestTableData GetKeyData(int key) { return Instance._GetKeyData(key); }
-        public static TestTableData GetKeyData(string key) { return Instance._GetKeyData(key); }
-        public static TestTableData GetKeyData(int key1, int key2) { return Instance._GetKeyData(key1, key2); }
+        public static TestTableData GetIndexData(int index) { return instance._GetIndexData(index); }
+        public static TestTableData GetKeyData(int key) { return instance._GetKeyData(key); }
+        public static TestTableData GetKeyData(string key) { return instance._GetKeyData(key); }
+        public static TestTableData GetKeyData(int key1, int key2) { return instance._GetKeyData(key1, key2); }
     }
 }

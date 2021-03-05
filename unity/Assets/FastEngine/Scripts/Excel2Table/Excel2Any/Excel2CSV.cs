@@ -22,7 +22,8 @@ namespace FastEngine.Core.Excel2Table
 
 			// fields
 			_mStringBuilder.Clear();
-			for (int i = 0; i < reader.fields.Count - 1; i++)
+			var maxCount = reader.fields.Count - 1;
+			for (int i = 0; i < maxCount; i++)
 			{
 				if (reader.types[i] == FieldType.I18N)
 				{
@@ -32,23 +33,30 @@ namespace FastEngine.Core.Excel2Table
 				{
 					_mStringBuilder.Append(reader.fields[i]);
 				}
-				
 				_mStringBuilder.Append(",");
 			}
-			_mStringBuilder.Append(reader.fields[reader.fields.Count - 1]);
+			if (reader.types[maxCount] == FieldType.I18N)
+			{
+				_mStringBuilder.Append($"_{reader.fields[maxCount]}_I18N");
+			}
+			else
+			{
+				_mStringBuilder.Append(reader.fields[maxCount]);
+			}
+
 			_mStringBuilder.Append("\r\n");
 
 			// data
-			for (int i = 0; i < reader.rows.Count - 1; i++)
+			for (int i = 0; i < reader.rows.Count; i++)
 			{
 				Dictionary<string, object> data = new Dictionary<string, object>();
-				for (int k = 0; k < reader.fields.Count - 1; k++)
+				for (int k = 0; k < maxCount; k++)
 				{
 					_mStringBuilder.Append(WrapContext(reader.rows[i].datas[k], reader.types[k]));
 					_mStringBuilder.Append(",");
 				}
 
-				_mStringBuilder.Append(WrapContext(reader.rows[i].datas[reader.fields.Count - 1], reader.types[reader.fields.Count - 1]));
+				_mStringBuilder.Append(WrapContext(reader.rows[i].datas[maxCount], reader.types[maxCount]));
 				_mStringBuilder.Append("\r\n");
 			}
 
@@ -79,6 +87,7 @@ namespace FastEngine.Core.Excel2Table
 					case FieldType.Byte:
 					case FieldType.Int:
 					case FieldType.Long:
+					case FieldType.Float:
 					case FieldType.Double:
 					case FieldType.Boolean:
 						return content;
@@ -102,7 +111,7 @@ namespace FastEngine.Core.Excel2Table
 				var modelField = model.GetField(datas[0]);
 
 				var key = typeof(LanaguageKey);
-				var keyField = model.GetField($"{datas[0]}_{datas[1]}");
+				var keyField = key.GetField($"{datas[0]}_{datas[1]}");
 
 				if (modelField != null && keyField != null)
 				{
@@ -115,7 +124,7 @@ namespace FastEngine.Core.Excel2Table
 			}
 			else
 			{
-				Debug.LogError($"[{  _mReader.options.tableName }] table i18n format error!");
+				Debug.LogError($"[{_mReader.options.tableName}] table i18n format error!");
 			}
 			return "0:0";
 		}
@@ -129,7 +138,7 @@ namespace FastEngine.Core.Excel2Table
 			{
 				result += WrapI18NContext(datas[i]) + ",";
 			}
-			result += WrapI18NContext(datas[datas.Length]);
+			result += WrapI18NContext(datas[datas.Length - 1]);
 			return $"\"{result}\"";
 		}
 	}

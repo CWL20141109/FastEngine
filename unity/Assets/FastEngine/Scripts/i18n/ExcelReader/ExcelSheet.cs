@@ -33,7 +33,7 @@ namespace FastEngine.Core.I18n
 
 			for (int i = 1; i < columns.Length; i++)
 			{
-				builder.AppendLine(columns[i].values[index].TrimEnd('\r', '\n') + "\n");
+				builder.AppendLine(columns[i].values[index].TrimEnd('\r', '\n'));
 			}
 			return builder.ToString().TrimEnd('\r', '\n');
 		}

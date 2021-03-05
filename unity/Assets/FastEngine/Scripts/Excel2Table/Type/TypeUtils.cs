@@ -111,7 +111,6 @@ namespace FastEngine.Core.Excel2Table
 			if (string.IsNullOrEmpty(content)) return new I18NObject(0, 0);
 			string[] datas = ContentSeparator(content, new char[] { ':' });
 			return new I18NObject(int.Parse(datas[0]), int.Parse(datas[1]));
-
 		}
 
 		/// <summary>

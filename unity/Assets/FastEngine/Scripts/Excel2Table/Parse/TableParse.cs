@@ -30,8 +30,7 @@ namespace FastEngine.Core.Excel2Table
 			if (App.runModel == AppRunModel.Develop)
 			{
 				var filePath = FilePathUtils.Combine(AppUtils.TableDataDirectory(), tableName + ".csv");
-				bool succeed = false;
-				content = FilePathUtils.FileReadAllText(filePath, out succeed);
+				content = FilePathUtils.FileReadAllText(filePath, out _);
 			}
 			else
 			{

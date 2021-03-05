@@ -42,16 +42,16 @@ $variable$
             switch (dataFormatOptions)
             {
                 case DataFormatOptions.Array:
-                   // m_tableDatas = new TableParseCSV(tableName).ParseArray<$tableName$TableData>();
+                    m_tableDatas = new TableParseCSV<$tableName$TableData>(tableName).ParseArray();
                     break;
                 case DataFormatOptions.IntDictionary:
-                   // m_tableDataIntDictionary = new TableParseCSV(tableName).ParseIntDictionary<$tableName$TableData>();
+                    m_tableDataIntDictionary = new TableParseCSV<$tableName$TableData>(tableName).ParseIntDictionary();
                     break;
                 case DataFormatOptions.StringDictionary:
-                   // m_tableDataStringDictionary = new TableParseCSV(tableName).ParseStringDictionary<$tableName$TableData>();
+                    m_tableDataStringDictionary = new TableParseCSV<$tableName$TableData>(tableName).ParseStringDictionary();
                     break;
                 case DataFormatOptions.Int2IntDictionary:
-                   // m_tableDataInt2IntDictionary = new TableParseCSV(tableName).ParseInt2IntDictionary<$tableName$TableData>();
+                    m_tableDataInt2IntDictionary = new TableParseCSV<$tableName$TableData>(tableName).ParseInt2IntDictionary();
                     break;
             }
         }
@@ -151,7 +151,7 @@ $variable$
 				}
 				else
 				{
-					_mStringBuilder.AppendLine($"\t\tpublic {TypeUtils.FieldTypeToTypeContent(reader.types[i])} {reader.fields[i]} {{ get; }}");
+					_mStringBuilder.AppendLine($"\t\tpublic {TypeUtils.FieldTypeToTypeContent(reader.types[i])} {reader.fields[i]};");
 				}
 			}
 			_template = _template.Replace("$variable$", _mStringBuilder.ToString());
